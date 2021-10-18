@@ -1,4 +1,5 @@
 // 色
+$background: #fff; // 背景
 $white: #fff; // 背景
 $text-color: #393939; // テキスト色
 $main-color: #1391E6; // メインカラー
@@ -31,3 +32,18 @@ $breakpoints: (
 );
 $padding-pc: 25px; // タブレット時の余白
 $padding-sp: 20px; // スマホ時の余白
+
+//ヘッダー高さ
+$header-height-sp: 60px;
+$header-height-pc: 80px;
+
+//重なり順
+$layer-toggle-button: 200;
+$layer-modal: 100;
+$layer-drawer: 40;
+$layer-floating: 30;
+$layer-header: 20;
+$layer-footer: 10;
+$layer-up: 2;
+$layer-default: 1;
+$layer-background: -1;

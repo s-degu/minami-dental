@@ -1,0 +1,22 @@
+.p-drawer__toggle {
+  z-index: 9999;
+}
+
+// ドロワーメニューオープン時の動き
+.p-drawer__toggle.is-checked {
+  .p-drawer__toggle-icon {
+      background-color: $white;
+    &:nth-child(1) {
+      top: 6px;
+      transform: rotate(45deg);
+    }
+    &:nth-child(2) {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+    &:nth-child(3) {
+      top: -6px;
+      transform: rotate(-45deg);
+    }
+  }
+}

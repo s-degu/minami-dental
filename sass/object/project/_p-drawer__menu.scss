@@ -1,0 +1,74 @@
+.p-drawer__menu {
+  border-top: 2px dotted $white;
+  position: relative;
+  width: 68%;
+  &:last-child {
+    border-bottom: 2px dotted $white;
+  }
+  &::before {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    display: inline-block;
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: 16px;
+    width: 24px;
+
+  }
+  &::after {
+    content: "\f061";
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.p-drawer__menu a {
+  display: block;
+  padding-bottom: rem(19);
+  padding-left: rem(38);
+  padding-top: rem(18);
+}
+
+.p-drawer__menu--home {
+  &::before {
+    background-image: url(../../../WordPressTheme/assets/img/icon_home.png);
+   }
+}
+
+.p-drawer__menu--about {
+  &::before {
+    background-image: url(../../../WordPressTheme/assets/img/icon_about.png);
+   }
+}
+
+.p-drawer__menu--info {
+  &::before {
+    background-image: url(../../../WordPressTheme/assets/img/icon_info.png);
+   }
+}
+
+.p-drawer__menu--staff {
+  &::before {
+    background-image: url(../../../WordPressTheme/assets/img/icon_staff.png);
+   }
+}
+
+.p-drawer__menu--blog {
+  &::before {
+    background-image: url(../../../WordPressTheme/assets/img/icon_blog.png);
+   }
+}
+
+.p-drawer__menu--contact {
+  &::before {
+    background-image: url(../../../WordPressTheme/assets/img/icon_contact.png);
+   }
+}
