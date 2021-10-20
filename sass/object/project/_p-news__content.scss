@@ -1,0 +1,17 @@
+.p-news__content {
+  font-size: rem(14);
+  &::after {
+    color: $text-color;
+    content: "\f061";
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.4em;
+    font-weight: bold;
+    // height: 14px;
+    position: absolute;
+    right: 0;
+    top: 11%;
+    // transform: translateY(-50%);
+    width: 21px;
+  }
+}

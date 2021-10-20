@@ -2,4 +2,7 @@
   margin-left: auto;
   position: relative;
   z-index: $layer-toggle-button;
+  @include mq(tab) {
+    display: none;
+  }
 }

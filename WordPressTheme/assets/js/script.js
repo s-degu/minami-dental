@@ -51,10 +51,17 @@ jQuery(function ($) {
 		let ua = navigator.userAgent;
 		if (ua.indexOf("iPhone") < 0 && ua.indexOf("Android") < 0) {
 			jQuery('a[href^="tel:"]')
-				.css("cursor", "default")
-				.on("click", function (e) {
-					e.preventDefault();
-				});
+			.css("cursor", "default")
+			.on("click", function (e) {
+				e.preventDefault();
+			});
 		}
+		
+		/* slickスライダー */
+		jQuery(".js-slider").slick({
+			dots: true,
+			slidesToShow: 1,
+			speed: 400,
+		});
 	});
 });

@@ -1,0 +1,15 @@
+.p-slider__text {
+  color: $white;
+  content: "";
+  display: block;
+  font-size: rem(20);
+  font-weight: bold;
+  left: 0;
+  line-height: 2.05;
+  position: absolute;
+  bottom: 0;
+  z-index: $layer-default;
+  padding-left: 20px;
+  padding-bottom: 38px;
+  letter-spacing: 0.08em;
+}

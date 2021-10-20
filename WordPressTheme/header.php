@@ -40,6 +40,38 @@
         </ul>
       </div>
       <!-- 👆ドロワーメニュー -->
-
     </div>
   </header>
+
+      <!-- 👇メインビュー -->
+      <div class="p-hero">
+        <div class="l-inner">
+          <div class="p-hero__fv p-slider">
+            <p class="p-slider__text">街の皆さまの笑顔を守る<br>アットホームな歯医者さん</p>
+          <div class="p-slider__wrap js-slider">
+            <div class="p-slider__item"><img class="p-slider__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/chair-1_sp.jpg" alt="診察場所の風景" /></div>
+            <div class="p-slider__item"><img class="p-slider__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/chair-2_sp.jpg" alt="診察場所の風景" /></div>
+            <div class="p-slider__item"><img class="p-slider__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/chair-3_sp.jpg" alt="診察場所の風景" /></div>
+          </div>
+          </div>
+          <div class="p-hero__info">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/medical-time.png" alt="診察日一覧">
+          </div>
+          <div class="p-hero__news p-news">
+            <div class="p-news__heading">
+              <p class="p-news__title">お知らせ</p>
+              <span class="p-news__title--en">news</span>
+              <span class="p-news__title--past"><a href="#">過去のお知らせはこちら</a></span>
+            </div>
+            <div class="p-news__body">
+              <dl class="p-news__list-wrap">
+                <a class="p-news__list">
+                  <dt class="p-news__date"><time datetime="2021/01/01">2021/01/01</time></dt>
+                  <dd class="p-news__content">年末年始の営業時間のお知らせ</dd>
+                </a>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 👆メインビュー -->

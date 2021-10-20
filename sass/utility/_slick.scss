@@ -1,0 +1,68 @@
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+// アローボタン
+.slick-prev {
+  left: -19px;
+}
+
+.slick-next {
+  right: -13px;
+}
+
+.slick-prev,
+.slick-next {
+  height: 32px;
+  width: 32px;
+  z-index: $layer-up;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 37px;
+  opacity: 1;
+  // color: blue;
+  //   box-shadow: 0 3px 6px 0 rgba(0,0,0,.6);
+  //   content: "";
+}
+
+.slick-prev::before {
+  background-image: url(../../../WordPressTheme/assets/img/button-prev.png);
+  background-size: contain;
+}
+
+.slick-next::before {
+  background-image: url(../../../WordPressTheme/assets/img/button-next.png);
+  background-size: contain;
+}
+
+//画像の背景色
+.p-slider__wrap {
+  position: relative;
+  &::after {
+    background-color: rgba(0, 0, 0, .1);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+//ドットの調整
+.slick-dots {
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  left: -25px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: $main-color;
+}
+
+.p-slide__dots {
+  font-size: 1px;
+}
