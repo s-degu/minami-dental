@@ -3,6 +3,11 @@
   display: inline-block;
   font-size: rem(11);
   font-weight: bold;
+  @include mq(tab) {
+    font-size: rem(12);
+    letter-spacing: .1em;
+    line-height: 2;
+  }
   letter-spacing: .1em;
   margin-top: auto;
   text-transform: uppercase;

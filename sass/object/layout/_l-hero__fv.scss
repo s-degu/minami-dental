@@ -1,0 +1,5 @@
+.l-hero__fv {
+  @include mq(tab) {
+    padding-left: rem(22);
+  }
+}

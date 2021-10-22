@@ -1,4 +1,7 @@
 .p-hero__fv {
     position: relative;
     margin-top: rem(20);
+    @include mq(tab) {
+        margin-top: rem(41);
+    }
 }

@@ -1,4 +1,7 @@
 .p-news__date {
-    font-size: rem(12);
-    margin-right: rem(24);
+  font-size: rem(12);
+  @include mq(tab) {
+    margin-right: rem(21);
+  }
+  margin-right: rem(24);
 }

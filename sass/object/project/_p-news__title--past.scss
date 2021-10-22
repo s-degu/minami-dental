@@ -9,4 +9,7 @@
   display: inline-block;
   display: block;
   font-size: rem(11);
+  @include mq(tab) {
+    font-size: rem(12);
+  }
 }

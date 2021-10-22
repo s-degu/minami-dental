@@ -1,0 +1,8 @@
+.p-hero__inner {
+  display: flex;
+  flex-direction: column;
+  @include mq(tab) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

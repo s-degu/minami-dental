@@ -1,3 +1,6 @@
 .l-header {
   height: $header-height-sp;
+  @include mq(tab) {
+    height: $header-height-pc;
+  }
 }

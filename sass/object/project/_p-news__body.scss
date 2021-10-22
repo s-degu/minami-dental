@@ -1,3 +1,6 @@
 .p-news__body {
-    margin-top: rem(4);
+  @include mq(tab) {
+    margin-top: 6px;
+  }
+  margin-top: rem(4);
 }

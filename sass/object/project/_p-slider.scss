@@ -1,15 +1,30 @@
 .p-slider__text {
+  bottom: 0;
   color: $white;
   content: "";
   display: block;
   font-size: rem(20);
   font-weight: bold;
+  @include mq(tab) {
+    font-size: rem(32);
+    letter-spacing: .15em;
+    line-height: 2.2;
+    padding-bottom: 50px;
+    padding-left: 82px;
+  }
   left: 0;
+  letter-spacing: .08em;
   line-height: 2.05;
-  position: absolute;
-  bottom: 0;
-  z-index: $layer-default;
-  padding-left: 20px;
   padding-bottom: 38px;
-  letter-spacing: 0.08em;
+  padding-left: 20px;
+  position: absolute;
+  z-index: $layer-default;
+}
+
+.p-slider__text--underline {
+  border-bottom: 2px dotted $white;
+  @include mq(tab) {
+    border-bottom: 5px dotted $white;
+    padding-bottom: 5px;
+  }
 }
