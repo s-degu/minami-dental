@@ -1,0 +1,10 @@
+.p-concept__img-wrap {
+  background-color: transparent;
+  @include mq(tab) {
+    margin-top: 0;
+    width: 50.8%;
+    margin-right: auto;
+  }
+  margin-top: rem(41);
+  width: 89.0666%;
+}

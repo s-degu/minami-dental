@@ -1,0 +1,22 @@
+.p-concept__button {
+  margin-top: rem(37);
+  padding: 10px 40px 13px;
+  line-height: 1;
+  @include mq(tab) {
+      padding: 14px 45px 13px;
+      
+  }
+  &::after {
+    color: $main-color;
+    content: "\f061";
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 21px;
+  }
+}

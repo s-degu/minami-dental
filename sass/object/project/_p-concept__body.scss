@@ -1,0 +1,5 @@
+.p-concept__body {
+  @include mq(tab) {
+    padding-top: rem(35);
+  }
+}

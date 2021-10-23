@@ -1,0 +1,6 @@
+.p-concept__button-wrap {
+  @include mq(tab) {
+    text-align: left;
+  }
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+.p-concept__title {
+  font-size: rem(20);
+  font-weight: bold;
+  letter-spacing: .08em;
+  line-height: 1.6;
+  margin-top: rem(11);
+  @include mq(tab) {
+      margin-top: rem(22);
+      font-size: rem(28);
+
+  }
+}
+
+.p-concept__title--en {
+  color: $main-color;
+  font-size: rem(11);
+  font-weight: bold;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  @include mq(tab) {
+      font-size: rem(14);
+  }
+}

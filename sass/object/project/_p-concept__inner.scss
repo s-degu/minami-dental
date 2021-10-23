@@ -1,0 +1,9 @@
+.p-concept__inner {
+  @include mq(tab) {
+    width: 35.477%;
+    padding-left: 39px;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 117px;
+  }
+}

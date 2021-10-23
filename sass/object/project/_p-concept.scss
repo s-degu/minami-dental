@@ -1,0 +1,28 @@
+.p-concept {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  @include mq(tab) {
+    flex-direction: row-reverse;
+  }
+  position: relative;
+  &::before {
+    background-image: url(../../../WordPressTheme/assets/img/concept-bg_sp.png);
+    background-repeat: no-repeat;
+    background-size: 147%;
+    content: "";
+    display: block;
+    height: 80vh;
+    @include mq(tab) {
+      background-image: url(../../../WordPressTheme/assets/img/concept-bg.png);
+      background-size: 102%;
+    //   background-size: contain;
+      left: 33%;
+    }
+    left: 2%;
+    position: absolute;
+    top: 0;
+    width: 102%;
+    z-index: $layer-background;
+  }
+}

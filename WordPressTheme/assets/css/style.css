@@ -578,6 +578,11 @@ summary {
 
 /* Remove all animations and transitions for people that prefer not to see them */
 
+.l-concept {
+	margin-top: 3.75rem;
+	padding-top: 6.5rem;
+}
+
 .l-header {
 	height: 60px;
 }
@@ -591,9 +596,95 @@ summary {
 	width: 100%;
 }
 
+.c-button {
+	border: 1px solid #1391E6;
+	border-radius: 40px;
+	color: #1391E6;
+	display: inline-block;
+	font-size: 0.875rem;
+	position: relative;
+}
+
 .c-test {
 	color: red;
 	font-size: 1.25rem;
+}
+
+.p-concept__button-wrap {
+	text-align: center;
+}
+
+.p-concept__button {
+	line-height: 1;
+	margin-top: 2.3125rem;
+	padding: 10px 40px 13px;
+}
+
+.p-concept__button::after {
+	color: #1391E6;
+	content: "\f061";
+	display: block;
+	font-family: "Font Awesome 5 Free";
+	font-size: 1.2em;
+	font-weight: bold;
+	position: absolute;
+	right: 7px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 21px;
+}
+
+.p-concept__img-wrap {
+	background-color: transparent;
+	margin-top: 2.5625rem;
+	width: 89.0666%;
+}
+
+.p-concept__img {
+	border-radius: 0 20px 20px 0;
+}
+
+.p-concept__text {
+	font-size: 0.875rem;
+	line-height: calc(24 /14);
+	margin-top: 1.6875rem;
+}
+
+.p-concept__title {
+	font-size: 1.25rem;
+	font-weight: bold;
+	letter-spacing: .08em;
+	line-height: 1.6;
+	margin-top: 0.6875rem;
+}
+
+.p-concept__title--en {
+	color: #1391E6;
+	font-size: 0.6875rem;
+	font-weight: bold;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}
+
+.p-concept {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	position: relative;
+}
+
+.p-concept::before {
+	background-image: url(../../../WordPressTheme/assets/img/concept-bg_sp.png);
+	background-repeat: no-repeat;
+	background-size: 147%;
+	content: "";
+	display: block;
+	height: 80vh;
+	left: 2%;
+	position: absolute;
+	top: 0;
+	width: 102%;
+	z-index: -1;
 }
 
 .p-drawer__link {
@@ -1058,6 +1149,10 @@ summary {
 	font-size: 1px;
 }
 
+* {
+	outline: 1px solid red;
+}
+
 @media (prefers-reduced-motion: reduce) {
 
 html:focus-within {
@@ -1095,6 +1190,10 @@ html {
 	font-size: 1.26984vw;
 }
 
+.l-concept {
+	padding-top: 11.125rem;
+}
+
 .l-header {
 	height: 80px;
 }
@@ -1112,6 +1211,55 @@ html {
 .c-test {
 	color: green;
 	font-size: 3.125rem;
+}
+
+.p-concept__body {
+	padding-top: 2.1875rem;
+}
+
+.p-concept__button-wrap {
+	text-align: left;
+}
+
+.p-concept__button {
+	padding: 14px 45px 13px;
+}
+
+.p-concept__img-wrap {
+	margin-right: auto;
+	margin-top: 0;
+	width: 50.8%;
+}
+
+.p-concept__inner {
+	margin-left: 0;
+	margin-right: 117px;
+	padding-left: 39px;
+	padding-right: 0;
+	width: 35.477%;
+}
+
+.p-concept__text {
+	margin-top: 2.1875rem;
+}
+
+.p-concept__title {
+	font-size: 1.75rem;
+	margin-top: 1.375rem;
+}
+
+.p-concept__title--en {
+	font-size: 0.875rem;
+}
+
+.p-concept {
+	flex-direction: row-reverse;
+}
+
+.p-concept::before {
+	background-image: url(../../../WordPressTheme/assets/img/concept-bg.png);
+	background-size: 102%;
+	left: 33%;
 }
 
 .p-header__drawer {
