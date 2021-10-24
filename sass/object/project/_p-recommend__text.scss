@@ -1,0 +1,9 @@
+.p-recommend__text {
+    font-size: rem(14);
+    line-height: calc(24 /14);
+    margin-top: rem(22);
+}
+
+.p-recommend__text--red {
+    color: $accent-color;
+}

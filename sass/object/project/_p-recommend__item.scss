@@ -1,0 +1,5 @@
+.p-recommend__item {
+  & + & {
+    margin-top: rem(19);
+  }
+}

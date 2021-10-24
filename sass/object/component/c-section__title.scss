@@ -1,0 +1,26 @@
+.c-section__title {
+  font-size: rem(20);
+  font-weight: bold;
+  letter-spacing: .08em;
+  position: relative;
+  &::before,
+  &::after {
+    background-image: url(../../../WordPressTheme/assets/img/section_title_heading.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    display: block;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+  }
+  &::before {
+    left: -2px;
+  }
+  &::after {
+    right: -2px;
+  }
+}

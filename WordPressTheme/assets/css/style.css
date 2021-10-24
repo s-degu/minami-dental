@@ -596,6 +596,10 @@ summary {
 	width: 100%;
 }
 
+.l-recommend {
+	margin-top: 6.125rem;
+}
+
 .c-button {
 	border: 1px solid #1391E6;
 	border-radius: 40px;
@@ -608,6 +612,36 @@ summary {
 .c-test {
 	color: red;
 	font-size: 1.25rem;
+}
+
+.c-section__title {
+	font-size: 1.25rem;
+	font-weight: bold;
+	letter-spacing: .08em;
+	position: relative;
+}
+
+.c-section__title::before,
+.c-section__title::after {
+	background-image: url(../../../WordPressTheme/assets/img/section_title_heading.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	display: block;
+	height: 15px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50px;
+}
+
+.c-section__title::before {
+	left: -2px;
+}
+
+.c-section__title::after {
+	right: -2px;
 }
 
 .p-concept__button-wrap {
@@ -1051,6 +1085,44 @@ summary {
 	padding-left: 1rem;
 }
 
+.p-recommend__img-wrap {
+	margin-top: 0.8125rem;
+	padding-left: 0.1875rem;
+	padding-right: 0.1875rem;
+}
+
+.p-recommend__item + .p-recommend__item {
+	margin-top: 1.1875rem;
+}
+
+.p-recommend__items {
+	padding-left: 1.6875rem;
+	padding-right: 1.6875rem;
+}
+
+.p-recommend__text {
+	font-size: 0.875rem;
+	line-height: calc(24 /14);
+	margin-top: 1.375rem;
+}
+
+.p-recommend__text--red {
+	color: #EE5A6D;
+}
+
+.p-recommend__title-wrap {
+	text-align: center;
+}
+
+.p-recommend__title {
+	text-align: center;
+}
+
+.p-recommend__title img {
+	margin-top: 2.3125rem;
+	width: 62%;
+}
+
 .p-slider__item img {
 	aspect-ratio: 335 / 446.93;
 }
@@ -1147,10 +1219,6 @@ summary {
 
 .p-slide__dots {
 	font-size: 1px;
-}
-
-* {
-	outline: 1px solid red;
 }
 
 @media (prefers-reduced-motion: reduce) {

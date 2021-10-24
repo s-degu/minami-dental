@@ -42,7 +42,6 @@
 </div>
 <!-- 👆メインビュー -->
 
-
 <!-- 👇コンセプトセクション -->
 <section class="l-concept p-concept">
   <div class="l-inner p-concept__inner">
@@ -64,6 +63,52 @@
 
 </section>
 <!-- 👆コンセプトセクション -->
+
+<!-- 👇当院のおすすめセクション -->
+<section class="l-recommend p-recommend">
+  <div class="l-inner p-recommend">
+    <div class="p-recommend__title-wrap">
+      <h2 class="p-recommend__title c-section__title">当院の3つのおすすめ</h2>
+    </div>
+    <div class="p-recommend__items">
+      <div class="p-recommend__item">
+        <h3 class="p-recommend__title">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/recommend_tag_01.png" alt="おすすめ01">
+        </h3>
+        <div class="p-recommend__img-wrap">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/recommend-img-01.png" alt="痛くない歯医者の追求">
+        </div>
+        <p class="p-recommend__text">
+          歯の治療において、小さな違和感は大きなストレスにつながります。<br>
+          私たちは常に快適な歯科医療技術の研究を行っております。</p>
+      </div>
+      <div class="p-recommend__item">
+        <h3 class="p-recommend__title">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/recommend_tag_02.png" alt="おすすめ02">
+        </h3>
+        <div class="p-recommend__img-wrap">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/recommend-img-02.png" alt="駅から徒歩3分">
+        </div>
+        <p class="p-recommend__text">
+        「通いやすさ」も医院選びの重要なポイントと考え、2019年のリニューアルを期に更に駅の近くへ場所を移しました。
+      </div>
+      <div class="p-recommend__item">
+        <h3 class="p-recommend__title">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/recommend_tag_03.png" alt="おすすめ03">
+        </h3>
+        <div class="p-recommend__img-wrap">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/recommend-img-03.png" alt="痛くない歯医者の追求">
+        </div>
+        <p class="p-recommend__text">
+        朝から夜までお仕事をされている方のために、診療時間を見直しました。<br>
+        <span class="p-recommend__text--red">※駆け込みでも対応可能ですが、事前にご連絡いただけるとスムーズです。</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 👆当院のおすすめセクション -->
+
+
 
 
 
