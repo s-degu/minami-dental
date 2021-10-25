@@ -3,6 +3,9 @@
 }
 
 .p-recommend__title img {
-    width: 62%;
-    margin-top: rem(37);
+  @include mq(tab) {
+    margin-top: rem(55);
+  }
+  margin-top: rem(37);
+  width: 62%;
 }

@@ -2,4 +2,8 @@
   margin-top: rem(13);
   padding-left: rem(3);
   padding-right: rem(3);
+  @include mq(tab) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

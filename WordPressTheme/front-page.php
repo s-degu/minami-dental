@@ -66,7 +66,7 @@
 
 <!-- 👇当院のおすすめセクション -->
 <section class="l-recommend p-recommend">
-  <div class="l-inner p-recommend">
+  <div class="l-inner p-recommend__inner">
     <div class="p-recommend__title-wrap">
       <h2 class="p-recommend__title c-section__title">当院の3つのおすすめ</h2>
     </div>

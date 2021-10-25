@@ -1,4 +1,13 @@
 .p-recommend__items {
+  display: block;
+  @include mq(tab) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding-left: 0;
+    gap: 0 62px;
+    padding-right: 0;
+  }
   padding-left: rem(27);
   padding-right: rem(27);
 }

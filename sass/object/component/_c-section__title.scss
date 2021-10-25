@@ -1,8 +1,13 @@
 .c-section__title {
+  display: inline-block;
   font-size: rem(20);
   font-weight: bold;
+  @include mq(tab) {
+    font-size: rem(28);
+  }
   letter-spacing: .08em;
   position: relative;
+
   &::before,
   &::after {
     background-image: url(../../../WordPressTheme/assets/img/section_title_heading.svg);
@@ -12,15 +17,26 @@
     content: "";
     display: block;
     height: 15px;
+    @include mq(tab) {
+      height: 17px;
+      top: 46%;
+      width: 67px;
+    }
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 50px;
   }
   &::before {
-    left: -2px;
+    @include mq(tab) {
+      left: -96px;
+    }
+    left: -66px;
   }
   &::after {
-    right: -2px;
+    @include mq(tab) {
+      right: -93px;
+    }
+    right: -66px;
   }
 }

@@ -1,0 +1,7 @@
+.p-recommend__inner {
+  @include mq(tab) {
+    max-width: rem(966);
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

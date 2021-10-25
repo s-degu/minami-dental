@@ -1,5 +1,8 @@
 .p-recommend__item {
   & + & {
     margin-top: rem(19);
+    @include mq(tab) {
+        margin-top: 0;
+    }
   }
 }

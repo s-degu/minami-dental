@@ -1,3 +1,6 @@
 .l-recommend {
+  @include mq(tab) {
+    margin-top: rem(108);
+  }
   margin-top: rem(98);
 }
