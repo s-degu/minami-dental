@@ -1,0 +1,33 @@
+.p-medical-link__title {
+  color: $white;
+  font-size: rem(20);
+  font-weight: bold;
+  @include mq(tab) {
+    font-size: rem(28);
+    padding-bottom: rem(45);
+    line-height: calc(32/ 28);
+  }
+  letter-spacing: .08em;
+  line-height: calc(23/ 20);
+  padding-bottom: rem(42);
+  position: relative;
+  text-align: center;
+  z-index: $layer-up;
+  &::after {
+    background-color: $white;
+    border-radius: 30px;
+    bottom: 19px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 30px;
+    z-index: $layer-up;
+    @include mq(tab) {
+      width: 40px;
+      
+    }
+  }
+}

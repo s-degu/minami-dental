@@ -1,0 +1,10 @@
+.p-medical-link__wrap {
+  @include mq(tab) {
+    top: 33%;
+  }
+  left: 0;
+  position: relative;
+  text-align: center;
+  top: 31%;
+  z-index: $layer-up;
+}

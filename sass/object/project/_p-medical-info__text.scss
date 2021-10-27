@@ -1,0 +1,14 @@
+.p-medical-info__text {
+  background-color: $white;
+  font-size: rem(14);
+  @include mq(tab) {
+    padding: rem(35) rem(40);
+    line-height: calc(28 / 14);
+  }
+  line-height: calc(24 / 14);
+  padding: rem(20);
+}
+
+.p-medical-info__text > span {
+  display: inline-block;
+}

@@ -1,0 +1,13 @@
+.p-medical-link__text {
+  color: $white;
+  font-size: rem(12);
+  font-weight: bold;
+  @include mq(tab) {
+    font-size: rem(16);
+    line-height: calc( 28 / 16);
+  }
+  letter-spacing: .08em;
+  line-height: calc( 19 / 12);
+  position: relative;
+  z-index: $layer-up;
+}

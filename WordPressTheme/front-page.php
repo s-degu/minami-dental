@@ -108,6 +108,48 @@
 </section>
 <!-- 👆当院のおすすめセクション -->
 
+<!-- 👇診療案内セクション -->
+<section class="l-medical-info p-medical-info">
+  <div class="l-inner p-medical-info__inner">
+    <div class="c-title-wrap">
+      <h2 class="p-recommend__title c-section__title">診療案内</h2>
+    </div>
+    <div class="p-medical-info__items">
+      <div class="p-medical-info__item">
+        <a href="" class="p-medical-info__link p-medical-info__link--general p-medical-link">
+          <div class="p-medical-link__wrap">
+            <h3 class="p-medical-link__title">一般診療</h3>
+            <p class="p-medical-link__text">虫歯・入れ歯・小児歯科</p>
+          </div>
+        </a>
+      </div>
+      <div class="p-medical-info__item">
+        <a href="" class="p-medical-info__link p-medical-info__link--special p-medical-link">
+          <div class="p-medical-link__wrap">
+            <h3 class="p-medical-link__title">特殊診療</h3>
+            <p class="p-medical-link__text">インプラント・ホワイトニング</p>
+            <p class="p-medical-link__text">予防歯科・口腔外科・審美歯科</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="p-medical-info__item">
+        <p class="p-medical-info__text">
+        当院では、患者さんの歯の健康状態や治療方針を丁寧にカウンセリングし、十分ご理解していただいた上で治療いたします。<br>
+        痛みに配慮することと、可能な限り削らない・抜かない治療に努めております。<br>
+        <span class="u-text-red">※特殊性の高い矯正治療などは保険の適応外となります。 これらの治療を行う際は事前に詳細と費用のご説明いたします。</span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- 👆診療案内セクション -->
+
+<!-- 👇スタッフブログセクション -->
+<!-- 👆スタッフブログセクション -->
+
+
 
 
 

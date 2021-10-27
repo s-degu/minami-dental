@@ -1,0 +1,31 @@
+.p-medical-info__link {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  display: block;
+  height: rem(210);
+  position: relative;
+  width: 100%;
+  @include mq(tab) {
+    height: rem(288);
+  }
+  &::after {
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.p-medical-info__link--general {
+  background-image: url(../../../WordPressTheme/assets/img/medical_1.jpg);
+}
+
+.p-medical-info__link--special {
+  background-image: url(../../../WordPressTheme/assets/img/medical_2.jpg);
+}
