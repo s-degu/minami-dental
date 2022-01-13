@@ -109,8 +109,8 @@
 <!-- 👆当院のおすすめセクション -->
 
 <!-- 👇診療案内セクション -->
-<section class="l-medical-info p-medical-info">
-  <div class="l-inner p-medical-info__inner">
+<section class="l-medical-info p-medical-info ">
+  <div class="l-inner p-medical-info__inner p-medical-info__deco">
     <div class="c-title-wrap">
       <h2 class="p-recommend__title c-section__title">診療案内</h2>
     </div>
@@ -132,7 +132,6 @@
           </div>
         </a>
       </div>
-
       <div class="p-medical-info__item">
         <p class="p-medical-info__text">
         当院では、患者さんの歯の健康状態や治療方針を丁寧にカウンセリングし、十分ご理解していただいた上で治療いたします。<br>
@@ -141,20 +140,85 @@
         </p>
       </div>
     </div>
-
   </div>
+  <div class="p-medical-info__bottom-deco1"></div>
+  <div class="p-medical-info__bottom-deco2"></div>
 </section>
 <!-- 👆診療案内セクション -->
 
 <!-- 👇スタッフブログセクション -->
+<section class="l-blog p-blog">
+  <div class="l-inner p-blog__inner">
+    <div class="c-title-wrap">
+        <h2 class="p-recommend__title c-section__title">スタッフブログ</h2>
+    </div>
+    <div class="p-blog__items">
+      <div class="p-blog__item">
+        <div class="p-blog__img-wrap">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog_test.jpg" alt="ほげほげ">
+        </div>
+        <div class="p-blog__body">
+          <span class="p-blog__label c-article-label">お知らせ</span>
+          <div class="p-blog__title c-blog-title">記事のタイトルが入ります。記事のタイトルが入ります…</div>
+          <time class="p-blog__date c-blog-date">2020.02.14</time>
+        </div>
+      </div>
+      <div class="p-blog__item">
+        <div class="p-blog__img-wrap">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog_test.jpg" alt="ほげほげ">
+        </div>
+        <div class="p-blog__body">
+          <span class="p-blog__label c-article-label">お知らせ</span>
+          <div class="p-blog__title c-blog-title">記事のタイトルが入ります。記事のタイトルが入ります…</div>
+          <time class="p-blog__date c-blog-date">2020.02.14</time>
+        </div>
+      </div>
+      <div class="p-blog__item">
+        <div class="p-blog__img-wrap">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog_test.jpg" alt="ほげほげ">
+        </div>
+        <div class="p-blog__body">
+          <span class="p-blog__label c-article-label">お知らせ</span>
+          <div class="p-blog__title c-blog-title">記事のタイトルが入ります。記事のタイトルが入ります…</div>
+          <time class="p-blog__date c-blog-date">2020.02.14</time>
+        </div>
+      </div>
+      <div class="p-blog__item">
+        <div class="p-blog__img-wrap">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog_test.jpg" alt="ほげほげ">
+        </div>
+        <div class="p-blog__body">
+          <span class="p-blog__label c-article-label">お知らせ</span>
+          <div class="p-blog__title c-blog-title">記事のタイトルが入ります。記事のタイトルが入ります…</div>
+          <time class="p-blog__date c-blog-date">2020.02.14</time>
+        </div>
+      </div>
+      <div class="p-blog__item">
+        <div class="p-blog__img-wrap">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog_test.jpg" alt="ほげほげ">
+        </div>
+        <div class="p-blog__body">
+          <span class="p-blog__label c-article-label">お知らせ</span>
+          <div class="p-blog__title c-blog-title">記事のタイトルが入ります。記事のタイトルが入ります…</div>
+          <time class="p-blog__date c-blog-date">2020.02.14</time>
+        </div>
+      </div>
+      <div class="p-blog__item">
+        <div class="p-blog__img-wrap">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog_test.jpg" alt="ほげほげ">
+        </div>
+        <div class="p-blog__body">
+          <span class="p-blog__label c-article-label">お知らせ</span>
+          <div class="p-blog__title c-blog-title">記事のタイトルが入ります。記事のタイトルが入ります…</div>
+          <time class="p-blog__date c-blog-date">2020.02.14</time>
+        </div>
+      </div>
+    </div>
+    <div class="p-blog__button">
+      <a class="c-button" href="#">スタッフブログ一覧はこちら</a>
+    </div>
+  </div>
+</section>
 <!-- 👆スタッフブログセクション -->
-
-
-
-
-
-
-
-
 
 <?php get_footer(); ?>

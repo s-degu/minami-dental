@@ -1,0 +1,17 @@
+.p-medical-info__bottom-deco1 {
+  height: 7.57812vw;
+  position: relative;
+  width: 100%;
+  &::before {
+    background-image: url(../../../WordPressTheme/assets/img/bottom-bg.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: inherit;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: inherit;
+  }
+}

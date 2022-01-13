@@ -1,0 +1,15 @@
+.p-blog__img-wrap {
+  max-width: rem(133);
+  padding-top: calc((101/335)*100%);
+  position: relative;
+  width: 100%;
+}
+
+.p-blog__img-wrap img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

@@ -1,0 +1,9 @@
+.p-blog__item {
+	align-items: center;
+	display: flex;
+}
+
+.p-blog__item + .p-blog__item {
+	margin-top: rem(20);
+}
+

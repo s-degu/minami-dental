@@ -1,0 +1,24 @@
+.p-blog__button {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.p-blog__button > a {
+  font-size: rem(14);
+  // line-height: calc(38/14);
+  padding: 7px 40px;
+  position: relative;
+  &::after {
+    color: #1391e6;
+    content: "\f061";
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 21px;
+  }
+}

@@ -605,6 +605,28 @@ summary {
 	margin-top: 6.125rem;
 }
 
+.c-article-label {
+	background-color: #1391E6;
+	border-radius: 10px;
+	color: #fff;
+	display: inline-block;
+	font-size: 0.625rem;
+	line-height: calc(14 /10);
+	padding: 0.125rem 0.5rem;
+}
+
+.c-blog-date {
+	color: #888;
+	display: inline-block;
+	font-size: 0.6875rem;
+}
+
+.c-blog-title {
+	font-size: 0.875rem;
+	line-height: calc(24 /16);
+	margin-top: 0.125rem;
+}
+
 .c-button {
 	border: 1px solid #1391E6;
 	border-radius: 40px;
@@ -652,6 +674,52 @@ summary {
 
 .c-title-wrap {
 	text-align: center;
+}
+
+.p-blog__button {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.p-blog__button > a {
+	font-size: 0.875rem;
+	padding: 7px 40px;
+	position: relative;
+}
+
+.p-blog__button > a::after {
+	color: #1391e6;
+	content: "\f061";
+	display: block;
+	font-family: "Font Awesome 5 Free";
+	font-size: 1.2em;
+	font-weight: bold;
+	position: absolute;
+	right: 7px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 21px;
+}
+
+.p-blog__img-wrap {
+	max-width: 8.3125rem;
+	padding-top: calc((101/335)*100%);
+	position: relative;
+	width: 100%;
+}
+
+.p-blog__img-wrap img {
+	-o-object-fit: cover;
+	height: 100%;
+	left: 0;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.p-blog__items {
+	margin-top: 2.875rem;
 }
 
 .p-concept__button-wrap {
@@ -1017,6 +1085,29 @@ summary {
 	margin-top: 2.375rem;
 }
 
+.p-medical-info__bottom-deco1 {
+	height: 7.57812vw;
+	position: relative;
+	width: 100%;
+}
+
+.p-medical-info__bottom-deco1::before {
+	background-image: url(../../../WordPressTheme/assets/img/bottom-bg.png);
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: inherit;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	width: inherit;
+}
+
+.p-medical-info__deco {
+	padding-bottom: 96px;
+}
+
 .p-medical-info__inner {
 	background-color: #DFF1FD;
 }
@@ -1261,6 +1352,20 @@ summary {
 .p-test {
 	color: red;
 	font-size: 1.25rem;
+}
+
+.p-blog__body {
+	padding-left: 0.625rem;
+	padding-right: 0.625rem;
+}
+
+.p-blog__item {
+	align-items: center;
+	display: flex;
+}
+
+.p-blog__item + .p-blog__item {
+	margin-top: 1.25rem;
 }
 
 .slick-dotted.slick-slider {
