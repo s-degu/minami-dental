@@ -1,4 +1,7 @@
 .l-medical-info {
-  margin-top: 211px;
-  padding-bottom: 180px;
+  @include mq(tab) {
+    margin-top: rem(137);
+  }
+  margin-top: rem(99);
+  padding-bottom: rem(97);
 }

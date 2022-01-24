@@ -1,3 +1,7 @@
 .p-medical-info__inner {
   background-color: $sub-color-second;
+  @include mq(tab) {
+    padding-top: 0;
+  }
+  padding-top: rem(26);
 }

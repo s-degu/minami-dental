@@ -1,0 +1,11 @@
+.p-footer__access {
+  font-size: rem(14);
+  line-height: calc(36/14);
+  text-align: center;
+  margin-top: 3px;
+}
+
+.p-footer__access > span {
+  display: inline-block;
+  margin-left: 14px;
+}

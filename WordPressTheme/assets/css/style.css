@@ -339,7 +339,7 @@ body {
 	color: #393939;
 	font-family: "M PLUS Rounded 1c", sans-serif;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 1.6;
 	min-height: 100vh;
 	min-height: -webkit-fill-available;
@@ -597,12 +597,28 @@ summary {
 }
 
 .l-medical-info {
-	margin-top: 211px;
-	padding-bottom: 180px;
+	margin-top: 6.1875rem;
+	padding-bottom: 6.0625rem;
 }
 
 .l-recommend {
 	margin-top: 6.125rem;
+}
+
+.p-footer__map {
+	margin-top: 20px;
+	padding: 0 10px;
+	padding-top: calc((315/315)*100%);
+	position: relative;
+	width: 100%;
+}
+
+.p-footer__map > iframe {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 .c-article-label {
@@ -634,6 +650,40 @@ summary {
 	display: inline-block;
 	font-size: 0.875rem;
 	position: relative;
+}
+
+.c-footer-button {
+	border: 1px solid #1391E6;
+	border-radius: 20px;
+	display: inline-block;
+	font-size: 0.875rem;
+	height: 38px;
+	max-width: 150px;
+	text-align: center;
+	width: 100%;
+}
+
+.c-footer-button--blue {
+	background-color: #1391E6;
+	color: #fff;
+}
+
+.c-footer-top-img {
+	height: 32px;
+	margin-top: 100px;
+	position: relative;
+}
+
+.c-footer-top-img::before {
+	background-image: url(../../../WordPressTheme/assets/img/wave.svg);
+	background-repeat: no-repeat;
+	content: "";
+	height: inherit;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
 }
 
 .c-section__title {
@@ -719,6 +769,8 @@ summary {
 }
 
 .p-blog__items {
+	display: flex;
+	flex-direction: column;
 	margin-top: 2.875rem;
 }
 
@@ -948,8 +1000,181 @@ summary {
 }
 
 .p-drawer__toggle.is-checked .p-drawer__toggle-icon:nth-child(3) {
-	top: -6px;
+	top: -8px;
 	transform: rotate(-45deg);
+}
+
+.p-footer__access {
+	font-size: 0.875rem;
+	line-height: calc(36/14);
+	margin-top: 3px;
+	text-align: center;
+}
+
+.p-footer__access > span {
+	display: inline-block;
+	margin-left: 14px;
+}
+
+.p-footer__button {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.p-footer__button > span {
+	display: inline-block;
+	margin-left: 9px;
+}
+
+.p-footer__button--white {
+	color: #1391E6;
+}
+
+.p-footer__button-wrap {
+	display: flex;
+	justify-content: center;
+	margin-top: 23px;
+}
+
+.p-footer__button + .p-footer__button {
+	margin-left: 15px;
+}
+
+.p-footer__content {
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 30px 10px 20px 10px;
+}
+
+.p-footer__copy {
+	background-color: #1391E6;
+	color: #fff;
+	margin: 0 calc(50% - 50vw);
+	padding: 15px 0 79px 0;
+	text-align: center;
+	width: 100vw;
+}
+
+.p-footer__copy > small {
+	display: inline-block;
+	font-size: 14px;
+}
+
+.p-footer__hours {
+	color: #1391E6;
+	display: block;
+	font-size: 12px;
+	line-height: 1;
+	margin-top: 7px;
+	text-align: center;
+}
+
+.p-footer__inner {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.p-footer__logo {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 311px;
+	width: 100%;
+}
+
+.p-footer__nav-item {
+	font-weight: bold;
+}
+
+.p-footer__nav-item:nth-child(2) {
+	margin-top: 38px;
+}
+
+.p-footer__nav-item:nth-child(3) {
+	margin-top: 33px;
+}
+
+.p-footer__nav-item:nth-child(4) {
+	margin-top: 34px;
+}
+
+.p-footer__nav-item:nth-child(5) {
+	margin-top: 32px;
+}
+
+.p-footer__nav {
+	margin-top: 37px;
+	padding-bottom: 54px;
+	padding-left: 11px;
+}
+
+.p-footer__sub-nav-box {
+	display: flex;
+}
+
+.p-footer__sub-nav-item + .p-footer__sub-nav-item {
+	margin-top: 6px;
+}
+
+.p-footer__sub-nav-item > a {
+	display: inline-block;
+	font-weight: normal;
+	font-weight: 500;
+	line-height: calc(36/16);
+	padding-left: 12px;
+	position: relative;
+}
+
+.p-footer__sub-nav-item > a::before {
+	background-image: url(../../../WordPressTheme/assets/img/arrow-dropright.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 12px;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 6px;
+}
+
+.p-footer__sub-nav {
+	margin-top: 9px;
+}
+
+.p-footer__sub-nav + .p-footer__sub-nav {
+	margin-left: 20px;
+}
+
+.p-footer__tel {
+	color: #1391E6;
+	display: block;
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 1;
+	margin-top: 17px;
+	text-align: center;
+}
+
+.p-footer__tel > img {
+	height: 28px;
+	left: 7px;
+	position: relative;
+	width: 28px;
+}
+
+.p-footer__time-sheet {
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	margin-top: 20px;
+	max-width: 477px;
+}
+
+.p-footer {
+	background-color: #DFF1FD;
+	padding-top: 14px;
 }
 
 .p-header__address {
@@ -1104,12 +1329,45 @@ summary {
 	width: inherit;
 }
 
+.p-medical-info__bottom-deco2 {
+	position: relative;
+}
+
+.p-medical-info__bottom-deco2::before {
+	background-image: url(../../../WordPressTheme/assets/img/deco-kirakira2-w.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	bottom: 44px;
+	content: "";
+	height: 25px;
+	left: 12px;
+	position: absolute;
+	width: 25px;
+}
+
+.p-medical-info__bottom-deco2::after {
+	background-image: url(../../../WordPressTheme/assets/img/deco-kirakira-w.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	bottom: 30px;
+	content: "";
+	height: 58px;
+	position: absolute;
+	right: 5px;
+	width: 53px;
+}
+
+.p-medical-info__container {
+	background-color: #DFF1FD;
+}
+
 .p-medical-info__deco {
 	padding-bottom: 96px;
 }
 
 .p-medical-info__inner {
 	background-color: #DFF1FD;
+	padding-top: 1.625rem;
 }
 
 .p-medical-info__item {
@@ -1166,6 +1424,24 @@ summary {
 
 .p-medical-info__text > span {
 	display: inline-block;
+}
+
+.p-medical-info__top-deco {
+	height: 22.66667vw;
+	position: relative;
+	width: 100%;
+}
+
+.p-medical-info__top-deco::before {
+	background-image: url(../../../WordPressTheme/assets/img/bg-top-sp.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: inherit;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 .p-medical-link__text {
@@ -1497,8 +1773,22 @@ html {
 	padding-right: 40px;
 }
 
+.l-medical-info {
+	margin-top: 8.5625rem;
+}
+
 .l-recommend {
 	margin-top: 6.75rem;
+}
+
+.p-footer__map {
+	margin-left: auto;
+	max-width: 24.0625rem;
+	padding-top: calc((385/1000)*100%);
+}
+
+.c-blog-title {
+	margin-top: 0;
 }
 
 .c-section__title {
@@ -1523,6 +1813,29 @@ html {
 .c-test {
 	color: green;
 	font-size: 3.125rem;
+}
+
+.p-blog__img-wrap {
+	max-width: 18.75rem;
+	padding-top: calc((188 / 300 )* 100%);
+}
+
+.p-blog__items {
+	gap: 50px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 63.125rem;
+	width: 100%;
+}
+
+.p-blog__label {
+	border-radius: 14px;
+	font-size: 0.6875rem;
+	padding: 6px 12px;
+	position: relative;
+	top: -14px;
 }
 
 .p-concept__body {
@@ -1571,7 +1884,50 @@ html {
 .p-concept::before {
 	background-image: url(../../../WordPressTheme/assets/img/concept-bg.png);
 	background-size: 102%;
+	height: 100vh;
 	left: 33%;
+}
+
+.p-footer__content {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 62.5rem;
+	padding: 40px 49px;
+	width: 100%;
+}
+
+.p-footer__nav-item:nth-child(2) {
+	margin-left: 40px;
+	margin-top: 0;
+}
+
+.p-footer__nav-item:nth-child(3) {
+	margin-left: 40px;
+	margin-top: 0;
+}
+
+.p-footer__nav-item:nth-child(4) {
+	margin-left: 40px;
+	margin-top: 0;
+}
+
+.p-footer__nav-item:nth-child(5) {
+	margin-left: 40px;
+	margin-top: 0;
+}
+
+.p-footer__nav-wrap {
+	display: flex;
+}
+
+.p-footer__nav {
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	width: 1000px;
 }
 
 .p-header__drawer {
@@ -1604,6 +1960,25 @@ html {
 	flex: 0 0 44.9%;
 	margin-left: 60px;
 	margin-top: 17px;
+}
+
+.p-medical-info__bottom-deco2::before {
+	bottom: 7.57812vw;
+	content: "";
+	height: 58px;
+	left: 42px;
+	width: 58px;
+}
+
+.p-medical-info__bottom-deco2::after {
+	bottom: 5.78125vw;
+	height: 138px;
+	right: 20px;
+	width: 125px;
+}
+
+.p-medical-info__inner {
+	padding-top: 0;
 }
 
 .p-medical-info__item {
@@ -1639,15 +2014,13 @@ html {
 }
 
 .p-medical-info__items {
-	-ms-grid-columns: (1fr)[2];
-	-ms-grid-rows: (1fr)[2];
 	grid-column-gap: 80px;
 	grid-row-gap: 61px;
+	-ms-grid-columns: (1fr)[2];
 	display: -ms-grid;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	padding-top: 148px;
+	padding-top: 20px;
 }
 
 .p-medical-info__link {
@@ -1657,6 +2030,14 @@ html {
 .p-medical-info__text {
 	line-height: calc(28 / 14);
 	padding: 2.1875rem 2.5rem;
+}
+
+.p-medical-info__top-deco {
+	height: 15.70313vw;
+}
+
+.p-medical-info__top-deco::before {
+	background-image: url(../../../WordPressTheme/assets/img/bg-top.svg);
 }
 
 .p-medical-link__text {
@@ -1759,6 +2140,21 @@ html {
 .p-test {
 	color: green;
 	font-size: 3.125rem;
+}
+
+.p-blog__body {
+	padding: 0 24px 13px 24px;
+}
+
+.p-blog__item {
+	border-radius: 20px;
+	box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.16);
+	flex-direction: column;
+	width: calc(100% / 3 - 50px * 2 / 3);
+}
+
+.p-blog__item + .p-blog__item {
+	margin-top: 0;
 }
 
 .slick-prev {

@@ -1,0 +1,14 @@
+.p-footer__button {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.p-footer__button > span {
+  display: inline-block;
+  margin-left: 9px;
+}
+
+.p-footer__button--white {
+  color: $main-color;
+}

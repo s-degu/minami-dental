@@ -1,0 +1,25 @@
+.p-footer__sub-nav-item + .p-footer__sub-nav-item {
+  margin-top: 6px;
+}
+
+.p-footer__sub-nav-item > a {
+  display: inline-block;
+  font-weight: normal;
+  line-height: calc(36/16);
+  padding-left: 12px;
+  position: relative;
+  font-weight: 500;
+  &::before {
+    background-image: url(../../../WordPressTheme/assets/img/arrow-dropright.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 12px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+  }
+}

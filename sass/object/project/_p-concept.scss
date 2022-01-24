@@ -12,10 +12,11 @@
     background-size: 147%;
     content: "";
     display: block;
-    height: 80vh;
+    height: 80vh; 
     @include mq(tab) {
       background-image: url(../../../WordPressTheme/assets/img/concept-bg.png);
       background-size: 102%;
+      height: 100vh;
     //   background-size: contain;
       left: 33%;
     }

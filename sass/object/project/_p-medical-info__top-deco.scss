@@ -1,0 +1,23 @@
+.p-medical-info__top-deco {
+  height: 22.66667vw;
+  @include mq(tab) {
+    height: 15.70313vw;
+  }
+  position: relative;
+  width: 100%;
+  &::before {
+    background-image: url(../../../WordPressTheme/assets/img/bg-top-sp.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: inherit;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    @include mq(tab) {
+      background-image: url(../../../WordPressTheme/assets/img/bg-top.svg);
+
+    }
+  }
+}

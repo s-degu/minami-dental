@@ -1,0 +1,32 @@
+.p-footer__nav-item {
+  font-weight: bold;
+
+  &:nth-child(2) {
+    @include mq(tab) {
+      margin-left: 40px;
+      margin-top: 0;
+    }
+    margin-top: 38px;
+  }
+  &:nth-child(3) {
+    @include mq(tab) {
+      margin-left: 40px;
+      margin-top: 0;
+    }
+    margin-top: 33px;
+  }
+  &:nth-child(4) {
+    @include mq(tab) {
+      margin-left: 40px;
+      margin-top: 0;
+    }
+    margin-top: 34px;
+  }
+  &:nth-child(5) {
+    @include mq(tab) {
+      margin-left: 40px;
+      margin-top: 0;
+    }
+    margin-top: 32px;
+  }
+}

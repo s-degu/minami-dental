@@ -1,0 +1,20 @@
+.p-footer__map {
+  @include mq(tab) {
+    margin-left: auto;
+    max-width: rem(385);
+    padding-top: calc((385/1000)*100%);
+  }
+  margin-top: 20px;
+  padding: 0 10px;
+  padding-top: calc((315/315)*100%);
+  position: relative;
+  width: 100%;
+}
+
+.p-footer__map > iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

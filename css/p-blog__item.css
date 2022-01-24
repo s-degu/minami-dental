@@ -1,6 +1,6 @@
 .p-blog__item {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .p-blog__item + .p-blog__item {

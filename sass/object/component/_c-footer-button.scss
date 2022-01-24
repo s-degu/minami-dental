@@ -1,0 +1,15 @@
+.c-footer-button {
+  border: 1px solid $main-color;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: rem(14);
+  height: 38px;
+  max-width: 150px;
+  text-align: center;
+  width: 100%;
+}
+
+.c-footer-button--blue {
+  background-color: $main-color;
+  color: $white;
+}

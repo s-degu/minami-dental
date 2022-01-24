@@ -1,0 +1,5 @@
+.p-footer__nav-wrap {
+  @include mq(tab) {
+    display: flex;
+  }
+}

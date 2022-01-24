@@ -1,4 +1,8 @@
 .p-blog__img-wrap {
+  @include mq(tab) {
+    max-width: rem(300);
+    padding-top: calc((188 / 300 )* 100%);
+  }
   max-width: rem(133);
   padding-top: calc((101/335)*100%);
   position: relative;

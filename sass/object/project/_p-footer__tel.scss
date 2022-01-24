@@ -1,0 +1,16 @@
+.p-footer__tel {
+  color: $main-color;
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1;
+  margin-top: 17px;
+  text-align: center;
+}
+
+.p-footer__tel > img {
+  height: 28px;
+  width: 28px;
+  position: relative;
+  left: 7px;
+}

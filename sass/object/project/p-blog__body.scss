@@ -1,6 +1,9 @@
 .p-blog__body {
+  // padding-top: rem(12);
+  @include mq(tab) {
+    padding: 0 24px 13px 24px;
+  }
   // padding-bottom: rem(5);
   padding-left: rem(10);
   padding-right: rem(10);
-  // padding-top: rem(12);
 }

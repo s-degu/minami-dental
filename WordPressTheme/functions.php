@@ -37,7 +37,7 @@ add_action('after_setup_theme', 'my_setup');
 function my_script_init()
 {
 	//👇CSS
-	wp_enqueue_style('add_google_fonts', 'https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap', false);
+	wp_enqueue_style('add_google_fonts', 'https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap', false);
 	wp_enqueue_style('add_font_awesome', 'https://use.fontawesome.com/releases/v5.15.4/css/all.css', false);
 	wp_enqueue_style('add_slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', false);
 	wp_enqueue_style('add_slick_theme', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css', false);

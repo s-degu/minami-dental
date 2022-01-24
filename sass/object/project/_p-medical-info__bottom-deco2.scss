@@ -1,0 +1,38 @@
+.p-medical-info__bottom-deco2 {
+  position: relative;
+  &::before {
+    background-image: url(../../../WordPressTheme/assets/img/deco-kirakira2-w.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 44px;
+    content: "";
+    height: 25px;
+    @include mq(tab) {
+      bottom: 7.57812vw;
+      content: "";
+      height: 58px;
+      left: 42px;
+      width: 58px;
+    }
+    left: 12px;
+    position: absolute;
+    width: 25px;
+  }
+  &::after {
+    background-image: url(../../../WordPressTheme/assets/img/deco-kirakira-w.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 30px;
+    content: "";
+    height: 58px;
+    @include mq(tab) {
+      bottom: 5.78125vw;
+      height: 138px;
+      right: 20px;
+      width: 125px;
+    }
+    position: absolute;
+    right: 5px;
+    width: 53px;
+  }
+}

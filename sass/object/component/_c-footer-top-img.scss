@@ -1,0 +1,16 @@
+.c-footer-top-img {
+  height: 32px;
+  margin-top: 100px;
+  position: relative;
+  &::before {
+    background-image: url(../../../WordPressTheme/assets/img/wave.svg);
+    background-repeat: no-repeat;
+    content: "";
+    height: inherit;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+}
