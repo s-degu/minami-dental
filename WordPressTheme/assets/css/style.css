@@ -608,6 +608,10 @@ summary {
 	margin-top: 6.125rem;
 }
 
+.l-sub-fv {
+	margin-top: 21px;
+}
+
 .p-footer__map {
 	margin-top: 20px;
 	padding: 0 10px;
@@ -1628,6 +1632,54 @@ summary {
 	border-bottom: 2px dotted #fff;
 }
 
+.p-sub-fv__content {
+	padding-top: calc((188/335)*100%);
+	position: relative;
+	width: 100%;
+}
+
+.p-sub-fv__content::after,
+.p-sub-fv__content::before {
+	border-radius: 12px;
+	content: "";
+	position: absolute;
+}
+
+.p-sub-fv__content::before {
+	background-image: url(../../../WordPressTheme/assets/img/page-about_top-sp.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.p-sub-fv__content::after {
+	background-color: rgba(0, 0, 0, 0.2);
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.p-sub-fv__head {
+	color: #fff;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+.p-sub-fv__title {
+	font-size: 1.5rem;
+	letter-spacing: .2em;
+	white-space: nowrap;
+}
+
 .p-test {
 	color: red;
 	font-size: 1.25rem;
@@ -1646,6 +1698,15 @@ summary {
 
 .p-blog__item + .p-blog__item {
 	margin-top: 1.25rem;
+}
+
+.p-sub-fv__sub-title {
+	display: block;
+	font-size: 0.75rem;
+	font-weight: bold;
+	letter-spacing: .1em;
+	margin-top: 13px;
+	text-align: center;
 }
 
 .slick-dotted.slick-slider {

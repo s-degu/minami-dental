@@ -1,0 +1,29 @@
+.p-sub-fv__content {
+  padding-top: calc((188/335)*100%);
+  position: relative;
+  width: 100%;
+  &::after,
+  &::before {
+    border-radius: 12px;
+    content: "";
+    position: absolute;
+  }
+  &::before {
+    background-image: url(../../../WordPressTheme/assets/img/page-about_top-sp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  &::after {
+    background-color: rgba(0, 0, 0, .2);
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
