@@ -578,6 +578,10 @@ summary {
 
 /* Remove all animations and transitions for people that prefer not to see them */
 
+.l-blog {
+	margin-top: 9.75rem;
+}
+
 .l-concept {
 	margin-top: 3.75rem;
 	padding-top: 6.5rem;
@@ -598,7 +602,6 @@ summary {
 
 .l-medical-info {
 	margin-top: 6.1875rem;
-	padding-bottom: 6.0625rem;
 }
 
 .l-recommend {
@@ -633,7 +636,7 @@ summary {
 
 .c-blog-date {
 	color: #888;
-	display: inline-block;
+	display: block;
 	font-size: 0.6875rem;
 }
 
@@ -1034,7 +1037,7 @@ summary {
 .p-footer__button-wrap {
 	display: flex;
 	justify-content: center;
-	margin-top: 23px;
+	margin-top: 19px;
 }
 
 .p-footer__button + .p-footer__button {
@@ -1633,6 +1636,7 @@ summary {
 .p-blog__body {
 	padding-left: 0.625rem;
 	padding-right: 0.625rem;
+	position: relative;
 }
 
 .p-blog__item {
@@ -1787,8 +1791,23 @@ html {
 	padding-top: calc((385/1000)*100%);
 }
 
+.c-blog-date {
+	margin-top: 3px;
+}
+
 .c-blog-title {
+	font-size: 1rem;
 	margin-top: 0;
+}
+
+.c-footer-button {
+	border-radius: 30px;
+	height: 56px;
+	max-width: 220px;
+}
+
+.c-footer-top-img {
+	margin-top: 158px;
 }
 
 .c-section__title {
@@ -1815,6 +1834,14 @@ html {
 	font-size: 3.125rem;
 }
 
+.p-blog__button {
+	margin-top: 93px;
+}
+
+.p-blog__button > a {
+	padding: 9px 45px;
+}
+
 .p-blog__img-wrap {
 	max-width: 18.75rem;
 	padding-top: calc((188 / 300 )* 100%);
@@ -1826,6 +1853,7 @@ html {
 	flex-wrap: wrap;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 4.75rem;
 	max-width: 63.125rem;
 	width: 100%;
 }
@@ -1834,7 +1862,7 @@ html {
 	border-radius: 14px;
 	font-size: 0.6875rem;
 	padding: 6px 12px;
-	position: relative;
+	position: absolute;
 	top: -14px;
 }
 
@@ -1895,6 +1923,19 @@ html {
 	max-width: 62.5rem;
 	padding: 40px 49px;
 	width: 100%;
+}
+
+.p-footer__copy {
+	margin-top: 53px;
+	padding: 17px 0 19px 0;
+}
+
+.p-footer__info {
+	margin-top: 44px;
+}
+
+.p-footer__logo {
+	max-width: 402px;
 }
 
 .p-footer__nav-item:nth-child(2) {
@@ -2143,7 +2184,7 @@ html {
 }
 
 .p-blog__body {
-	padding: 0 24px 13px 24px;
+	padding: 21px 24px 13px 24px;
 }
 
 .p-blog__item {

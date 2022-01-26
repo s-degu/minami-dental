@@ -1,5 +1,8 @@
 .c-blog-date {
   color: #888;
-  display: inline-block;
+  display: block;
   font-size: rem(11);
+  @include mq(tab) {
+    margin-top: 3px;
+  }
 }

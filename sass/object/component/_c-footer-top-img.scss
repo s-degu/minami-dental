@@ -1,5 +1,8 @@
 .c-footer-top-img {
   height: 32px;
+  @include mq(tab) {
+    margin-top: 158px;
+  }
   margin-top: 100px;
   position: relative;
   &::before {

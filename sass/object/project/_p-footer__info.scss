@@ -1,0 +1,5 @@
+.p-footer__info {
+  @include mq(tab) {
+    margin-top: 44px;
+  }
+}

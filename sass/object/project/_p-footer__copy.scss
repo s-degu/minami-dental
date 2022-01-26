@@ -1,6 +1,10 @@
 .p-footer__copy {
   background-color: $main-color;
   color: $white;
+  @include mq(tab) {
+    margin-top: 53px;
+    padding: 17px 0 19px 0;
+  }
   margin: 0 calc(50% - 50vw);
   padding: 15px 0 79px 0;
   text-align: center;
