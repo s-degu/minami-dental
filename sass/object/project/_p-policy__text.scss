@@ -1,0 +1,9 @@
+.p-policy__text {
+  margin-top: 27px;
+  font-size: rem(14);
+  line-height: calc(24/14);
+}
+
+.p-policy__text + .p-policy__text {
+  margin-top: 24px;
+}

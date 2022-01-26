@@ -1584,6 +1584,54 @@ summary {
 	padding-left: 1rem;
 }
 
+.p-policy__img {
+	margin-left: -20px;
+	margin-top: 37px;
+	max-width: 334px;
+	padding-top: calc((229/334)*100%);
+	position: relative;
+}
+
+.p-policy__img img {
+	border-radius: 0 20px 20px 0;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.p-policy__sub-title {
+	color: #1391E6;
+	display: block;
+	font-size: 0.6875rem;
+	font-weight: bold;
+	letter-spacing: .1em;
+}
+
+.p-policy__text {
+	font-size: 0.875rem;
+	line-height: calc(24/14);
+	margin-top: 27px;
+}
+
+.p-policy__text + .p-policy__text {
+	margin-top: 24px;
+}
+
+.p-policy__title-wrap {
+	margin-top: 54px;
+	text-align: center;
+}
+
+.p-policy__title {
+	font-size: 1.25rem;
+	font-weight: bold;
+	letter-spacing: .08em;
+	line-height: calc(32/20);
+	margin-top: 13px;
+}
+
 .p-recommend__img-wrap {
 	margin-top: 0.8125rem;
 	padding-left: 0.1875rem;
