@@ -591,6 +591,10 @@ summary {
 	padding-top: 6.5rem;
 }
 
+.l-feature {
+	margin-top: 100px;
+}
+
 .l-header {
 	height: 60px;
 }
@@ -1024,6 +1028,30 @@ summary {
 .p-drawer__toggle.is-checked .p-drawer__toggle-icon:nth-child(3) {
 	top: -8px;
 	transform: rotate(-45deg);
+}
+
+.p-feature__img {
+	height: 61.2vw;
+	margin-left: auto;
+	margin-top: 37px;
+	max-width: 334px;
+	position: relative;
+}
+
+.p-feature__img img {
+	-o-object-fit: cover;
+	border-radius: 20px 0 0 20px;
+	height: 100%;
+	left: 0;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.p-policy__textarea,
+.p-feature__textarea {
+	padding: 0 20px;
 }
 
 .p-footer__access {
@@ -1584,12 +1612,35 @@ summary {
 	padding-left: 1rem;
 }
 
-.p-policy__img {
-	margin-left: -20px;
+.p-policy__content {
 	margin-top: 37px;
-	max-width: 334px;
-	padding-top: calc((229/334)*100%);
+	overflow: hidden;
+}
+
+.p-policy__deco {
+	padding-top: 110px;
 	position: relative;
+}
+
+.p-policy__deco::before {
+	background-image: url(../../../WordPressTheme/assets/img/concept-bg_sp.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 81.06667vw;
+	left: 3%;
+	position: absolute;
+	top: 0;
+	width: 102%;
+	z-index: -1;
+}
+
+.p-policy__img {
+	height: 61.2vw;
+	margin-right: auto;
+	margin-top: 37px;
+	position: relative;
+	width: calc((334/375)*100%);
 }
 
 .p-policy__img img {
@@ -1601,22 +1652,32 @@ summary {
 	width: 100%;
 }
 
-.p-policy__sub-title {
+.p-policy__sub-title,
+.p-feature__sub-title {
 	color: #1391E6;
 	display: block;
 	font-size: 0.6875rem;
 	font-weight: bold;
 	letter-spacing: .1em;
+	text-transform: uppercase;
+}
+
+.p-policy__text,
+.p-feature__text {
+	font-size: 0.875rem;
+	line-height: calc(24/14);
 }
 
 .p-policy__text {
-	font-size: 0.875rem;
-	line-height: calc(24/14);
-	margin-top: 27px;
+	margin-top: 24px;
+}
+
+.p-feature__text {
+	margin-top: 25px;
 }
 
 .p-policy__text + .p-policy__text {
-	margin-top: 24px;
+	margin-top: 26px;
 }
 
 .p-policy__title-wrap {
@@ -1624,7 +1685,8 @@ summary {
 	text-align: center;
 }
 
-.p-policy__title {
+.p-policy__title,
+.p-feature__title {
 	font-size: 1.25rem;
 	font-weight: bold;
 	letter-spacing: .08em;

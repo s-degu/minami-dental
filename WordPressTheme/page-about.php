@@ -34,19 +34,22 @@
 
 <!-- ポリシーと特徴 -->
 <section class="l-policy p-policy">
-  <div class="l-inner p-policy__inner">
+  <div class="p-policy__inner">
     <div class="p-policy__title-wrap">
       <h2 class="p-about-policy__title c-section__title">ポリシーと特徴</h2>
     </div>
     <div class="p-policy__content">
-      <div class="p-policy__textarea">
-        <span class="p-policy__sub-title">POLICY</span>
-        <h2 class="p-policy__title">コミュニケーションから始まる最適な医療提供</h2>
-        <p class="p-policy__text">当院ではまず患者様から詳しくお話を伺います。<br>難しい言葉は使わず、実際に感じている小さな違和感からあらゆる可能性を考え、最適な治療方法をご提案いたします。</p>
-        <p class="p-policy__text"> 「どこよりも本音で話せる歯医者さん」を目指し、スタッフ一同、「人間力の向上」にも勤めております。</p>
-      </div>
-      <div class="p-policy__img">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/feature_1.jpg" alt="診療の様子">
+      <div class="p-policy__deco"></div>
+      <div class="p-policy__wrap">
+        <div class="p-policy__textarea">
+          <span class="p-policy__sub-title">policy</span>
+          <h2 class="p-policy__title">コミュニケーションから始まる最適な医療提供</h2>
+          <p class="p-policy__text">当院ではまず患者様から詳しくお話を伺います。<br>難しい言葉は使わず、実際に感じている小さな違和感からあらゆる可能性を考え、最適な治療方法をご提案いたします。</p>
+          <p class="p-policy__text"> 「どこよりも本音で話せる歯医者さん」を目指し、スタッフ一同、「人間力の向上」にも勤めております。</p>
+        </div>
+        <div class="p-policy__img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/feature_1.jpg" alt="診療の様子">
+        </div>
       </div>
     </div>
   </div>
@@ -54,11 +57,25 @@
 <!-- ポリシーと特徴 -->
 
 <!-- feature -->
-<div class="l-feature p-feature">
+<section class="l-feature p-feature">
   <div class="p-feature__inner">
-    
+    <div class="p-feature__content">
+      <div class="p-feature__textarea">
+        <span class="p-feature__sub-title">feature</span>
+        <h2 class="p-feature__title">「医療技術の追求」と<br>「通いやすさ」</h2>
+        <p class="p-feature__text">歯の治療において、小さな違和感は大きなストレスにつながります。私たちは常に快適な歯科医療技術の研究を行っております。<br>
+        また、「通いやすさ」も医院選びの重要なポイントと考え、2019年のリニューアルを期に更に駅の近くへ場所を移しました。
+        </p>
+        <p class="p-feature__text">
+          朝から夜までお仕事をされている方のために診療時間を見直し、平日でもご利用いただけるようにいたしました。
+        </p>
+      </div>
+      <div class="p-feature__img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/feature_2.jpg" alt="院内の様子">
+      </div>
+    </div>
   </div>
-</div>
+</section>
 <!-- feature -->
 
 

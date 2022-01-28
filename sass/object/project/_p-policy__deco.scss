@@ -1,0 +1,17 @@
+.p-policy__deco {
+  padding-top: 110px;
+  position: relative;
+  &::before {
+    background-image: url(../../../WordPressTheme/assets/img/concept-bg_sp.svg);
+    // background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 81.06667vw;
+    left: 3%;
+    position: absolute;
+    top: 0;
+    width: 102%;
+    z-index: -1;
+  }
+}

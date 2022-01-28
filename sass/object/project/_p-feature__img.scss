@@ -1,0 +1,17 @@
+.p-feature__img {
+  height: 61.2vw;
+  margin-left: auto;
+  margin-top: 37px;
+  max-width: 334px;
+  position: relative;
+}
+
+.p-feature__img img {
+  border-radius: 20px 0 0 20px;
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
