@@ -1,0 +1,6 @@
+.p-policy__wrap {
+  @include mq(tab) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

@@ -1,4 +1,7 @@
 .p-sub-fv__content {
+  @include mq(tab) {
+    padding-top: calc((340/1160)*100%);
+  }
   padding-top: calc((188/335)*100%);
   position: relative;
   width: 100%;
@@ -13,7 +16,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 12px;
     height: 100%;
+    @include mq(tab) {
+      background-image: url(../../../WordPressTheme/assets/img/page-about_top.jpg);
+    }
     left: 0;
     top: 0;
     width: 100%;

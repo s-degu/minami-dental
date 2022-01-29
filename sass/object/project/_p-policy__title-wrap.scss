@@ -1,4 +1,7 @@
 .p-policy__title-wrap {
+  @include mq(tab) {
+    margin-top: 74px;
+  }
   margin-top: 54px;
   text-align: center;
 }

@@ -1,3 +1,6 @@
 .l-sub-fv {
+  @include mq(tab) {
+    margin-top: 40px;
+  }
   margin-top: 20px;
 }

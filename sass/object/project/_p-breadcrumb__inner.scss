@@ -1,0 +1,5 @@
+.p-breadcrumb__inner {
+  @include mq(tab) {
+    padding-left: 89px;
+  }
+}

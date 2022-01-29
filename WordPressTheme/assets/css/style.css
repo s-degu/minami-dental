@@ -1065,6 +1065,10 @@ summary {
 	transform: rotate(-45deg);
 }
 
+.p-feature__content {
+	display: flex;
+}
+
 .p-feature__img {
 	height: 61.2vw;
 	margin-left: auto;
@@ -1078,6 +1082,7 @@ summary {
 	border-radius: 20px 0 0 20px;
 	height: 100%;
 	left: 0;
+	max-height: 438px;
 	object-fit: cover;
 	position: absolute;
 	top: 0;
@@ -1658,7 +1663,7 @@ summary {
 }
 
 .p-policy__deco::before {
-	background-image: url(../../../WordPressTheme/assets/img/concept-bg_sp.svg);
+	background-image: url(../../../WordPressTheme/assets/img/concept-bg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
@@ -1679,9 +1684,11 @@ summary {
 }
 
 .p-policy__img img {
+	-o-object-fit: cover;
 	border-radius: 0 20px 20px 0;
 	height: 100%;
 	left: 0;
+	object-fit: cover;
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -1810,6 +1817,7 @@ summary {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	border-radius: 12px;
 	height: 100%;
 	left: 0;
 	top: 0;
@@ -1836,6 +1844,7 @@ summary {
 
 .p-sub-fv__title {
 	font-size: 1.5rem;
+	font-weight: bold;
 	letter-spacing: .2em;
 	white-space: nowrap;
 }
@@ -1979,9 +1988,22 @@ html {
 	font-size: 1.25vw;
 }
 
+.l-breadcrumb {
+	margin-top: 9px;
+}
+
+.l-about-gellery {
+	margin-bottom: 160px;
+	margin-top: 156px;
+}
+
 .l-concept {
 	padding-bottom: 7.5625rem;
 	padding-top: 11.125rem;
+}
+
+.l-feature {
+	margin-top: 153px;
 }
 
 .l-header {
@@ -2004,6 +2026,10 @@ html {
 
 .l-recommend {
 	margin-top: 6.75rem;
+}
+
+.l-sub-fv {
+	margin-top: 40px;
 }
 
 .p-footer__map {
@@ -2051,6 +2077,22 @@ html {
 	font-size: 3.125rem;
 }
 
+.p-about-gellery__inner {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 62.4375rem;
+	padding: 0;
+}
+
+.p-about-gellery__photo {
+	width: calc(100% / 3 -  24px * 2 / 3);
+}
+
+.p-about-gellery__photos {
+	gap: 24px;
+	margin-top: 57px;
+}
+
 .p-blog__button {
 	margin-top: 93px;
 }
@@ -2081,6 +2123,10 @@ html {
 	padding: 6px 12px;
 	position: absolute;
 	top: -14px;
+}
+
+.p-breadcrumb__inner {
+	padding-left: 89px;
 }
 
 .p-concept__body {
@@ -2131,6 +2177,31 @@ html {
 	background-size: 102%;
 	height: 100vh;
 	left: 33%;
+}
+
+.p-feature__img {
+	margin-top: 0;
+	max-height: 438px;
+	max-width: initial;
+	width: 50%;
+}
+
+.p-policy__textarea {
+	margin-left: -46px;
+	margin-right: auto;
+	margin-top: 40px;
+	max-width: 407px;
+	padding: 0;
+	padding-top: 34px;
+	width: 100%;
+}
+
+.p-feature__textarea {
+	margin-left: 140px;
+	margin-top: 37px;
+	max-width: 407px;
+	padding: 0;
+	width: 100%;
 }
 
 .p-footer__content {
@@ -2346,6 +2417,64 @@ html {
 	padding-left: 0.875rem;
 }
 
+.p-policy__deco {
+	padding-bottom: 115px;
+	padding-top: 162px;
+}
+
+.p-policy__deco::before {
+	background-image: url(../../../WordPressTheme/assets/img/concept-bg_sp.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	height: 725px;
+	left: 32.5%;
+	position: absolute;
+	top: 20px;
+	width: 102%;
+}
+
+.p-policy__img {
+	max-height: 438px;
+	width: 50%;
+}
+
+.p-policy__sub-title,
+.p-feature__sub-title {
+	font-size: 0.875rem;
+}
+
+.p-policy__text {
+	margin-top: 35px;
+}
+
+.p-feature__text {
+	margin-top: 36px;
+}
+
+.p-policy__text + .p-policy__text {
+	margin-top: 24px;
+}
+
+.p-feature__text + .p-feature__text {
+	margin-top: 24px;
+}
+
+.p-policy__title-wrap {
+	margin-top: 74px;
+}
+
+.p-policy__title,
+.p-feature__title {
+	font-size: 1.75rem;
+	margin-top: 21px;
+}
+
+.p-policy__wrap {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
 .p-recommend__img-wrap {
 	padding-left: 0;
 	padding-right: 0;
@@ -2395,6 +2524,24 @@ html {
 	padding-bottom: 5px;
 }
 
+.p-sub-fv__content {
+	padding-top: calc((340/1160)*100%);
+}
+
+.p-sub-fv__content::before {
+	background-image: url(../../../WordPressTheme/assets/img/page-about_top.jpg);
+}
+
+.p-sub-fv__inner {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.p-sub-fv__title {
+	font-size: 2rem;
+	letter-spacing: .1em;
+}
+
 .p-test {
 	color: green;
 	font-size: 3.125rem;
@@ -2413,6 +2560,10 @@ html {
 
 .p-blog__item + .p-blog__item {
 	margin-top: 0;
+}
+
+.p-sub-fv__sub-title {
+	font-size: 0.875rem;
 }
 
 .slick-prev {

@@ -1,5 +1,11 @@
 .p-feature__img {
   height: 61.2vw;
+  @include mq(tab) {
+    margin-top: 0;
+    max-height: 438px;
+    max-width: initial;
+    width: 50%;
+  }
   margin-left: auto;
   margin-top: 37px;
   max-width: 334px;
@@ -10,6 +16,7 @@
   border-radius: 20px 0 0 20px;
   height: 100%;
   left: 0;
+  max-height: 438px;
   object-fit: cover;
   position: absolute;
   top: 0;

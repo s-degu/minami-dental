@@ -2,3 +2,25 @@
 .p-feature__textarea {
   padding: 0 $padding-sp;
 }
+.p-policy__textarea {
+  @include mq(tab) {
+    margin-left: -46px;
+    // margin-left: 93px;
+    margin-right: auto;
+    margin-top: 40px;
+    max-width: 407px;
+    padding: 0;
+    padding-top: 34px;
+    width: 100%;
+  }
+}
+
+.p-feature__textarea {
+  @include mq(tab) {
+    margin-left: 140px;
+    margin-top: 37px;
+    max-width: 407px;
+    padding: 0;
+    width: 100%;
+  }
+}

@@ -1,3 +1,6 @@
 .l-breadcrumb {
+  @include mq(tab) {
+    margin-top: 9px;
+  }
   margin-top: 5px;
 }
