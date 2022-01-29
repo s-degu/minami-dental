@@ -5,11 +5,19 @@
   display: block;
   font-size: rem(20);
   font-weight: bold;
+  @include mq(tab) {
+    font-size: 24px;
+    padding: 14px 30px;
+  }
   letter-spacing: .08em;
   padding: 15px 0 11px 0;
   text-align: center;
 }
 
 .p-medical-nav__item + .p-medical-nav__item {
+  @include mq(tab) {
+    margin-left: 16px;
+    margin-top: 0;
+  }
   margin-top: 16px;
 }

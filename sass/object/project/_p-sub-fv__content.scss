@@ -38,5 +38,8 @@
 .p-sub-fv__content.medical {
   &::before {
     background-image: url(../../../WordPressTheme/assets/img/page-medical_top-sp.png);
+    @include mq(tab) {
+      background-image: url(../../../WordPressTheme/assets/img/page-medical_top.png);
+    }
   }
 }

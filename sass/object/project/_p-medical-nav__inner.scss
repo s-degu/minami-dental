@@ -1,0 +1,9 @@
+.p-medical-nav__inner {
+  @include mq(tab) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 998px;
+    width: 100%;
+    padding: 0;
+  }
+}

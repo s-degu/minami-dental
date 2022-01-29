@@ -1,3 +1,7 @@
 .p-medical-nav__items {
   margin-top: 31px;
+  @include mq(tab) {
+    display: flex;
+    margin-top: 29px;
+  }
 }

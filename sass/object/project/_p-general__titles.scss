@@ -1,4 +1,7 @@
 .p-general__titles {
-  text-align: center;
+  @include mq(tab) {
+    padding-top: 4px;
+  }
   padding-top: 31px;
+  text-align: center;
 }

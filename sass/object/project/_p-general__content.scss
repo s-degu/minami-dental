@@ -1,0 +1,6 @@
+.p-general__content {
+  display: flex;
+  @include mq(tab) {
+    margin-top: 20px;
+  }
+}

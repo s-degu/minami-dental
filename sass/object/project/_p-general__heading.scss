@@ -1,4 +1,9 @@
 .p-general__heading {
   padding-bottom: 5px;
   border-bottom: 1px solid #C2C2C2;
+  @include mq(tab) {
+    padding-bottom: 35px;
+    display: flex;
+    align-items: center;
+  }
 }

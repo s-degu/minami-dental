@@ -1,4 +1,7 @@
 .p-general__inner {
   background: $sub-color-second;
+  @include mq(tab) {
+    padding-bottom: 83px;
+  }
   padding-bottom: 95px;
 }

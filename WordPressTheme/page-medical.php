@@ -34,7 +34,7 @@
 
 <div class="l-sub-medical p-sub-medical">
   <div class="p-sub-medical__nav p-medical-nav">
-    <div class="l-inner">
+    <div class="l-inner p-medical-nav__inner">
       <div class="p-medical-nav__wrap">
         <div class="p-medical-nav__titles">
           <h2 class="p-medial-nav__title">一般診療</h2>
@@ -100,7 +100,10 @@
           <div class="p-general__img">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/general01.jpg" alt="">
           </div>
-          <img class="p-general__icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/tag-01-sp.png" alt="">
+          <picture>
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/tag-01.png" media="(min-width: 768px)">
+            <img class="p-general__icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/tag-01-sp.png" alt="">
+          </picture>
         </div>
       </div>
     </div>
@@ -155,7 +158,7 @@
     <div class="p-general__titles">
       <h2 class="c-section__title">特殊診療</h2>
     </div>
-    <div class="p-general__items">
+    <div class="p-general__items denture">
       <div class="p-general__item">
         <div class="p-general__heading">
           <h3 class="p-general__heading-title">入れ歯</h3>
@@ -174,7 +177,7 @@
       </div>
     </div>
 
-    <div class="p-general__items">
+    <div class="p-general__items correct">
       <div class="p-general__item">
         <div class="p-general__heading">
           <h3 class="p-general__heading-title">矯正歯科</h3>

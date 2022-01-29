@@ -1,26 +1,62 @@
 .p-general__items {
   background-color: $white;
   border-radius: 20px;
-  padding: 24px 20px 19px;
+  @include mq(tab) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 58px;
+    max-width: 1000px;
+    padding: 52px 60px 60px;
+    width: 100%;
+  }
   margin-top: 35px;
+  padding: 24px 20px 19px;
 }
 
 .p-general__items.child {
+  @include mq(tab) {
+    margin-top: 41px;
+  }
   margin-top: 32px;
 }
 
 .p-general__items.yobou {
+  @include mq(tab) {
+    margin-top: 40px;
+  }
   margin-top: 22px;
 }
 
 .p-general__items.white {
+  @include mq(tab) {
+    margin-top: 40px;
+  }
   margin-top: 18px;
 }
 
 .p-general__items.oral {
+  @include mq(tab) {
+    margin-top: 40px;
+  }
   margin-top: 21px;
 }
 
 .p-general__items.lazer {
+  @include mq(tab) {
+    margin-top: 40px;
+  }
   margin-top: 22px;
+}
+
+.p-general__items.correct {
+  @include mq(tab) {
+    margin-top: 40px;
+  }
+}
+
+
+.p-general__items.denture {
+  @include mq(tab) {
+    margin-top: 52px;
+  }
 }

@@ -3,6 +3,10 @@
   display: block;
   font-size: rem(14);
   font-weight: bold;
+  @include mq(tab) {
+    margin-top: 0;
+    margin-left: 38px;
+  }
   letter-spacing: .08em;
   line-height: calc(48/14);
   margin-top: 3px;
