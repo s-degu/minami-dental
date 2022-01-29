@@ -1,0 +1,14 @@
+.p-about-gellery__img {
+  padding-top: 100%;
+  position: relative;
+}
+
+.p-about-gellery__img img {
+  border-radius: 20px;
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

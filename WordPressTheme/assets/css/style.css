@@ -582,6 +582,11 @@ summary {
 	margin-top: 5px;
 }
 
+.l-about-gellery {
+	margin-bottom: 101px;
+	margin-top: 98px;
+}
+
 .l-blog {
 	margin-top: 9.75rem;
 }
@@ -685,7 +690,6 @@ summary {
 
 .c-footer-top-img {
 	height: 32px;
-	margin-top: 100px;
 	position: relative;
 }
 
@@ -738,6 +742,37 @@ summary {
 }
 
 .c-title-wrap {
+	text-align: center;
+}
+
+.p-about-gellery__img {
+	padding-top: 100%;
+	position: relative;
+}
+
+.p-about-gellery__img img {
+	-o-object-fit: cover;
+	border-radius: 20px;
+	height: 100%;
+	left: 0;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.p-about-gellery__photo {
+	width: calc(50% - 12px * 1 / 2);
+}
+
+.p-about-gellery__photos {
+	gap: 12px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 37px;
+}
+
+.p-about-gellery-wrap {
 	text-align: center;
 }
 
@@ -1990,10 +2025,6 @@ html {
 	border-radius: 30px;
 	height: 56px;
 	max-width: 220px;
-}
-
-.c-footer-top-img {
-	margin-top: 158px;
 }
 
 .c-section__title {

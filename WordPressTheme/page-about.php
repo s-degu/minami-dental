@@ -78,6 +78,47 @@
 </section>
 <!-- feature -->
 
+<!-- 院内の様子 -->
+<section class="l-about-gellery p-about-gellery">
+  <div class="l-inner p-about-gellery__inner">
+    <div class="p-about-gellery-wrap">
+      <h2 class="p-about-gellery__title c-section__title">院内の様子</h2>
+    </div>
+    <div class="p-about-gellery__photos">
+      <div class="p-about-gellery__photo">
+        <figure class="p-about-gellery__img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery01.jpg" alt="">
+        </figure>
+      </div>
+      <div class="p-about-gellery__photo">
+        <figure class="p-about-gellery__img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery02.jpg" alt="">
+        </figure>
+      </div>
+      <div class="p-about-gellery__photo">
+        <figure class="p-about-gellery__img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery03.jpg" alt="">
+        </figure>
+      </div>
+      <div class="p-about-gellery__photo">
+        <figure class="p-about-gellery__img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery04.jpg" alt="">
+        </figure>
+      </div>
+      <div class="p-about-gellery__photo">
+        <figure class="p-about-gellery__img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery05.jpg" alt="">
+        </figure>
+      </div>
+      <div class="p-about-gellery__photo">
+        <figure class="p-about-gellery__img">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery06.jpg" alt="">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 院内の様子 -->
 
 
 <?php get_footer(); ?>
