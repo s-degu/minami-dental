@@ -1,0 +1,14 @@
+.p-medial-nav__sub-title {
+  background-color: $main-color;
+  border-radius: 24px;
+  color: $white;
+  font-size: rem(14);
+  font-weight: bold;
+  letter-spacing: .08em;
+  margin-left: 22px;
+  padding: 6px 12px;
+}
+
+.p-medial-nav__sub-title--red {
+  background-color: $accent-color;
+}

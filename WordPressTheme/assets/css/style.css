@@ -625,6 +625,10 @@ summary {
 	margin-top: 20px;
 }
 
+.l-sub-medical {
+	margin-top: 57px;
+}
+
 .p-footer__map {
 	margin-top: 20px;
 	padding: 0 10px;
@@ -1306,19 +1310,6 @@ summary {
 	position: relative;
 }
 
-.p-header__nav-link > span::after {
-	background-color: #1391E6;
-	border-radius: 3px;
-	bottom: -8px;
-	content: "";
-	display: block;
-	height: 2px;
-	left: 50%;
-	position: absolute;
-	transform: translateX(-50%);
-	width: 20px;
-}
-
 .p-header__nav-wrap {
 	gap: 22px;
 	align-items: center;
@@ -1398,6 +1389,27 @@ summary {
 
 .p-hero__news {
 	margin-top: 2.375rem;
+}
+
+.p-medial-nav__sub-title {
+	background-color: #1391E6;
+	border-radius: 24px;
+	color: #fff;
+	font-size: 0.875rem;
+	font-weight: bold;
+	letter-spacing: .08em;
+	margin-left: 22px;
+	padding: 6px 12px;
+}
+
+.p-medial-nav__sub-title--red {
+	background-color: #EE5A6D;
+}
+
+.p-medial-nav__title {
+	font-size: 1.25rem;
+	font-weight: bold;
+	letter-spacing: .08em;
 }
 
 .p-medical-info__bottom-deco1 {
@@ -1576,6 +1588,35 @@ summary {
 	text-align: center;
 	top: 31%;
 	z-index: 2;
+}
+
+.p-medical-nav__item > a {
+	border: 1px solid #1391E6;
+	border-radius: 12px;
+	color: #1391E6;
+	display: block;
+	font-size: 1.25rem;
+	font-weight: bold;
+	letter-spacing: .08em;
+	padding: 15px 0 11px 0;
+	text-align: center;
+}
+
+.p-medical-nav__item + .p-medical-nav__item {
+	margin-top: 16px;
+}
+
+.p-medical-nav__items {
+	margin-top: 31px;
+}
+
+.p-medical-nav__titles {
+	align-items: center;
+	display: flex;
+}
+
+.p-medical-nav__wrap + .p-medical-nav__wrap {
+	margin-top: 81px;
 }
 
 .p-news__body {
@@ -1831,6 +1872,10 @@ summary {
 	left: 0;
 	top: 0;
 	width: 100%;
+}
+
+.p-sub-fv__content.medical::before {
+	background-image: url(../../../WordPressTheme/assets/img/page-medical_top-sp.png);
 }
 
 .p-sub-fv__head {

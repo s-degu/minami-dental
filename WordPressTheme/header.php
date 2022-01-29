@@ -1,6 +1,7 @@
 <?php
   $home = esc_url(home_url('/'));
   $about = esc_url(home_url('/about'));
+  $medical = esc_url(home_url('/medical'));
 ?>
 
 <!DOCTYPE html>
@@ -37,27 +38,27 @@
             </a>
           </li>
           <li class="p-header__nav">
-            <a class="p-header__nav-link" href="#">
+            <a class="p-header__nav-link" href="<?php echo $medical?>">
             <svg class="p-header__icon" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><g fill="#393939"><path d="m0 0h24v24h-24z" opacity="0"/><path d="m15 16h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2z"/><path d="m9 14h3a1 1 0 0 0 0-2h-3a1 1 0 0 0 0 2z"/><path d="m19.74 8.33-5.44-6a1 1 0 0 0 -.74-.33h-7a2.53 2.53 0 0 0 -2.56 2.5v15a2.53 2.53 0 0 0 2.56 2.5h10.88a2.53 2.53 0 0 0 2.56-2.5v-10.5a1 1 0 0 0 -.26-.67zm-5.74-3.33 2.74 3h-2a.79.79 0 0 1 -.74-.85zm3.44 15h-10.88a.53.53 0 0 1 -.56-.5v-15a.53.53 0 0 1 .56-.5h5.44v3.15a2.79 2.79 0 0 0 2.71 2.85h3.29v9.5a.53.53 0 0 1 -.56.5z"/></g></svg>
-            <span href="#" >診療案内</span>
+            <span>診療案内</span>
             </a>
           </li>
           <li class="p-header__nav">
             <a class="p-header__nav-link" href="#">
             <svg class="p-header__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="#1391e6" opacity="0"/><path d="M9,11A4,4,0,1,0,5,7a4,4,0,0,0,4,4ZM9,5A2,2,0,1,1,7,7,2,2,0,0,1,9,5Z" fill="#1391e6"/><path d="M17,13a3,3,0,1,0-3-3A3,3,0,0,0,17,13Zm0-4a1,1,0,1,1-1,1A1,1,0,0,1,17,9Z" fill="#1391e6"/><path d="M17,14a5,5,0,0,0-3.06,1.05A7,7,0,0,0,2,20a1,1,0,1,0,2,0,5,5,0,0,1,10,0,1,1,0,0,0,2,0,6.9,6.9,0,0,0-.86-3.35A3,3,0,0,1,20,19a1,1,0,1,0,2,0A5,5,0,0,0,17,14Z" fill="#1391e6"/></svg>
-            <span href="#" >スタッフ紹介</span>
+            <span>スタッフ紹介</span>
             </a>
           </li>
           <li class="p-header__nav">
             <a class="p-header__nav-link" href="#">
             <svg class="p-header__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="#393939" opacity="0"/><path d="M19.4,7.34,16.66,4.6A2,2,0,0,0,14,4.53l-9,9a2,2,0,0,0-.57,1.21L4,18.91A1,1,0,0,0,5,20h.09l4.17-.38a2,2,0,0,0,1.21-.57l9-9a1.92,1.92,0,0,0-.07-2.71ZM9.08,17.62l-3,.28.27-3L12,9.32l2.7,2.7ZM16,10.68,13.32,8l1.95-2L18,8.73Z" fill="#393939"/></svg>
-            <span href="#" >スタッフブログ</span>
+            <span>スタッフブログ</span>
             </a>
           </li>
           <li class="p-header__nav">
             <a class="p-header__nav-link" href="#">
             <svg class="p-header__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="#393939" opacity="0"/><path d="M19,4H5A3,3,0,0,0,2,7V17a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7a3,3,0,0,0-3-3Zm-.67,2L12,10.75,5.67,6ZM19,18H5a1,1,0,0,1-1-1V7.25l7.4,5.55a1,1,0,0,0,1.2,0L20,7.25V17A1,1,0,0,1,19,18Z" fill="#393939"/></svg>
-            <span href="#" >お問い合わせ</span>
+            <span>お問い合わせ</span>
             </a>
           </li>
         </ul>
@@ -86,7 +87,7 @@
         <ul class="p-drawer__menus">
           <li class="p-drawer__menu p-drawer__menu--home"><a href="<?php echo $home?>">ホーム</a></li>
           <li class="p-drawer__menu p-drawer__menu--about"><a href="<?php echo $about?>">当院について</a></li>
-          <li class="p-drawer__menu p-drawer__menu--info"><a href="#">診療案内</a></li>
+          <li class="p-drawer__menu p-drawer__menu--info"><a href="<?php echo $medical?>">診療案内</a></li>
           <li class="p-drawer__menu p-drawer__menu--staff"><a href="#">スタッフ紹介</a></li>
           <li class="p-drawer__menu p-drawer__menu--blog"><a href="#">スタッフブログ</a></li>
           <li class="p-drawer__menu p-drawer__menu--contact"><a href="#">お問い合わせ</a></li>
