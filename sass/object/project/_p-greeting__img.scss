@@ -1,0 +1,17 @@
+.p-greeting__img {
+  background-color: #ececec;
+  border-radius: 20px;
+  margin-top: 38px;
+  padding-top: calc((446/335)*100%);
+  position: relative;
+}
+
+.p-greeting__img img {
+  border-radius: 20px;
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

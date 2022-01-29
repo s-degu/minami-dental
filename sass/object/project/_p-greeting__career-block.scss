@@ -1,0 +1,11 @@
+.p-greeting__career-block {
+  display: flex;
+}
+
+
+.p-greeting__career-block,
+.p-greeting__licence-block {
+  &:nth-child(n + 2) {
+    margin-top: 12px;
+  }
+}

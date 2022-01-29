@@ -634,6 +634,10 @@ summary {
 	margin-top: 57px;
 }
 
+.l-sub-staff {
+	margin-top: 54px;
+}
+
 .p-footer__map {
 	margin-top: 20px;
 	padding: 0 10px;
@@ -1276,6 +1280,13 @@ summary {
 	padding-top: 14px;
 }
 
+.p-geeting__title {
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: .08em;
+	line-height: calc(30/20);
+}
+
 .p-general__content {
 	display: flex;
 }
@@ -1379,6 +1390,80 @@ summary {
 .p-general__titles {
 	padding-top: 31px;
 	text-align: center;
+}
+
+.p-greeting__career-block {
+	display: flex;
+}
+
+.p-greeting__career-block:nth-child(n + 2),
+.p-greeting__licence-block:nth-child(n + 2) {
+	margin-top: 12px;
+}
+
+.p-greeting__career-text,
+.p-greeting__licence-text {
+	font-size: 14px;
+	line-height: calc(24/14);
+}
+
+.p-greeting__career-text + .p-greeting__career-text {
+	margin-left: 16px;
+}
+
+.p-greeting__career-title,
+.p-greeting__licence-title {
+	border-bottom: 1px solid #393939;
+	padding-bottom: 6px;
+}
+
+.p-greeting__career {
+	margin-top: 39px;
+}
+
+.p-greeting__content {
+	margin-top: 37px;
+}
+
+.p-greeting__img {
+	background-color: #ececec;
+	border-radius: 20px;
+	margin-top: 38px;
+	padding-top: calc((446/335)*100%);
+	position: relative;
+}
+
+.p-greeting__img img {
+	-o-object-fit: cover;
+	border-radius: 20px;
+	height: 100%;
+	left: 0;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.p-greeting__licence {
+	margin-top: 35px;
+}
+
+.p-greeting__text-wrap {
+	margin-top: 29px;
+}
+
+.p-greeting__text-wrap2 {
+	margin-top: 24px;
+}
+
+.p-greeting__text-wrap3 {
+	margin-top: 34px;
+	text-align: right;
+}
+
+.p-greeting__text {
+	font-size: 14px;
+	line-height: calc(24/14);
 }
 
 .p-header__address {
@@ -1986,6 +2071,10 @@ summary {
 
 .p-sub-fv__content.medical::before {
 	background-image: url(../../../WordPressTheme/assets/img/page-medical_top-sp.png);
+}
+
+.p-sub-fv__content.staff::before {
+	background-image: url(../../../WordPressTheme/assets/img/page-staff_top-sp.jpg);
 }
 
 .p-sub-fv__head {

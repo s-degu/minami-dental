@@ -1,0 +1,9 @@
+.p-greeting__career-text,
+.p-greeting__licence-text {
+  font-size: 14px;
+  line-height: calc(24/14);
+}
+
+.p-greeting__career-text + .p-greeting__career-text {
+  margin-left: 16px;
+}
