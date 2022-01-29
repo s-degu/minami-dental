@@ -79,4 +79,179 @@
   </div>
 </div>
 
+<!-- 一般診療 -->
+<section class="l-sub-medical__general p-sub-medical__general p-general">
+    <div class="p-medical-info__top-deco"></div>
+  <div class="l-inner p-general__inner">
+    <div class="p-general__titles">
+      <h2 class="c-section__title">一般診療</h2>
+    </div>
+    <div class="p-general__items">
+      <div class="p-general__item">
+        <div class="p-general__heading">
+          <h3 class="p-general__heading-title">一般歯科</h3>
+          <span class="p-general__heading-sub-title">虫歯治療、歯茎がしみるなど</span>
+        </div>
+        <div class="p-general__content">
+          <div class="p-general__textarea">
+            <p class="p-general__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            <p class="p-general__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          </div>
+          <div class="p-general__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/general01.jpg" alt="">
+          </div>
+          <img class="p-general__icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/tag-01-sp.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="p-general__items child">
+      <div class="p-general__item">
+        <div class="p-general__heading">
+          <h3 class="p-general__heading-title">小児歯科</h3>
+          <span class="p-general__heading-sub-title">小さいお子様の歯の治療</span>
+        </div>
+        <div class="p-general__content">
+          <div class="p-general__textarea">
+            <p class="p-general__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            <p class="p-general__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          </div>
+          <div class="p-general__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/general02.jpg" alt="">
+          </div>
+          <img class="p-general__icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/tag-01-sp.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="p-general__items yobou">
+      <div class="p-general__item">
+        <div class="p-general__heading">
+          <h3 class="p-general__heading-title">予防歯科</h3>
+          <span class="p-general__heading-sub-title">口腔内のケア全般</span>
+        </div>
+        <div class="p-general__content">
+          <div class="p-general__textarea">
+            <p class="p-general__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            <p class="p-general__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          </div>
+          <div class="p-general__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/general03.jpg" alt="">
+          </div>
+          <img class="p-general__icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/tag-01-sp.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-medical-info__bottom-deco1"></div>
+  <div class="p-medical-info__bottom-deco2"></div>
+</section>
+<!-- 一般診療 -->
+
+<!-- 特殊診療 -->
+<section class="l-sub-medical__general p-sub-medical__general p-general">
+  <div class="p-medical-info__top-deco"></div>
+  <div class="l-inner p-general__inner">
+    <div class="p-general__titles">
+      <h2 class="c-section__title">特殊診療</h2>
+    </div>
+    <div class="p-general__items">
+      <div class="p-general__item">
+        <div class="p-general__heading">
+          <h3 class="p-general__heading-title">入れ歯</h3>
+          <span class="p-general__heading-sub-title">入れ歯を作りたい、調整したい</span>
+        </div>
+        <div class="p-general__content">
+          <div class="p-general__textarea">
+            <p class="p-general__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            <p class="p-general__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          </div>
+          <div class="p-general__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/special01.jpg" alt="">
+          </div>
+          <img class="p-general__icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/tag-02-sp.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="p-general__items">
+      <div class="p-general__item">
+        <div class="p-general__heading">
+          <h3 class="p-general__heading-title">矯正歯科</h3>
+          <span class="p-general__heading-sub-title">歯並びが気になる</span>
+        </div>
+        <div class="p-general__content">
+          <div class="p-general__textarea">
+            <p class="p-general__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            <p class="p-general__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          </div>
+          <div class="p-general__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/special02.jpg" alt="">
+          </div>
+          <img class="p-general__icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/tag-02-sp.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="p-general__items white">
+      <div class="p-general__item">
+        <div class="p-general__heading">
+          <h3 class="p-general__heading-title">ホワイトニング</h3>
+          <span class="p-general__heading-sub-title">歯を白くしたい</span>
+        </div>
+        <div class="p-general__content">
+          <div class="p-general__textarea">
+            <p class="p-general__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            <p class="p-general__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          </div>
+          <div class="p-general__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/special03.jpg" alt="">
+          </div>
+          <img class="p-general__icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/tag-02-sp.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="p-general__items oral">
+      <div class="p-general__item">
+        <div class="p-general__heading">
+          <h3 class="p-general__heading-title">口腔外科</h3>
+          <span class="p-general__heading-sub-title">インプラント、親知らずの抜歯</span>
+        </div>
+        <div class="p-general__content">
+          <div class="p-general__textarea">
+            <p class="p-general__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            <p class="p-general__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          </div>
+          <div class="p-general__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/special04.jpg" alt="">
+          </div>
+          <img class="p-general__icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/tag-02-sp.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="p-general__items lazer">
+      <div class="p-general__item">
+        <div class="p-general__heading">
+          <h3 class="p-general__heading-title">レーザー治療</h3>
+          <span class="p-general__heading-sub-title">口内炎を治したい</span>
+        </div>
+        <div class="p-general__content">
+          <div class="p-general__textarea">
+            <p class="p-general__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            <p class="p-general__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          </div>
+          <div class="p-general__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/special05.jpg" alt="">
+          </div>
+          <img class="p-general__icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/tag-02-sp.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-medical-info__bottom-deco1"></div>
+  <div class="p-medical-info__bottom-deco2"></div>
+</section>
+<!-- 特殊診療 -->
+
 <?php get_footer(); ?>

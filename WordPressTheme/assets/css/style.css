@@ -625,6 +625,11 @@ summary {
 	margin-top: 20px;
 }
 
+.l-sub-medical__general {
+	margin-bottom: 101px;
+	margin-top: 100px;
+}
+
 .l-sub-medical {
 	margin-top: 57px;
 }
@@ -1269,6 +1274,106 @@ summary {
 .p-footer {
 	background-color: #DFF1FD;
 	padding-top: 14px;
+}
+
+.p-general__heading-sub-title {
+	color: #1391E6;
+	display: block;
+	font-size: 0.875rem;
+	font-weight: bold;
+	letter-spacing: .08em;
+	line-height: calc(48/14);
+	margin-top: 3px;
+}
+
+.p-general__heading-title {
+	font-size: 1.25rem;
+	font-weight: bold;
+	letter-spacing: .08em;
+}
+
+.p-general__heading {
+	border-bottom: 1px solid #C2C2C2;
+	padding-bottom: 5px;
+}
+
+.p-general__icon {
+	height: 60px;
+	position: absolute;
+	right: 0;
+	top: -16px;
+	width: 80px;
+}
+
+.p-general__img {
+	margin-top: 18px;
+	padding-top: calc((221/295)*100%);
+	position: relative;
+}
+
+.p-general__img img {
+	-o-object-fit: cover;
+	border-radius: 20px;
+	height: 100%;
+	left: 0;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.p-general__inner {
+	background: #DFF1FD;
+	padding-bottom: 95px;
+}
+
+.p-general__item {
+	position: relative;
+}
+
+.p-general__items {
+	background-color: #fff;
+	border-radius: 20px;
+	margin-top: 35px;
+	padding: 24px 20px 19px;
+}
+
+.p-general__items.child {
+	margin-top: 32px;
+}
+
+.p-general__items.yobou {
+	margin-top: 22px;
+}
+
+.p-general__items.white {
+	margin-top: 18px;
+}
+
+.p-general__items.oral {
+	margin-top: 21px;
+}
+
+.p-general__items.lazer {
+	margin-top: 22px;
+}
+
+.p-general__text {
+	font-size: 0.875rem;
+	line-height: calc(24/14);
+}
+
+.p-general__text + .p-general__text {
+	margin-top: 24px;
+}
+
+.p-general__textarea {
+	margin-top: 18px;
+}
+
+.p-general__titles {
+	padding-top: 31px;
+	text-align: center;
 }
 
 .p-header__address {

@@ -1,0 +1,8 @@
+.p-general__text {
+  font-size: rem(14);
+  line-height: calc(24/14);
+}
+
+.p-general__text + .p-general__text {
+  margin-top: 24px;
+}

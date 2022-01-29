@@ -1,0 +1,15 @@
+.p-general__img {
+  margin-top: 18px;
+  position: relative;
+  padding-top: calc((221/295)*100%);
+}
+
+.p-general__img img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-radius: 20px;
+}
