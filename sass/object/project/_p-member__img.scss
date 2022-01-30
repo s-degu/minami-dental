@@ -1,0 +1,14 @@
+.p-member__img {
+  padding-top: calc((336/335)*100%);
+  position: relative;
+}
+
+.p-member__img img {
+  border-radius: 20px;
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

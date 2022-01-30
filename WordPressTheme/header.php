@@ -21,7 +21,7 @@
   <header class="l-header p-header">
     <div class="l-inner p-header__inner">
       <h1 class="p-header__title">
-        <a href="#"><img class="p-header__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="みなみ歯科クリニック"></a>
+        <a href="<?php echo $home?>"><img class="p-header__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="みなみ歯科クリニック"></a>
       </h1>
       <!-- 👇PCナビゲーション -->
       <div class="p-header__right">
@@ -89,7 +89,7 @@
           <li class="p-drawer__menu p-drawer__menu--home"><a href="<?php echo $home?>">ホーム</a></li>
           <li class="p-drawer__menu p-drawer__menu--about"><a href="<?php echo $about?>">当院について</a></li>
           <li class="p-drawer__menu p-drawer__menu--info"><a href="<?php echo $medical?>">診療案内</a></li>
-          <li class="p-drawer__menu p-drawer__menu--staff"><a href="#">スタッフ紹介</a></li>
+          <li class="p-drawer__menu p-drawer__menu--staff"><a href="<?php echo $staff?>">スタッフ紹介</a></li>
           <li class="p-drawer__menu p-drawer__menu--blog"><a href="#">スタッフブログ</a></li>
           <li class="p-drawer__menu p-drawer__menu--contact"><a href="#">お問い合わせ</a></li>
         </ul>

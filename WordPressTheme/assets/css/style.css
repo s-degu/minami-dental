@@ -1,3 +1,13 @@
+.p-sub-staff__slider {
+	margin-top: 97px;
+	text-align: center;
+}
+
+.p-sub-staff__slider img {
+	border-radius: 20px;
+	width: 200px;
+}
+
 fieldset,
 legend,
 button {
@@ -632,6 +642,10 @@ summary {
 
 .l-sub-medical {
 	margin-top: 57px;
+}
+
+.l-sub-staff__member {
+	margin-top: 99px;
 }
 
 .l-sub-staff {
@@ -1458,7 +1472,6 @@ summary {
 
 .p-greeting__text-wrap3 {
 	margin-top: 34px;
-	text-align: right;
 }
 
 .p-greeting__text {
@@ -1814,6 +1827,43 @@ summary {
 	margin-top: 81px;
 }
 
+.p-member__content {
+	margin-top: 32px;
+}
+
+.p-member__img {
+	padding-top: calc((336/335)*100%);
+	position: relative;
+}
+
+.p-member__img img {
+	-o-object-fit: cover;
+	border-radius: 20px;
+	height: 100%;
+	left: 0;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.p-member__item + .p-member__item {
+	margin-top: 52px;
+}
+
+.p-member__items {
+	margin-top: 37px;
+}
+
+.p-member__sub-title {
+	border-bottom: 1px solid #393939;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: .08em;
+	line-height: 2;
+	padding-bottom: 3px;
+}
+
 .p-news__body {
 	margin-top: 0.25rem;
 }
@@ -2033,6 +2083,50 @@ summary {
 
 .p-slider__text--underline {
 	border-bottom: 2px dotted #fff;
+}
+
+.p-staff__charge {
+	display: inline-block;
+	font-size: 12px;
+	letter-spacing: .08em;
+	line-height: calc(18/12);
+	vertical-align: middle;
+}
+
+.p-staff__def-data {
+	width: 58%;
+}
+
+.p-staff__def-title {
+	background-color: #DFF1FD;
+	width: calc((140/335)*100%);
+}
+
+.p-staff__def-title,
+.p-staff__def-data {
+	border-bottom: 1px solid #fff;
+	font-size: 14px;
+	padding: 16px 20px;
+}
+
+.p-staff__info {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 14px;
+}
+
+.p-staff__name-wrap {
+	margin-top: 16px;
+	text-align: center;
+}
+
+.p-staff__name {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: .08em;
+	line-height: calc(28/18);
+	margin-left: 7px;
 }
 
 .p-sub-fv__content {

@@ -91,5 +91,59 @@
   <!-- 院長の挨拶 -->
 </div>
 
+<!-- スライダー -->
+<div class="p-sub-staff__slider">
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff-slider1.jpg" alt="">
+</div>
+<!-- スライダー -->
+
+<!-- スタッフ紹介 -->
+<section class="l-sub-staff__member p-sub-staff__member p-member">
+  <div class="l-inner p-member__inner">
+    <div class="c-title-wrap">
+      <h2 class="c-section__title">スタッフ紹介</h2>
+    </div>
+    <div class="p-member__content">
+      <h3 class="p-member__sub-title">歯科衛生士</h3>
+      <div class="p-member__items">
+        <div class="p-member__item">
+          <div class="p-member__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff2.jpg" alt="">
+          </div>
+          <div class="p-staff__name-wrap">
+            <span class="p-staff__charge">歯科衛生士</span>
+            <span class="p-staff__name">鈴木 太郎</span>
+          </div>
+          <dl class="p-staff__info">
+            <dt class="p-staff__def-title">出身地</dt>
+            <dd class="p-staff__def-data">北海道</dd>
+            <dt class="p-staff__def-title">趣味</dt>
+            <dd class="p-staff__def-data">スキー、料理</dd>
+            <dt class="p-staff__def-title">好きな食べ物</dt>
+            <dd class="p-staff__def-data">お寿司、うなぎ</dd>
+          </dl>
+        </div>
+        <div class="p-member__item">
+          <div class="p-member__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff3.jpg" alt="">
+          </div>
+          <div class="p-staff__name-wrap">
+            <span class="p-staff__charge">歯科衛生士</span>
+            <span class="p-staff__name">山田 花子</span>
+          </div>
+          <dl class="p-staff__info">
+            <dt class="p-staff__def-title">出身地</dt>
+            <dd class="p-staff__def-data">北海道</dd>
+            <dt class="p-staff__def-title">趣味</dt>
+            <dd class="p-staff__def-data">スキー、料理</dd>
+            <dt class="p-staff__def-title">好きな食べ物</dt>
+            <dd class="p-staff__def-data">お寿司、うなぎ</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- スタッフ紹介 -->
 
 <?php get_footer(); ?>
