@@ -1,3 +1,9 @@
 .p-member__items {
+  @include mq(tab) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 60px 80px;
+  }
   margin-top: 37px;
 }

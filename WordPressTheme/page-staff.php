@@ -51,7 +51,7 @@
           <div class="p-greeting__text-wrap3">
             <p class="p-greeting__text">みなみ歯科クリニック<br>院長&nbsp;&nbsp;&nbsp;南 俊雄</p>
           </div>
-          <div class="p-greeting__img">
+          <div class="p-greeting__img u-hidden-pc">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/greeting.png" alt="">
           </div>
           <div class="p-greeting__about">
@@ -83,6 +83,9 @@
               </div>
             </div>
             </div>
+          </div>
+          <div class="p-greeting__img-pc">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/greeting.png" alt="">
           </div>
         </div>
       </div>
@@ -142,8 +145,100 @@
         </div>
       </div>
     </div>
+    <div class="p-member__content">
+      <h3 class="p-member__sub-title">歯科助手</h3>
+      <div class="p-member__items">
+        <div class="p-member__item">
+          <div class="p-member__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff4.jpg" alt="">
+          </div>
+          <div class="p-staff__name-wrap">
+            <span class="p-staff__charge">歯科衛生士</span>
+            <span class="p-staff__name">山田 花子</span>
+          </div>
+          <dl class="p-staff__info">
+            <dt class="p-staff__def-title">出身地</dt>
+            <dd class="p-staff__def-data">北海道</dd>
+            <dt class="p-staff__def-title">趣味</dt>
+            <dd class="p-staff__def-data">スキー、料理</dd>
+            <dt class="p-staff__def-title">好きな食べ物</dt>
+            <dd class="p-staff__def-data">お寿司、うなぎ</dd>
+          </dl>
+        </div>
+        <div class="p-member__item">
+          <div class="p-member__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff3.jpg" alt="">
+          </div>
+          <div class="p-staff__name-wrap">
+            <span class="p-staff__charge">歯科衛生士</span>
+            <span class="p-staff__name">山田 花子</span>
+          </div>
+          <dl class="p-staff__info">
+            <dt class="p-staff__def-title">出身地</dt>
+            <dd class="p-staff__def-data">北海道</dd>
+            <dt class="p-staff__def-title">趣味</dt>
+            <dd class="p-staff__def-data">スキー、料理</dd>
+            <dt class="p-staff__def-title">好きな食べ物</dt>
+            <dd class="p-staff__def-data">お寿司、うなぎ</dd>
+          </dl>
+        </div>
+        <div class="p-member__item">
+          <div class="p-member__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff3.jpg" alt="">
+          </div>
+          <div class="p-staff__name-wrap">
+            <span class="p-staff__charge">歯科衛生士</span>
+            <span class="p-staff__name">山田 花子</span>
+          </div>
+          <dl class="p-staff__info">
+            <dt class="p-staff__def-title">出身地</dt>
+            <dd class="p-staff__def-data">北海道</dd>
+            <dt class="p-staff__def-title">趣味</dt>
+            <dd class="p-staff__def-data">スキー、料理</dd>
+            <dt class="p-staff__def-title">好きな食べ物</dt>
+            <dd class="p-staff__def-data">お寿司、うなぎ</dd>
+          </dl>
+        </div>
+        <div class="p-member__item">
+          <div class="p-member__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff3.jpg" alt="">
+          </div>
+          <div class="p-staff__name-wrap">
+            <span class="p-staff__charge">歯科衛生士</span>
+            <span class="p-staff__name">山田 花子</span>
+          </div>
+          <dl class="p-staff__info">
+            <dt class="p-staff__def-title">出身地</dt>
+            <dd class="p-staff__def-data">北海道</dd>
+            <dt class="p-staff__def-title">趣味</dt>
+            <dd class="p-staff__def-data">スキー、料理</dd>
+            <dt class="p-staff__def-title">好きな食べ物</dt>
+            <dd class="p-staff__def-data">お寿司、うなぎ</dd>
+          </dl>
+        </div>
+        <div class="p-member__item">
+          <div class="p-member__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff3.jpg" alt="">
+          </div>
+          <div class="p-staff__name-wrap">
+            <span class="p-staff__charge">歯科衛生士</span>
+            <span class="p-staff__name">山田 花子</span>
+          </div>
+          <dl class="p-staff__info">
+            <dt class="p-staff__def-title">出身地</dt>
+            <dd class="p-staff__def-data">北海道</dd>
+            <dt class="p-staff__def-title">趣味</dt>
+            <dd class="p-staff__def-data">スキー、料理</dd>
+            <dt class="p-staff__def-title">好きな食べ物</dt>
+            <dd class="p-staff__def-data">お寿司、うなぎ</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 <!-- スタッフ紹介 -->
+
 
 <?php get_footer(); ?>

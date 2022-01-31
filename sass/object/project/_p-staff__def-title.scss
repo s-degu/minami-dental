@@ -1,6 +1,9 @@
 .p-staff__def-title {
   background-color: $sub-color-second;
   width: calc((140/335)*100%);
+  @include mq(tab) {
+    width: 50%;
+  }
 }
 
 .p-staff__def-title,

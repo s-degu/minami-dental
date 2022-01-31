@@ -1,0 +1,5 @@
+.p-greeting__textarea {
+  @include mq(tab) {
+    width: calc((460/1000)*100%);
+  }
+}

@@ -47,5 +47,8 @@
 .p-sub-fv__content.staff {
   &::before {
     background-image: url(../../../WordPressTheme/assets/img/page-staff_top-sp.jpg);
+    @include mq(tab) {
+      background-image: url(../../../WordPressTheme/assets/img/page-staff_top.jpg);
+    }
   }
 }

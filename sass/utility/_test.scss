@@ -1,0 +1,15 @@
+.p-sub-staff__slider {
+  margin-top: 97px;
+  text-align: center;
+  @include mq(tab) {
+    margin-top: 155px;
+  }
+}
+
+.p-sub-staff__slider img {
+  width: 200px;
+  border-radius: 20px;
+  @include mq(tab) {
+    width: 305px;
+  }
+}

@@ -3,4 +3,7 @@
   font-weight: bold;
   letter-spacing: .08em;
   line-height: calc(30/20);
+  @include mq(tab) {
+    font-size: 28px;
+  }
 }

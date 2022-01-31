@@ -1,4 +1,7 @@
 .p-greeting__text-wrap {
+  @include mq(tab) {
+    margin-top: 37px;
+  }
   margin-top: 29px;
 }
 
@@ -7,5 +10,9 @@
 }
 
 .p-greeting__text-wrap3 {
+  @include mq(tab) {
+    text-align: right;
+    margin-top: 15px;
+  }
   margin-top: 34px;
 }

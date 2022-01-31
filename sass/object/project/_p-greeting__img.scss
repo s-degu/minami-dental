@@ -15,3 +15,24 @@
   top: 0;
   width: 100%;
 }
+
+.p-greeting__img-pc {
+  align-self: flex-start;
+  background-color: #ececec;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-top: 7px;
+  padding-top: calc((613/1000)*100%);
+  position: relative;
+  width: calc((460/1000)*100%);
+}
+
+.p-greeting__img-pc img {
+  border-radius: 20px;
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

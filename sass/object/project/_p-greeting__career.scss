@@ -1,3 +1,6 @@
 .p-greeting__career {
+  @include mq(tab) {
+    margin-top: 56px;
+  }
   margin-top: 39px;
 }

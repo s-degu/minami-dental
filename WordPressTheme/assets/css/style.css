@@ -1,13 +1,3 @@
-.p-sub-staff__slider {
-	margin-top: 97px;
-	text-align: center;
-}
-
-.p-sub-staff__slider img {
-	border-radius: 20px;
-	width: 200px;
-}
-
 fieldset,
 legend,
 button {
@@ -588,10 +578,6 @@ summary {
 
 /* Remove all animations and transitions for people that prefer not to see them */
 
-.l-breadcrumb {
-	margin-top: 5px;
-}
-
 .l-about-gellery {
 	margin-bottom: 101px;
 	margin-top: 98px;
@@ -599,6 +585,10 @@ summary {
 
 .l-blog {
 	margin-top: 9.75rem;
+}
+
+.l-breadcrumb {
+	margin-top: 5px;
 }
 
 .l-concept {
@@ -1220,7 +1210,7 @@ summary {
 }
 
 .p-footer__nav {
-	margin-top: 37px;
+	margin-top: 42px;
 	padding-bottom: 54px;
 	padding-left: 11px;
 }
@@ -1448,6 +1438,28 @@ summary {
 }
 
 .p-greeting__img img {
+	-o-object-fit: cover;
+	border-radius: 20px;
+	height: 100%;
+	left: 0;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.p-greeting__img-pc {
+	align-self: flex-start;
+	background-color: #ececec;
+	border-radius: 20px;
+	margin-left: auto;
+	margin-top: 7px;
+	padding-top: calc((613/1000)*100%);
+	position: relative;
+	width: calc((460/1000)*100%);
+}
+
+.p-greeting__img-pc img {
 	-o-object-fit: cover;
 	border-radius: 20px;
 	height: 100%;
@@ -1845,6 +1857,14 @@ summary {
 	position: absolute;
 	top: 0;
 	width: 100%;
+}
+
+.p-member__inner {
+	margin-bottom: 95px;
+}
+
+.p-member__item {
+	width: calc(100% / 3 - 80px * 2 /3);
 }
 
 .p-member__item + .p-member__item {
@@ -2285,6 +2305,16 @@ summary {
 	font-size: 1px;
 }
 
+.p-sub-staff__slider {
+	margin-top: 97px;
+	text-align: center;
+}
+
+.p-sub-staff__slider img {
+	border-radius: 20px;
+	width: 200px;
+}
+
 .u-text-red {
 	color: #EE5A6D;
 }
@@ -2326,13 +2356,13 @@ html {
 	font-size: 1.25vw;
 }
 
-.l-breadcrumb {
-	margin-top: 9px;
-}
-
 .l-about-gellery {
 	margin-bottom: 160px;
 	margin-top: 156px;
+}
+
+.l-breadcrumb {
+	margin-top: 9px;
 }
 
 .l-concept {
@@ -2377,6 +2407,15 @@ html {
 
 .l-sub-medical {
 	margin-top: 72px;
+}
+
+.l-sub-staff__member {
+	margin-bottom: 156px;
+	margin-top: 167px;
+}
+
+.l-sub-staff {
+	margin-top: 65px;
 }
 
 .p-footer__map {
@@ -2602,8 +2641,13 @@ html {
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 37px;
 	padding: 0;
 	width: 1000px;
+}
+
+.p-geeting__title {
+	font-size: 28px;
 }
 
 .p-general__content {
@@ -2687,6 +2731,40 @@ html {
 
 .p-general__titles {
 	padding-top: 4px;
+}
+
+.p-greeting__career {
+	margin-top: 56px;
+}
+
+.p-greeting__content {
+	display: flex;
+	margin-top: 57px;
+}
+
+.p-greeting__inner {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+	padding: 0;
+	width: 100%;
+}
+
+.p-greeting__licence {
+	margin-top: 27px;
+}
+
+.p-greeting__text-wrap {
+	margin-top: 37px;
+}
+
+.p-greeting__text-wrap3 {
+	margin-top: 15px;
+	text-align: right;
+}
+
+.p-greeting__textarea {
+	width: calc((460/1000)*100%);
 }
 
 .p-header__drawer {
@@ -2845,6 +2923,29 @@ html {
 	margin-top: 29px;
 }
 
+.p-member__content {
+	margin-top: 52px;
+}
+
+.p-member__inner {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+	padding: 0;
+	width: 100%;
+}
+
+.p-member__item + .p-member__item {
+	margin-top: 0;
+}
+
+.p-member__items {
+	gap: 60px 80px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
 .p-news__body {
 	margin-top: 6px;
 }
@@ -2981,6 +3082,14 @@ html {
 	padding-bottom: 5px;
 }
 
+.p-staff__def-data {
+	width: 50%;
+}
+
+.p-staff__def-title {
+	width: 50%;
+}
+
 .p-sub-fv__content {
 	padding-top: calc((340/1160)*100%);
 }
@@ -2991,6 +3100,10 @@ html {
 
 .p-sub-fv__content.medical::before {
 	background-image: url(../../../WordPressTheme/assets/img/page-medical_top.png);
+}
+
+.p-sub-fv__content.staff::before {
+	background-image: url(../../../WordPressTheme/assets/img/page-staff_top.jpg);
 }
 
 .p-sub-fv__inner {
@@ -3046,6 +3159,14 @@ html {
 
 .slick-dots {
 	left: -36px;
+}
+
+.p-sub-staff__slider {
+	margin-top: 155px;
+}
+
+.p-sub-staff__slider img {
+	width: 305px;
 }
 
 }

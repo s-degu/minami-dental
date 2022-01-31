@@ -1,3 +1,12 @@
+.p-member__item {
+  width: calc(100% / 3 - 80px * 2 /3);
+
+}
+
+
 .p-member__item + .p-member__item {
+  @include mq(tab) {
+    margin-top: 0;
+  }
   margin-top: 52px;
 }

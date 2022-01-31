@@ -1,3 +1,7 @@
 .p-greeting__content {
+  @include mq(tab) {
+    display: flex;
+    margin-top: 57px;
+  }
   margin-top: 37px;
 }
