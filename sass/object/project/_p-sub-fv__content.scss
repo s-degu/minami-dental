@@ -52,3 +52,9 @@
     }
   }
 }
+
+.p-sub-fv__content.blog {
+  &::before {
+    background-image: url(../../../WordPressTheme/assets/img/archive_top-sp.jpg);
+  }
+}

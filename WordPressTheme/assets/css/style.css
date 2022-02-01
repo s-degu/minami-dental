@@ -642,22 +642,6 @@ summary {
 	margin-top: 54px;
 }
 
-.p-footer__map {
-	margin-top: 20px;
-	padding: 0 10px;
-	padding-top: calc((315/315)*100%);
-	position: relative;
-	width: 100%;
-}
-
-.p-footer__map > iframe {
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
-}
-
 .c-article-label {
 	background-color: #1391E6;
 	border-radius: 10px;
@@ -839,6 +823,59 @@ summary {
 	display: flex;
 	flex-direction: column;
 	margin-top: 2.875rem;
+}
+
+.p-blog-card__body {
+	margin-left: auto;
+	margin-right: 9px;
+	padding: 4px 0 0 0;
+	width: calc((182/335)*100%);
+}
+
+.p-blog-card__date {
+	color: #888;
+	display: inline-block;
+	font-size: 11px;
+}
+
+.p-blog-card__img {
+	align-self: flex-start;
+	padding-top: calc((101/335)*100%);
+	position: relative;
+	width: calc((133/335)*100%);
+}
+
+.p-blog-card__img img {
+	-o-object-fit: cover;
+	height: 100%;
+	left: 0;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.p-blog-card__label {
+	background-color: #1391E6;
+	border-radius: 10px;
+	color: #fff;
+	display: inline-block;
+	font-size: 10px;
+	padding: 2px 8px;
+}
+
+.p-blog-card__link {
+	display: flex;
+}
+
+.p-blog-card__text {
+	font-size: 14px;
+	line-height: calc(20/14);
+	margin-top: 4px;
+}
+
+.p-blog-card + .p-blog-card {
+	margin-top: 20px;
 }
 
 .p-breadcrumb span {
@@ -1186,6 +1223,22 @@ summary {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 311px;
+	width: 100%;
+}
+
+.p-footer__map {
+	margin-top: 20px;
+	padding: 0 10px;
+	padding-top: calc((315/315)*100%);
+	position: relative;
+	width: 100%;
+}
+
+.p-footer__map > iframe {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
 	width: 100%;
 }
 
@@ -2081,6 +2134,66 @@ summary {
 	width: 62%;
 }
 
+.p-sidebar__sub-title {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 19px;
+}
+
+.p-sidebar__title {
+	border-bottom: 1px solid #393939;
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 6px;
+}
+
+.p-sidebar__title img {
+	height: 24px;
+	margin-right: 6px;
+	width: 24px;
+}
+
+.p-sidebar-clinic__button {
+	color: #1391E6;
+	display: block;
+	font-size: 14px;
+	margin-top: 10px;
+	padding-left: 4px;
+	position: relative;
+}
+
+.p-sidebar-clinic__button::after {
+	background-image: url(../../../WordPressTheme/assets/img/icon_arrow.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	content: "";
+	height: 18px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 18px;
+}
+
+.p-sidebar-clinic__img {
+	margin-top: 20px;
+	padding-top: calc((210/335)*100%);
+	position: relative;
+}
+
+.p-sidebar-clinic__img img {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.p-sidebar-clinic__text {
+	font-size: 14px;
+	line-height: calc(24/14);
+	margin-top: 10px;
+}
+
 .p-slider__item img {
 	aspect-ratio: 335 / 446.93;
 }
@@ -2149,6 +2262,10 @@ summary {
 	margin-left: 7px;
 }
 
+.p-sub-blog__content {
+	margin-top: 56px;
+}
+
 .p-sub-fv__content {
 	padding-top: calc((188/335)*100%);
 	position: relative;
@@ -2189,6 +2306,10 @@ summary {
 
 .p-sub-fv__content.staff::before {
 	background-image: url(../../../WordPressTheme/assets/img/page-staff_top-sp.jpg);
+}
+
+.p-sub-fv__content.blog::before {
+	background-image: url(../../../WordPressTheme/assets/img/archive_top-sp.jpg);
 }
 
 .p-sub-fv__head {
@@ -2234,6 +2355,29 @@ summary {
 	letter-spacing: .1em;
 	margin-top: 13px;
 	text-align: center;
+}
+
+.wp-pagenavi a.previouspostslink {
+	background-color: #1391e6;
+	background-image: url(./../img/common/arrow-circle-left.svg);
+	background-position: left 14px center;
+	background-repeat: no-repeat;
+	border: none;
+	color: #fff;
+	justify-content: flex-end;
+	letter-spacing: -.1em;
+	padding-right: 15px;
+	transition: .3s ease;
+	width: 82px;
+}
+
+.pages {
+	display: none;
+}
+
+.previouspostslink,
+.nextpostslink {
+	display: none;
 }
 
 .slick-dotted.slick-slider {
@@ -2416,12 +2560,6 @@ html {
 
 .l-sub-staff {
 	margin-top: 65px;
-}
-
-.p-footer__map {
-	margin-left: auto;
-	max-width: 24.0625rem;
-	padding-top: calc((385/1000)*100%);
 }
 
 .c-blog-date {
@@ -2610,6 +2748,12 @@ html {
 
 .p-footer__logo {
 	max-width: 402px;
+}
+
+.p-footer__map {
+	margin-left: auto;
+	max-width: 24.0625rem;
+	padding-top: calc((385/1000)*100%);
 }
 
 .p-footer__nav-item:nth-child(2) {
@@ -3138,6 +3282,12 @@ html {
 
 .p-sub-fv__sub-title {
 	font-size: 0.875rem;
+}
+
+.wp-pagenavi a.previouspostslink {
+	background-size: 13px 13px;
+	padding-right: 13px;
+	width: 71px;
 }
 
 .slick-prev {

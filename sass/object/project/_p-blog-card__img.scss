@@ -1,0 +1,15 @@
+.p-blog-card__img {
+  position: relative;
+  width: calc((133/335)*100%);
+  padding-top: calc((101/335)*100%);
+  align-self: flex-start;
+}
+
+.p-blog-card__img img {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+}

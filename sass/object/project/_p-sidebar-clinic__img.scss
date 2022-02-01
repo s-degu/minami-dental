@@ -1,0 +1,13 @@
+.p-sidebar-clinic__img {
+  margin-top: 20px;
+  position: relative;
+  padding-top: calc((210/335)*100%);
+}
+
+.p-sidebar-clinic__img img {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

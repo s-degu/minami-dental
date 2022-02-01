@@ -1,0 +1,21 @@
+.p-sidebar-clinic__button {
+  color: $main-color;
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+  padding-left: 4px;
+  position: relative;
+  &::after {
+    background-image: url(../../../WordPressTheme/assets/img/icon_arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-size: contain;
+    content: "";
+    height: 18px;
+    position: absolute;
+    // right: 0;
+    top: 50%;
+    width: 18px;
+    transform: translateY(-50%);
+  }
+}

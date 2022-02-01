@@ -1,0 +1,27 @@
+.wp-pagenavi a.previouspostslink {
+  background-color: #1391e6;
+  background-image: url(./../img/common/arrow-circle-left.svg);
+  background-position: left 14px center;
+  background-repeat: no-repeat;
+  border: none;
+  color: #fff;
+  @include mq(tab) {
+    background-size: 13px 13px;
+    padding-right: 13px;
+    width: 71px;
+  }
+  justify-content: flex-end;
+  letter-spacing: -.1em;
+  padding-right: 15px;
+  transition: .3s ease;
+  width: 82px;
+}
+
+.pages {
+  display: none;
+}
+
+.previouspostslink,
+.nextpostslink {
+  display: none;
+}
