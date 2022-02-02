@@ -583,6 +583,10 @@ summary {
 	margin-top: 98px;
 }
 
+.l-blog-categry {
+	margin-top: 61px;
+}
+
 .l-blog {
 	margin-top: 9.75rem;
 }
@@ -617,8 +621,20 @@ summary {
 	margin-top: 6.1875rem;
 }
 
+.l-new-article__cards {
+	margin-top: 20px;
+}
+
 .l-recommend {
 	margin-top: 6.125rem;
+}
+
+.l-sub-blog__sideber {
+	margin-top: 165px;
+}
+
+.l-sub-blog {
+	margin-bottom: 90px;
 }
 
 .l-sub-fv {
@@ -876,6 +892,30 @@ summary {
 
 .p-blog-card + .p-blog-card {
 	margin-top: 20px;
+}
+
+.p-blog-category__lists {
+	margin-top: 10px;
+	padding-left: 21px;
+}
+
+.p-blog-categpry__item a {
+	display: block;
+	font-size: 16px;
+	line-height: calc(36/16);
+	padding-left: 12px;
+	position: relative;
+}
+
+.p-blog-categpry__item a::before {
+	background-image: url(../../../WordPressTheme/assets/img/md-arrow-dropright.svg);
+	content: "";
+	height: 12px;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 6px;
 }
 
 .p-breadcrumb span {
@@ -1916,10 +1956,6 @@ summary {
 	margin-bottom: 95px;
 }
 
-.p-member__item {
-	width: calc(100% / 3 - 80px * 2 /3);
-}
-
 .p-member__item + .p-member__item {
 	margin-top: 52px;
 }
@@ -2132,6 +2168,10 @@ summary {
 .p-recommend__title img {
 	margin-top: 2.3125rem;
 	width: 62%;
+}
+
+.p-sidebar__new-article {
+	margin-top: 57px;
 }
 
 .p-sidebar__sub-title {
@@ -3077,6 +3117,10 @@ html {
 	max-width: 1000px;
 	padding: 0;
 	width: 100%;
+}
+
+.p-member__item {
+	width: calc(100% / 3 - 80px * 2 /3);
 }
 
 .p-member__item + .p-member__item {
