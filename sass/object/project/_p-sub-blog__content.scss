@@ -1,3 +1,7 @@
 .p-sub-blog__content {
+  @include mq(tab) {
+    display: flex;
+    margin-top: 86px;
+  }
   margin-top: 56px;
 }

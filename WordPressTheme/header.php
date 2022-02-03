@@ -4,6 +4,7 @@
   $medical = esc_url(home_url('/medical'));
   $staff = esc_url(home_url('/staff'));
   $blog = get_post_type_archive_link( "blog" );
+  $contact = esc_url(home_url('/contact'));
 ?>
 
 <!DOCTYPE html>
@@ -58,7 +59,7 @@
             </a>
           </li>
           <li class="p-header__nav">
-            <a class="p-header__nav-link" href="#">
+            <a class="p-header__nav-link" href="<?php echo $contact?>">
             <svg class="p-header__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><rect width="24" height="24" fill="#393939" opacity="0"/><path d="M19,4H5A3,3,0,0,0,2,7V17a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7a3,3,0,0,0-3-3Zm-.67,2L12,10.75,5.67,6ZM19,18H5a1,1,0,0,1-1-1V7.25l7.4,5.55a1,1,0,0,0,1.2,0L20,7.25V17A1,1,0,0,1,19,18Z" fill="#393939"/></svg>
             <span>お問い合わせ</span>
             </a>
@@ -92,7 +93,7 @@
           <li class="p-drawer__menu p-drawer__menu--info"><a href="<?php echo $medical?>">診療案内</a></li>
           <li class="p-drawer__menu p-drawer__menu--staff"><a href="<?php echo $staff?>">スタッフ紹介</a></li>
           <li class="p-drawer__menu p-drawer__menu--blog"><a href="<?php echo $blog?>">スタッフブログ</a></li>
-          <li class="p-drawer__menu p-drawer__menu--contact"><a href="#">お問い合わせ</a></li>
+          <li class="p-drawer__menu p-drawer__menu--contact"><a href="<?php echo $contact?>">お問い合わせ</a></li>
         </ul>
       </div>
       <!-- 👆ドロワーメニュー -->

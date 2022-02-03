@@ -1,6 +1,19 @@
 .p-blog-card__body {
+  @include mq(tab) {
+    margin-right: 0;
+    padding: 19px 0 0 0;
+    width: calc((405/670)*100%);
+  }
   margin-left: auto;
   margin-right: 9px;
-  width: calc((182/335)*100%);
   padding: 4px 0 0 0;
+  width: calc((182/335)*100%);
+}
+
+.p-blog-card__body.aside {
+  @include mq(tab) {
+    width: calc((170/300)*100%);
+    padding: 0;
+    font-size: 0;
+  }
 }

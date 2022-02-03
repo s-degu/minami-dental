@@ -1,4 +1,8 @@
 .p-blog-category__lists {
+  @include mq(tab) {
+    margin-top: 11px;
+    padding-left: 20px;
+  }
   margin-top: 10px;
   padding-left: 21px;
 }

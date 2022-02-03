@@ -2,8 +2,20 @@
   background-color: $main-color;
   border-radius: 10px;
   color: $white;
+  display: inline-block;
   font-size: 10px;
+  @include mq(tab) {
+    border-radius: 12px;
+    font-size: 11px;
+    padding: 6px 12px;
+  }
   // line-height: calc(38/10);
   padding: 2px 8px;
-  display: inline-block;
+}
+
+.p-blog-card__label.aside {
+  @include mq(tab) {
+    font-size: 10px;
+    padding: 2px 8px;
+  }
 }

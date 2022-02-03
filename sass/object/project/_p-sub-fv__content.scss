@@ -58,3 +58,9 @@
     background-image: url(../../../WordPressTheme/assets/img/archive_top-sp.jpg);
   }
 }
+
+.p-sub-fv__content.contact {
+  &::before {
+    background-image: url(../../../WordPressTheme/assets/img//page-contact_top-sp.jpg);
+  }
+}

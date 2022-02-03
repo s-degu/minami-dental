@@ -3,10 +3,10 @@
 <!-- ファーストビュー -->
 <div class="l-sub-fv p-sub-fv">
   <div class="l-inner p-sub-fv__inner p-sub-fv__inner--about">
-    <div class="p-sub-fv__content blog">
+    <div class="p-sub-fv__content contact">
       <div class="p-sub-fv__head">
-        <h1 class="p-sub-fv__title">スタッフブログ</h1>
-        <span class="p-sub-fv__sub-title">STAFF BLOG</span>
+        <h1 class="p-sub-fv__title">お問い合わせ</h1>
+        <span class="p-sub-fv__sub-title">CONTACT</span>
       </div>
     </div>
   </div>

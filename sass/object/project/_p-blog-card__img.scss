@@ -1,15 +1,26 @@
 .p-blog-card__img {
+  align-self: flex-start;
+  @include mq(tab) {
+    padding-top: calc((153/670)*100%);
+    width: calc((244/670)*100%);
+  }
+  padding-top: calc((101/335)*100%);
   position: relative;
   width: calc((133/335)*100%);
-  padding-top: calc((101/335)*100%);
-  align-self: flex-start;
 }
 
 .p-blog-card__img img {
   height: 100%;
   left: 0;
+  object-fit: cover;
   position: absolute;
   top: 0;
   width: 100%;
-  object-fit: cover;
+}
+
+.p-blog-card__img.aside {
+  @include mq(tab) {
+    padding-top: calc((91.13/300)*100%);
+    width: calc((120/300)*100%);
+  }
 }

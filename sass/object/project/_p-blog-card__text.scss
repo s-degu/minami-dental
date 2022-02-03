@@ -1,5 +1,16 @@
 .p-blog-card__text {
   font-size: 14px;
+  @include mq(tab) {
+    font-size: 16px;
+    margin-top: 12px;
+  }
   line-height: calc(20/14);
   margin-top: 4px;
+}
+
+.p-blog-card__text.aside {
+  @include mq(tab) {
+    font-size: 14px;
+    margin-top: 6px;
+  }
 }

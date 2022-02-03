@@ -1,0 +1,5 @@
+.p-sub-blog__items{
+ @include mq(tab) {
+   flex: 0 0 calc((670/1000)*100%);
+ }
+}
