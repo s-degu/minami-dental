@@ -1,0 +1,9 @@
+.p-form__submit {
+  background-color: transparent;
+  border: 1px solid currentColor;
+  border-radius: 24px;
+  color: $main-color;
+  font-size: 14px;
+  padding: 9px 0 4px 0;
+  width: calc((273/335)*100%);
+}

@@ -32,250 +32,73 @@
 </div>
 <!-- パンくず -->
 
-<div class="l-sub-blog p-sub-blog">
-  <div class="l-inner p-sub-blog__inner">
-    <div class="p-sub-blog__content">
-      <div class="p-sub-blog__items p-blog-cards">
-        <?php
-          $args = array(
-            'paged' => $paged,
-            'post_type' => 'blog',
-            'posts_per_page' => 1,
-          );
-          $my_query = new WP_Query($args);
-          $paged = get_query_var('page');
-          if ($my_query->have_posts()) :
-          while ($my_query->have_posts()) : $my_query->the_post();
-        ?>
-        <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
-            <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-            </div>
-            <div class="p-blog-card__body">
-              <span class="p-blog-card__label">カテゴリ1</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
-            </div>
-          </a>
-        </article>
-        <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
-            <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-            </div>
-            <div class="p-blog-card__body">
-              <span class="p-blog-card__label">お知らせ</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
-            </div>
-          </a>
-        </article>
-        <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
-            <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-            </div>
-            <div class="p-blog-card__body">
-              <span class="p-blog-card__label">お知らせ</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
-            </div>
-          </a>
-        </article>
-        <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
-            <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-            </div>
-            <div class="p-blog-card__body">
-              <span class="p-blog-card__label">お知らせ</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
-            </div>
-          </a>
-        </article>
-        <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
-            <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-            </div>
-            <div class="p-blog-card__body">
-              <span class="p-blog-card__label">お知らせ</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
-            </div>
-          </a>
-        </article>
-        <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
-            <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-            </div>
-            <div class="p-blog-card__body">
-              <span class="p-blog-card__label">お知らせ</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
-            </div>
-          </a>
-        </article>
-        <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
-            <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-            </div>
-            <div class="p-blog-card__body">
-              <span class="p-blog-card__label">お知らせ</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
-            </div>
-          </a>
-        </article>
-        <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
-            <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-            </div>
-            <div class="p-blog-card__body">
-              <span class="p-blog-card__label">お知らせ</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
-            </div>
-          </a>
-        </article>
-        <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
-            <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-            </div>
-            <div class="p-blog-card__body">
-              <span class="p-blog-card__label">お知らせ</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
-            </div>
-          </a>
-        </article>
-        <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
-            <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-            </div>
-            <div class="p-blog-card__body">
-              <span class="p-blog-card__label">お知らせ</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
-            </div>
-          </a>
-        </article>
-        <?php endwhile; endif; ?>
-        <?php wp_reset_query();?>
-        <div class="p-sub-blog__page-navi">
-          <?php if(function_exists('wp_pagenavi')) wp_pagenavi(array('query' => $my_query));?>
-        </div>
-      </div>
-      <aside class="l-sub-blog__sideber p-sub-blog__sideber p-sidebar">
-        <div class="p-sidebar__block p-sidebar__clinic">
-          <h2 class="p-sidebar__title">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-ciinic.svg" alt="">
-            クリニックの紹介
-          </h2>
-          <div class="p-sidebar-clinic__img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/side-clinic.jpg" alt="">
-          </div>
-          <h3 class="p-sidebar__sub-title">みなみ歯科クリニック</h3>
-          <p class="p-sidebar-clinic__text">お子様からご高齢の方まで、快適な空間で治療が受けられる場を作り、地域医療に貢献しきたいと考えております。</p>
-          <a href="#" class="p-sidebar-clinic__button">当院について</a>
-        </div>
-        <div class="l-new-article p-sidebar__new-article p-new-article">
-          <h2 class="p-sidebar__title">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-article.svg" alt="">
-            新着記事
-          </h2>
-          <div class="l-new-article__cards p-sub-blog__items p-blog-cards">
-            <article class="p-blog-cards__item p-blog-card">
-              <a class="p-blog-card__link" href="#">
-                <div class="p-blog-card__img aside">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-                </div>
-                <div class="p-blog-card__body aside">
-                  <span class="p-blog-card__label aside">お知らせ</span>
-                  <p class="p-blog-card__text aside">記事のタイトルが入ります。記事のタイトルます…</p>
-                  <time datetime="2020-02-14" class="p-blog-card__date aside">2020.02.14</time>
-                </div>
-              </a>
-            </article>
-            <article class="p-blog-cards__item p-blog-card">
-              <a class="p-blog-card__link" href="#">
-                <div class="p-blog-card__img aside">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-                </div>
-                <div class="p-blog-card__body aside">
-                  <span class="p-blog-card__label aside">お知らせ</span>
-                  <p class="p-blog-card__text aside">記事のタイトルが入ります。記事のタイトルます…</p>
-                  <time datetime="2020-02-14" class="p-blog-card__date aside">2020.02.14</time>
-                </div>
-              </a>
-            </article>
-            <article class="p-blog-cards__item p-blog-card">
-              <a class="p-blog-card__link" href="#">
-                <div class="p-blog-card__img aside">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-                </div>
-                <div class="p-blog-card__body aside">
-                  <span class="p-blog-card__label aside">お知らせ</span>
-                  <p class="p-blog-card__text aside">記事のタイトルが入ります。記事のタイトルます…</p>
-                  <time datetime="2020-02-14" class="p-blog-card__date aside">2020.02.14</time>
-                </div>
-              </a>
-            </article>
-            <article class="p-blog-cards__item p-blog-card">
-              <a class="p-blog-card__link" href="#">
-                <div class="p-blog-card__img aside">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-                </div>
-                <div class="p-blog-card__body aside">
-                  <span class="p-blog-card__label aside">お知らせ</span>
-                  <p class="p-blog-card__text aside">記事のタイトルが入ります。記事のタイトルます…</p>
-                  <time datetime="2020-02-14" class="p-blog-card__date aside">2020.02.14</time>
-                </div>
-              </a>
-            </article>
-            <article class="p-blog-cards__item p-blog-card">
-              <a class="p-blog-card__link" href="#">
-                <div class="p-blog-card__img aside">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-                </div>
-                <div class="p-blog-card__body aside">
-                  <span class="p-blog-card__label aside">お知らせ</span>
-                  <p class="p-blog-card__text aside">記事のタイトルが入ります。記事のタイトルます…</p>
-                  <time datetime="2020-02-14" class="p-blog-card__date aside">2020.02.14</time>
-                </div>
-              </a>
-            </article>
-
-          </div>
-          <div class="p-sub-blog__category p-blog-categry l-blog-categry">
-            <h2 class="p-sidebar__title">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-category.svg" alt="">
-              カテゴリー
-            </h2>
-            <ul class="p-blog-category__lists">
-              <li class="p-blog-categpry__item">
-                <a href="#">テキストテキスト</a>
-              </li>
-              <li class="p-blog-categpry__item">
-                <a href="#">テキストテキスト</a>
-              </li>
-              <li class="p-blog-categpry__item">
-                <a href="#">テキストテキスト</a>
-              </li>
-              <li class="p-blog-categpry__item">
-                <a href="#">テキストテキスト</a>
-              </li>
-            </ul>
-          </div>
-      </aside>
+<div class="l-sub-contact p-sub-contact">
+  <div class="l-inner p-sub-contact__inner">
+    <p class="p-sub-contact__text">
+      お急ぎの方は、お電話(TEL 03-1234-5678)での連絡がスムーズです。<br>
+      以下のフォームからお問い合わせ頂いた場合、ご連絡が2～3日後になる場合がございます。<br>
+      また、メールアドレスの入力間違いにより送信できない事が発生しておりますので、メールアドレスは正しくご入力下さい。<br>
+      <span class="p-sub-contact__text--red">※3営業日以内に当院からの返信がない場合には、お電話(TEL 03-1234-5678)にてお問い合わせ下さい。<span>
+    </p>
+    <div class="c-title-wrap p-sub-contact__title">
+      <h2 class="c-section__title">お問い合わせ<br>フォーム</h2>
     </div>
+    <div class="p-sub-contact__form p-form">
+      <form class="p-form__area" action="post">
+        <div class="p-form__lists">
+          <div class="p-form__list p-form-item">
+            <div class="p-form-item__left">
+              <label class="p-form-item__text" for="name">お名前</label>
+              <span class="p-form-item__required">必須</span>
+            </div>
+            <div class="p-form-item__right">
+              <input name="name" id="aname" type="text" placeholder="山田　太郎">
+            </div>
+          </div>
+          <div class="p-form__list p-form-item">
+            <div class="p-form-item__left">
+              <label class="p-form-item__text" for="kana">フリガナ</label>
+              <span class="p-form-item__required">必須</span>
+            </div>
+            <div class="p-form-item__right">
+              <input name="kana" id="kana" type="text" placeholder="ヤマダ　タロウ">
+            </div>
+          </div>
+          <div class="p-form__list p-form-item">
+            <div class="p-form-item__left">
+              <label class="p-form-item__text" for="tel">電話番号</label>
+              <span class="p-form-item__required">必須</span>
+            </div>
+            <div class="p-form-item__right">
+              <input name="tel" id="tel" type="text" placeholder="000-0000-0000">
+            </div>
+          </div>
+          <div class="p-form__list p-form-item">
+            <div class="p-form-item__left">
+              <label class="p-form-item__text" for="mail">メールアドレス</label>
+              <span class="p-form-item__required">必須</span>
+            </div>
+            <div class="p-form-item__right">
+              <input name="mail" id="mail" type="mail" placeholder="xxx@example.com">
+            </div>
+          </div>
+          <div class="p-form__list p-form-item">
+            <div class="p-form-item__left">
+              <label class="p-form-item__text" for="inquiry">お問い合わせ内容</label>
+              <span class="p-form-item__required">必須</span>
+            </div>
+            <div class="p-form-item__right">
+              <textarea name="inquiry" placeholder="ご自由にご記入ください。"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="p-form__button-wrap">
+          <button class="p-form__submit" type="submit">送　信</button>
+        </div>
+      </form>
+
+    </div>
+
   </div>
 </div>
 

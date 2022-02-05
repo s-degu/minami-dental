@@ -1,0 +1,10 @@
+.p-form__list {
+  &:nth-child(n+2) {
+    margin-top: 23px;
+    // border-top: 1px solid #DDDDDD;
+  }
+  &:last-child {
+    border-bottom:1px solid #ddd;
+    padding-bottom: 18px;
+  }
+}
