@@ -43,12 +43,7 @@
     <div class="c-title-wrap p-sub-contact__title">
       <h2 class="c-section__title">お問い合わせ<br class="u-hidden-pc">フォーム</h2>
     </div>
-
-    <?php if(have_posts()): while(have_posts()):the_post(); ?>
-      <?php the_content(); ?>
-    <?php endwhile; endif; ?>
-
-    <!-- <div class="p-sub-contact__form p-form">
+    <div class="p-sub-contact__form p-form">
       <form class="p-form__area" action="post">
         <div class="p-form__lists">
           <div class="p-form__list p-form-item">
@@ -57,7 +52,7 @@
               <span class="p-form-item__required">必須</span>
             </div>
             <div class="p-form-item__right">
-              <input name="name" id="name" type="text" placeholder="山田　太郎">
+              <input name="name" id="aname" type="text" placeholder="山田　太郎">
             </div>
           </div>
           <div class="p-form__list p-form-item">
@@ -101,7 +96,8 @@
           <button class="p-form__submit" type="submit">送　信</button>
         </div>
       </form>
-    </div> -->
+
+    </div>
 
   </div>
 </div>

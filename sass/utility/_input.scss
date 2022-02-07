@@ -1,5 +1,6 @@
 input[type="text"],
-input[type="mail"],
+input[type="email"],
+input[type="tel"],
 textarea {
   background-color: #f6f6f6;
   border: none;
@@ -11,4 +12,7 @@ textarea {
 textarea {
   min-height: 160px;
   resize: vertical;
+  @include mq(tab) {
+    min-height: 200px;
+  }
 }

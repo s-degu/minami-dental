@@ -5,6 +5,7 @@
   $staff = esc_url(home_url('/staff'));
   $blog = get_post_type_archive_link( "blog" );
   $contact = esc_url(home_url('/contact'));
+  $reservation = esc_url(home_url('/reservation'));
 ?>
 
 <!DOCTYPE html>

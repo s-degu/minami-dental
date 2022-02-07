@@ -137,25 +137,6 @@ legend {
 
 /* button */
 
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button {
-	-webkit-box-sizing: content-box;
-	-webkit-appearance: button;
-	-moz-appearance: button;
-	appearance: button;
-	background: #efefef;
-	border: 1px solid #999;
-	border-radius: 0;
-	color: #000;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 20px;
-	margin: 0;
-	padding: 10px 30px;
-}
-
 /* ブラウザ対策
 ---------------------------------------------------------------------------- */
 
@@ -629,12 +610,24 @@ summary {
 	margin-top: 6.125rem;
 }
 
+.l-reservation {
+	position: fixed;
+	right: 0;
+	top: 176px;
+	z-index: 30;
+}
+
 .l-sub-blog__sideber {
 	margin-top: 165px;
 }
 
 .l-sub-blog {
 	margin-bottom: 90px;
+}
+
+.l-sub-contact-thanks {
+	margin-bottom: 96px;
+	margin-top: 55px;
 }
 
 .l-sub-contact {
@@ -1412,7 +1405,6 @@ summary {
 
 .p-form-item__left {
 	align-items: center;
-	border-top: 1px solid #ddd;
 	display: flex;
 	padding-top: 24px;
 }
@@ -1432,6 +1424,10 @@ summary {
 
 .p-form-item__text {
 	font-size: 16px;
+}
+
+.p-form-item {
+	border-top: 1px solid #ddd;
 }
 
 .p-geeting__title {
@@ -2227,6 +2223,25 @@ summary {
 	width: 62%;
 }
 
+.p-reservation {
+	align-items: center;
+	background-color: #1391E6;
+	border-radius: 20px 0 0 20px;
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	height: 120px;
+	justify-content: center;
+	width: 92px;
+}
+
+.p-reservation__text {
+	font-size: 14px;
+	line-height: calc(18/14);
+	margin-top: 12px;
+}
+
 .p-sidebar__new-article {
 	margin-top: 57px;
 }
@@ -2476,8 +2491,14 @@ summary {
 	text-align: center;
 }
 
+.wpcf7-spinner {
+	display: block;
+	margin: 10px auto 0;
+}
+
 input[type="text"],
-input[type="mail"],
+input[type="email"],
+input[type="tel"],
 textarea {
 	background-color: #f6f6f6;
 	border: none;
@@ -2678,6 +2699,11 @@ html {
 	flex: 0 0 calc((300/1000)*100%);
 	margin-left: auto;
 	margin-top: -10px;
+}
+
+.l-sub-contact {
+	margin-bottom: 99px;
+	margin-top: 74px;
 }
 
 .l-sub-fv {
@@ -2986,6 +3012,38 @@ html {
 	margin-top: 37px;
 	padding: 0;
 	width: 1000px;
+}
+
+.p-form__button-wrap {
+	margin-top: 79px;
+}
+
+.p-form__submit {
+	border-radius: 28px;
+	font-size: 1rem;
+	line-height: 1;
+	padding: 19px 0;
+	width: 22.5rem;
+}
+
+.p-form-item__left {
+	padding-top: 0;
+	width: calc((240/728)*100%);
+}
+
+.p-form-item__required {
+	margin-left: 16px;
+}
+
+.p-form-item__right {
+	flex-grow: 1;
+	margin-top: 0;
+}
+
+.p-form-item {
+	display: flex;
+	padding-bottom: 3px;
+	padding-top: 26px;
 }
 
 .p-geeting__title {
@@ -3452,6 +3510,20 @@ html {
 	flex: 0 0 calc((670/1000)*100%);
 }
 
+.p-sub-contact__form {
+	margin-top: 71px;
+}
+
+.p-sub-contact__inner {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 808px;
+}
+
+.p-sub-contact__title {
+	margin-top: 158px;
+}
+
 .p-sub-fv__content {
 	padding-top: calc((340/1160)*100%);
 }
@@ -3500,6 +3572,10 @@ html {
 
 .p-sub-fv__sub-title {
 	font-size: 0.875rem;
+}
+
+textarea {
+	min-height: 200px;
 }
 
 .wp-pagenavi a.previouspostslink {

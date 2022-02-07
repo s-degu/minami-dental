@@ -1,3 +1,6 @@
 .p-sub-contact__form {
+  @include mq(tab) {
+    margin-top: 71px;
+  }
   margin-top: 68px;
 }

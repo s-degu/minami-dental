@@ -1,4 +1,7 @@
 .p-form__button-wrap {
-  text-align: center;
+  @include mq(tab) {
+    margin-top: 79px;
+  }
   margin-top: 68px;
+  text-align: center;
 }

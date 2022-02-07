@@ -6,4 +6,11 @@
   font-size: 14px;
   padding: 9px 0 4px 0;
   width: calc((273/335)*100%);
+  @include mq(tab) {
+    width: rem(360);
+    line-height: 1;
+    border-radius: 28px;
+    font-size: rem(16);
+    padding: 19px 0;
+  }
 }

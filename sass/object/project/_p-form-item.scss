@@ -1,0 +1,8 @@
+.p-form-item {
+  border-top: 1px solid #ddd;
+  @include mq(tab) {
+    display: flex;
+    padding-bottom: 3px;
+    padding-top: 26px;
+  }
+}

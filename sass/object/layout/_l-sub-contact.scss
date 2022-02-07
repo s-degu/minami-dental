@@ -1,4 +1,8 @@
 .l-sub-contact {
+  @include mq(tab) {
+    margin-bottom: 99px;
+    margin-top: 74px;
+  }
   margin-bottom: 101px;
   margin-top: 55px;
 }

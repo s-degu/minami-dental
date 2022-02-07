@@ -1,3 +1,13 @@
+<?php
+  $home = esc_url(home_url('/'));
+  $about = esc_url(home_url('/about'));
+  $medical = esc_url(home_url('/medical'));
+  $staff = esc_url(home_url('/staff'));
+  $blog = get_post_type_archive_link( "blog" );
+  $contact = esc_url(home_url('/contact'));
+  $reservation = esc_url(home_url('/reservation'));
+?>
+
 <div class="c-footer-top-img"></div>
 <footer class="l-footer p-footer">
   <div class="l-inner p-footer__inner">
@@ -111,6 +121,13 @@
     </div>
   </div>
 </footer>
+
+<!-- web予約 -->
+<a href="<?php echo $reservation?>" class="l-reservation p-reservation u-hidden-sp">
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-reservation.svg" alt="">
+  <p class="p-reservation__text">WEB予約<br>はこちら</p>
+</a>
+<!-- web予約 -->
 
 <?php wp_footer(); ?>
 </body>

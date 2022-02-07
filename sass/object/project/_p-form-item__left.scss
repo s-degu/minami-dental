@@ -1,6 +1,10 @@
 .p-form-item__left {
   align-items: center;
+  // border-top: 1px solid #ddd;
   display: flex;
+  @include mq(tab) {
+    padding-top: 0;
+    width: calc((240/728)*100%);
+  }
   padding-top: 24px;
-  border-top: 1px solid #ddd;
 }
