@@ -98,6 +98,7 @@ input[type="radio"],
 input[type="checkbox"] {
 	display: none;
 }
+
 input[type="radio"] + span,
 input[type="checkbox"] + span {
 	display: inline-block;
@@ -110,6 +111,7 @@ input[type="checkbox"] + span {
 	line-height: 1;
 	cursor: pointer;
 }
+
 input[type="radio"] + span::before,
 input[type="checkbox"] + span::before {
 	position: absolute;
@@ -238,7 +240,7 @@ input[type="radio"]:checked + span::after,
 input[type="checkbox"]:checked + span::after {
 	position: absolute;
 	content: "";
-	top: 50%;
+	top: calc(50% + 4px);
 	left: -4px;
 	width: 8px;
 	height: 8px;

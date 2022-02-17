@@ -123,7 +123,7 @@
 </footer>
 
 <!-- web予約 -->
-<a href="<?php echo $reservation?>" class="l-reservation p-reservation u-hidden-sp">
+<a href="<?php echo $reservation?>" class="l-reservation p-reservation">
   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-reservation.svg" alt="">
   <p class="p-reservation__text">WEB予約<br>はこちら</p>
 </a>

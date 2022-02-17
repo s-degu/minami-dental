@@ -1,4 +1,5 @@
 .p-form-item__right {
+  font-size: 0;
   @include mq(tab) {
     flex-grow: 1;
     margin-top: 0;

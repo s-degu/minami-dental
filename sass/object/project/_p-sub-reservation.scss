@@ -1,0 +1,37 @@
+.p-sub-reservation__textarea + .p-sub-reservation__textarea {
+  margin-top: 34px;
+}
+
+.p-sub-reservation__title {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: .08em;
+  line-height: calc(32/20);
+}
+
+.p-sub-reservation__tel-wrap {
+  color: $main-color;
+  display: inline-block;
+  margin-top: 31px;
+  text-align: center;
+}
+
+// .p-sub-reservation__tel {
+//   display: block;
+//   font-size: 32px;
+//   font-weight: bold;
+//   letter-spacing: -.02em;
+//   line-height: calc(36/32);
+// }
+
+.p-sub-reservation__time {
+  font-size: 12px;
+  line-height: 1;
+  margin-top: 3px;
+}
+
+.p-sub-reservaion__text {
+  font-size: 14px;
+  line-height: calc(24/14);
+  margin-top: 23px;
+}
