@@ -164,35 +164,42 @@
               </label>
             </div>
           </div>
-
-
           <div class="p-form__list p-form-item">
             <div class="p-form-item__left">
               <p class="p-form-item__text">ご連絡方法</p>
               <span class="p-form-item__required">必須</span>
             </div>
             <div class="p-form-item__right">
-              <label>
-                <input type="radio" value="初診" name="radio-1" checked>
-                <span>初診</span>
-              </label>
-              <label>
-                <input type="radio" value="再診" name="radio-1">
-                <span>再診</span>
-              </label>
+              <select name="" id="">
+                <option value="メール">メール</option>
+                <option value="電話">電話</option>
+                <option value="メール">メール</option>
+              </select>
             </div>
           </div>
-
-
-
-
-
+          <div class="p-form__list p-form-item">
+            <div class="p-form-item__left">
+              <p class="p-form-item__text">希望日</p>
+            </div>
+            <div class="p-form-item__right">
+              <input type="date" name="hope1" id="">
+              <input type="date" name="hope2" id="">
+              <input type="date" name="hope3" id="">
+            </div>
+          </div>
+          <div class="p-form__list p-form-item">
+            <div class="p-form-item__left">
+              <p class="p-form-item__text">お問い合わせ内容</p>
+            </div>
+            <div class="p-form-item__right">
+              <textarea name="reservation-textarea" placeholder="ご自由にご記入ください。" ></textarea>
+            </div>
+          </div>
         </div>
         <div class="p-form__button-wrap">
           <button class="p-form__submit" type="submit">送　信</button>
         </div>
       </form>
-
     </div>
   </div>
 </div>

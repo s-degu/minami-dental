@@ -26,10 +26,28 @@ input[type="checkbox"] + span {
   // padding: 0 0 0 1px;
 }
 
-.p-form__check-box > label  {
+.p-form__check-box > label {
   &:nth-child(3n) {
     input[type="checkbox"] + span {
       margin-right: 0;
     }
   }
+}
+
+select {
+  background-color: #c2c2c2;
+  border-color: #c2c2c2;
+  width: 100%;
+}
+
+input[type="date"] {
+  background-color: #f6f6f6;
+  border-color: #f6f6f6;
+  border-radius: 4px;
+  color: #c2c2c2 ;
+  width: 100%;
+}
+
+input[type="date"] + input[type="date"] {
+  margin-top: rem(20);
 }

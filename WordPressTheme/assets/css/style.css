@@ -1439,6 +1439,17 @@ summary {
 	margin-top: 10px;
 }
 
+.p-form-item__right > select {
+	background-color: #f6f6f6;
+	border-color: #f6f6f6;
+	border-radius: 4px;
+	font-size: 1rem;
+}
+
+.p-form-item__right > textarea {
+	font-size: 1rem;
+}
+
 .p-form-item__text {
 	font-size: 16px;
 }
@@ -2613,6 +2624,24 @@ input[type="checkbox"] + span {
 
 .p-form__check-box > label:nth-child(3n) input[type="checkbox"] + span {
 	margin-right: 0;
+}
+
+select {
+	background-color: #c2c2c2;
+	border-color: #c2c2c2;
+	width: 100%;
+}
+
+input[type="date"] {
+	background-color: #f6f6f6;
+	border-color: #f6f6f6;
+	border-radius: 4px;
+	color: #c2c2c2;
+	width: 100%;
+}
+
+input[type="date"] + input[type="date"] {
+	margin-top: 1.25rem;
 }
 
 .wp-pagenavi a.previouspostslink {
