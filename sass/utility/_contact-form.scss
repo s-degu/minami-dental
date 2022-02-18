@@ -3,7 +3,6 @@
   margin: 10px auto 0;
 }
 
-
 input[type="radio"] + span,
 input[type="checkbox"] + span {
   color: $text-color;
@@ -18,6 +17,10 @@ input[type="checkbox"] + span {
   padding: 8px 0 8px 24px;
   position: relative;
   text-align: center;
+}
+
+input[type="checkbox"] + span {
+  margin-bottom: 2px;
 }
 
 input[type="radio"] + span {

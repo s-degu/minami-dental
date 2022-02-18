@@ -8,3 +8,15 @@
     padding-bottom: 18px;
   }
 }
+
+.p-form__list.reserve-textarea {
+  padding-bottom: 25px;
+}
+
+input[type="checkbox"] + span {
+  margin-right: 24px;
+  @include mq("tab") {
+    margin-right: 32px;
+  }
+  // padding: 0 0 0 1px;
+}

@@ -158,10 +158,6 @@
                 <input type="checkbox" name="check-box1" value="その他">
                 <span>その他</span>
               </label>
-              <label>
-                <input type="checkbox" name="check-box1" value="咬み合わせ">
-                <span>咬み合わせ</span>
-              </label>
             </div>
           </div>
           <div class="p-form__list p-form-item">
@@ -187,7 +183,7 @@
               <input type="date" name="hope3" id="">
             </div>
           </div>
-          <div class="p-form__list p-form-item">
+          <div class="p-form__list p-form-item reserve-textarea">
             <div class="p-form-item__left">
               <p class="p-form-item__text">お問い合わせ内容</p>
             </div>

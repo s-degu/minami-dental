@@ -29,7 +29,17 @@ input[type="checkbox"] + span {
 .p-form__check-box > label {
   &:nth-child(3n) {
     input[type="checkbox"] + span {
+      @include mq("tab") {
+        margin-right: 32px;
+      }
       margin-right: 0;
+    }
+  }
+  &:nth-child(4n) {
+    @include mq("tab") {
+      input[type="checkbox"] + span {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -45,9 +55,12 @@ input[type="date"] {
   border-color: #f6f6f6;
   border-radius: 4px;
   color: #c2c2c2 ;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-top: 12px;
   width: 100%;
 }
 
 input[type="date"] + input[type="date"] {
-  margin-top: rem(20);
+  margin-top: 15px;
 }
