@@ -2549,6 +2549,15 @@ input[type="checkbox"] + span {
 	margin-top: 23px;
 }
 
+.p-sub-reservation__text {
+	font-size: 0.875rem;
+	line-height: calc(24/14);
+}
+
+.p-sub-reservation__text--red {
+	color: #EE5A6D;
+}
+
 .p-test {
 	color: red;
 	font-size: 1.25rem;

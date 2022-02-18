@@ -35,3 +35,12 @@
   line-height: calc(24/14);
   margin-top: 23px;
 }
+
+.p-sub-reservation__text {
+  font-size: rem(14);
+  line-height: calc(24/14);
+}
+
+.p-sub-reservation__text--red {
+  color: $accent-color;
+}
