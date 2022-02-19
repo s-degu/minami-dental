@@ -1,12 +1,33 @@
 .p-header__nav-link {
   align-items: center;
-  // display: block;
   display: flex;
   flex-direction: column;
   font-size: rem(11);
   font-weight: bold;
   height: inherit;
   justify-content: center;
+  position: relative;
+  &::after {
+    background-color: $main-color;
+    bottom: 9px;
+    content: "";
+    height: 2px;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: all .3s ease;
+    width: 20px;
+  }
+  &:hover {
+    color: $main-color;
+    svg > path {
+      fill: $main-color;
+    }
+    &::after {
+      opacity: 1;
+    }
+  }
 }
 
 .p-header__nav-link > span {

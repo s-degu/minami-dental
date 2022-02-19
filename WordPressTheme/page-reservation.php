@@ -61,7 +61,10 @@
       <h2 class="c-section__title">予約フォーム</h2>
     </div>
     <div class="p-sub-contact__form p-form">
-      <form class="p-form__area" action="post">
+      <?php if(have_posts()): while(have_posts()):the_post(); ?>
+        <?php the_content(); ?>
+      <?php endwhile; endif; ?>
+      <!-- <form class="p-form__area" action="post">
         <div class="p-form__lists">
           <div class="p-form__list p-form-item">
             <div class="p-form-item__left">
@@ -195,7 +198,7 @@
         <div class="p-form__button-wrap">
           <button class="p-form__submit" type="submit">送　信</button>
         </div>
-      </form>
+      </form> -->
     </div>
   </div>
 </div>

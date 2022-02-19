@@ -9,10 +9,11 @@ textarea {
   width: 100%;
 }
 
-textarea {
+.reservation-textarea > textarea {
   @include mq(tab) {
     min-height: 200px;
   }
+  font-size: rem(16);
   min-height: 160px;
   resize: vertical;
 }
@@ -23,18 +24,18 @@ input[type="checkbox"] {
 
 input[type="checkbox"] + span {
   margin-right: 24px;
-  // padding: 0 0 0 1px;
 }
 
-.p-form__check-box > label {
+.wpcf7-list-item {
   &:nth-child(3n) {
-    input[type="checkbox"] + span {
+    label > span {
       @include mq("tab") {
         margin-right: 32px;
       }
       margin-right: 0;
     }
   }
+
   &:nth-child(4n) {
     @include mq("tab") {
       input[type="checkbox"] + span {
@@ -61,6 +62,7 @@ input[type="date"] {
   width: 100%;
 }
 
-input[type="date"] + input[type="date"] {
+.hope-date2 > input[type="date"],
+.hope-date3 > input[type="date"] {
   margin-top: 15px;
 }

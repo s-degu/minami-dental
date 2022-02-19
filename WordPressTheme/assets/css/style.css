@@ -710,7 +710,7 @@ summary {
 
 .c-footer-top-img::before {
 	background-image: url(../../../WordPressTheme/assets/img/wave.svg);
-	background-repeat: no-repeat;
+	background-size: cover;
 	content: "";
 	height: inherit;
 	left: 0;
@@ -1447,7 +1447,7 @@ input[type="checkbox"] + span {
 	margin-top: 10px;
 }
 
-.p-form-item__right > select {
+.p-form-item__right > span > select {
 	background-color: #f6f6f6;
 	border-color: #f6f6f6;
 	border-radius: 4px;
@@ -1715,6 +1715,32 @@ input[type="checkbox"] + span {
 	font-weight: bold;
 	height: inherit;
 	justify-content: center;
+	position: relative;
+}
+
+.p-header__nav-link::after {
+	background-color: #1391E6;
+	bottom: 9px;
+	content: "";
+	height: 2px;
+	left: 50%;
+	opacity: 0;
+	position: absolute;
+	transform: translateX(-50%);
+	transition: all .3s ease;
+	width: 20px;
+}
+
+.p-header__nav-link:hover {
+	color: #1391E6;
+}
+
+.p-header__nav-link:hover svg > path {
+	fill: #1391E6;
+}
+
+.p-header__nav-link:hover::after {
+	opacity: 1;
 }
 
 .p-header__nav-link > span {
@@ -2631,7 +2657,8 @@ textarea {
 	width: 100%;
 }
 
-textarea {
+.reservation-textarea > textarea {
+	font-size: 1rem;
 	min-height: 160px;
 	resize: vertical;
 }
@@ -2644,7 +2671,7 @@ input[type="checkbox"] + span {
 	margin-right: 24px;
 }
 
-.p-form__check-box > label:nth-child(3n) input[type="checkbox"] + span {
+.wpcf7-list-item:nth-child(3n) label > span {
 	margin-right: 0;
 }
 
@@ -2665,7 +2692,8 @@ input[type="date"] {
 	width: 100%;
 }
 
-input[type="date"] + input[type="date"] {
+.hope-date2 > input[type="date"],
+.hope-date3 > input[type="date"] {
 	margin-top: 15px;
 }
 
@@ -3740,15 +3768,15 @@ input[type="checkbox"] + span {
 	font-size: 3.125rem;
 }
 
-textarea {
+.reservation-textarea > textarea {
 	min-height: 200px;
 }
 
-.p-form__check-box > label:nth-child(3n) input[type="checkbox"] + span {
+.wpcf7-list-item:nth-child(3n) label > span {
 	margin-right: 32px;
 }
 
-.p-form__check-box > label:nth-child(4n) input[type="checkbox"] + span {
+.wpcf7-list-item:nth-child(4n) input[type="checkbox"] + span {
 	margin-right: 0;
 }
 

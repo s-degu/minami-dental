@@ -3,7 +3,8 @@
   position: relative;
   &::before {
     background-image: url(../../../WordPressTheme/assets/img/wave.svg);
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
+    background-size: cover;
     content: "";
     height: inherit;
     left: 0;
