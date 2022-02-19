@@ -1,10 +1,19 @@
 .p-concept__button {
+  background: $white;
+  @include mq(tab) {
+    padding: 14px 45px 13px;
+  }
+  line-height: 1;
   margin-top: rem(37);
   padding: 10px 40px 13px;
-  line-height: 1;
-  @include mq(tab) {
-      padding: 14px 45px 13px;
-      
+  transition: all .3s ease;
+  &:hover {
+    background-color: $main-color;
+    color: $white;
+    &::after {
+      color: $white;
+      right: -.5px;
+    }
   }
   &::after {
     color: $main-color;
@@ -17,6 +26,7 @@
     right: 7px;
     top: 50%;
     transform: translateY(-50%);
+    transition: all .3s ease;
     width: 21px;
   }
 }

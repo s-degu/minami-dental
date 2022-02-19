@@ -156,14 +156,16 @@
     </div>
     <div class="p-blog__items">
       <div class="p-blog__item">
-        <div class="p-blog__img-wrap">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog_test.jpg" alt="ほげほげ">
-        </div>
-        <div class="p-blog__body">
-          <span class="p-blog__label c-article-label">お知らせ</span>
-          <div class="p-blog__title c-blog-title">記事のタイトルが入ります。記事のタイトルが入ります…</div>
-          <time class="p-blog__date c-blog-date">2020.02.14</time>
-        </div>
+        <a href="#">
+          <div class="p-blog__img-wrap">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog_test.jpg" alt="ほげほげ">
+          </div>
+          <div class="p-blog__body">
+            <span class="p-blog__label c-article-label">お知らせ</span>
+            <div class="p-blog__title c-blog-title">記事のタイトルが入ります。記事のタイトルが入ります…</div>
+            <time class="p-blog__date c-blog-date">2020.02.14</time>
+          </div>
+        </a>
       </div>
       <div class="p-blog__item">
         <div class="p-blog__img-wrap">

@@ -14,6 +14,12 @@
   // line-height: calc(38/14);
   padding: 7px 40px;
   position: relative;
+  &:hover {
+    &::after {
+      color: $white;
+      right: 2px;
+    }
+  }
   &::after {
     color: #1391e6;
     content: "\f061";
@@ -25,6 +31,7 @@
     right: 7px;
     top: 50%;
     transform: translateY(-50%);
+    transition: all .3s ease;
     width: 21px;
   }
 }

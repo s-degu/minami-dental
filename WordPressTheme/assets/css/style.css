@@ -569,7 +569,8 @@ summary {
 }
 
 .l-blog {
-	margin-top: 9.75rem;
+	margin-bottom: 9.75rem;
+	margin-top: 6.25rem;
 }
 
 .l-breadcrumb {
@@ -676,6 +677,7 @@ summary {
 	font-size: 0.875rem;
 	line-height: calc(24 /16);
 	margin-top: 0.125rem;
+	transition: all .3s ease;
 }
 
 .c-button {
@@ -685,6 +687,12 @@ summary {
 	display: inline-block;
 	font-size: 0.875rem;
 	position: relative;
+	transition: all .3s ease;
+}
+
+.c-button:hover {
+	background-color: #1391E6;
+	color: #fff;
 }
 
 .c-footer-button {
@@ -808,6 +816,11 @@ summary {
 	position: relative;
 }
 
+.p-blog__button > a:hover::after {
+	color: #fff;
+	right: 2px;
+}
+
 .p-blog__button > a::after {
 	color: #1391e6;
 	content: "\f061";
@@ -819,11 +832,14 @@ summary {
 	right: 7px;
 	top: 50%;
 	transform: translateY(-50%);
+	transition: all .3s ease;
 	width: 21px;
 }
 
 .p-blog__img-wrap {
+	border-radius: 20px 20px 0 0;
 	max-width: 8.3125rem;
+	overflow: hidden;
 	padding-top: calc((101/335)*100%);
 	position: relative;
 	width: 100%;
@@ -836,16 +852,31 @@ summary {
 	object-fit: cover;
 	position: absolute;
 	top: 0;
+	transition: all .3s ease;
 	width: 100%;
 }
 
 .p-blog__item {
 	align-items: center;
 	display: flex;
+	max-width: 18.75rem;
+	width: 100%;
 }
 
 .p-blog__item + .p-blog__item {
 	margin-top: 1.25rem;
+}
+
+.p-blog__item > a {
+	display: block;
+}
+
+.p-blog__item > a:hover .c-blog-title {
+	color: #1391E6;
+}
+
+.p-blog__item > a:hover .p-blog__img-wrap img {
+	transform: scale(1.2);
 }
 
 .p-blog__items {
@@ -951,9 +982,21 @@ summary {
 }
 
 .p-concept__button {
+	background: #fff;
 	line-height: 1;
 	margin-top: 2.3125rem;
 	padding: 10px 40px 13px;
+	transition: all .3s ease;
+}
+
+.p-concept__button:hover {
+	background-color: #1391E6;
+	color: #fff;
+}
+
+.p-concept__button:hover::after {
+	color: #fff;
+	right: -.5px;
 }
 
 .p-concept__button::after {
@@ -967,6 +1010,7 @@ summary {
 	right: 7px;
 	top: 50%;
 	transform: translateY(-50%);
+	transition: all .3s ease;
 	width: 21px;
 }
 
@@ -2307,7 +2351,12 @@ input[type="checkbox"] + span {
 	flex-direction: column;
 	height: 120px;
 	justify-content: center;
+	transition: all .3s ease;
 	width: 92px;
+}
+
+.p-reservation:hover {
+	background-color: #0060A0;
 }
 
 .p-reservation__text {
@@ -2843,6 +2892,10 @@ html {
 .l-about-gellery {
 	margin-bottom: 160px;
 	margin-top: 156px;
+}
+
+.l-blog {
+	margin-top: 9.75rem;
 }
 
 .l-breadcrumb {

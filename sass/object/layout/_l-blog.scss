@@ -1,3 +1,7 @@
 .l-blog {
-  margin-top: rem(156);
+  @include mq("tab") {
+    margin-top: rem(156);
+  }
+  margin-bottom: rem(156);
+  margin-top: rem(100);
 }
