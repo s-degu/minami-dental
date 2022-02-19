@@ -2162,6 +2162,7 @@ input[type="checkbox"] + span {
 	position: absolute;
 	right: 0;
 	top: 11%;
+	transition: all .3s ease;
 	width: 21px;
 }
 
@@ -2185,6 +2186,16 @@ input[type="checkbox"] + span {
 	padding-right: 2.1875rem;
 	padding-top: 0.75rem;
 	position: relative;
+	transition: all .3s ease;
+}
+
+.p-news__list:hover {
+	color: #1391E6;
+}
+
+.p-news__list:hover .p-news__content::after {
+	color: #1391E6;
+	right: -2px;
 }
 
 .p-news__title--en {

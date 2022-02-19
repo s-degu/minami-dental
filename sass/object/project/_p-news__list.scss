@@ -13,4 +13,12 @@
   padding-right: rem(35);
   padding-top: rem(12);
   position: relative;
+  transition: all .3s ease;
+  &:hover {
+    color: $main-color;
+    .p-news__content::after {
+      color: $main-color;
+      right: -2px;
+    }
+  }
 }
