@@ -1,3 +1,14 @@
+//ロード時一瞬横並びになるのを回避------
+.p-slider__wrap {
+  opacity: 0;
+  transition: opacity .3s linear;
+}
+
+.p-slider__wrap.slick-initialized {
+  opacity: 1;
+}
+//---------------------------------
+
 .slick-dotted.slick-slider {
   margin-bottom: 0;
 }
