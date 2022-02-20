@@ -1880,6 +1880,11 @@ textarea {
 
 .p-header__title a {
 	display: block;
+	transition: opacity .3s ease;
+}
+
+.p-header__title a:hover {
+	opacity: .8;
 }
 
 .p-header {
@@ -2258,6 +2263,11 @@ textarea {
 	display: inline-block;
 	display: block;
 	font-size: 0.6875rem;
+	transition: opacity .3s ease;
+}
+
+.p-news__title--past a:hover {
+	opacity: .8;
 }
 
 .p-news__title {

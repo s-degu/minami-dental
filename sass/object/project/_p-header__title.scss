@@ -9,4 +9,8 @@
 
 .p-header__title a {
   display: block;
+  transition: opacity .3s ease;
+  &:hover {
+    opacity: .8;
+  }
 }
