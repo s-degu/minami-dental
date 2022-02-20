@@ -703,12 +703,30 @@ summary {
 	height: 38px;
 	max-width: 150px;
 	text-align: center;
+	transition: all .3s ease;
 	width: 100%;
+}
+
+.c-footer-button:hover {
+	background-color: #1391E6;
+}
+
+.c-footer-button:hover span {
+	color: #fff;
+}
+
+.c-footer-button:hover path {
+	fill: #fff;
 }
 
 .c-footer-button--blue {
 	background-color: #1391E6;
 	color: #fff;
+	transition: all .3s ease;
+}
+
+.c-footer-button--blue:hover {
+	background-color: #0060A0;
 }
 
 .c-footer-top-img {
@@ -900,6 +918,7 @@ summary {
 
 .p-blog-card__img {
 	align-self: flex-start;
+	overflow: hidden;
 	padding-top: calc((101/335)*100%);
 	position: relative;
 	width: calc((133/335)*100%);
@@ -912,6 +931,7 @@ summary {
 	object-fit: cover;
 	position: absolute;
 	top: 0;
+	transition: all .3s ease;
 	width: 100%;
 }
 
@@ -928,10 +948,19 @@ summary {
 	display: flex;
 }
 
+.p-blog-card__link:hover .p-blog-card__text {
+	color: #1391E6;
+}
+
+.p-blog-card__link:hover .p-blog-card__img img {
+	transform: scale(1.2);
+}
+
 .p-blog-card__text {
 	font-size: 14px;
 	line-height: calc(20/14);
 	margin-top: 4px;
+	transition: all .3s ease;
 }
 
 .p-blog-card + .p-blog-card {
@@ -1500,6 +1529,10 @@ input[type="checkbox"] + span {
 }
 
 .p-form-item__right > textarea {
+	font-size: 1rem;
+}
+
+textarea {
 	font-size: 1rem;
 }
 
@@ -2084,6 +2117,12 @@ input[type="checkbox"] + span {
 	letter-spacing: .08em;
 	padding: 15px 0 11px 0;
 	text-align: center;
+	transition: all .3s ease;
+}
+
+.p-medical-nav__item > a:hover {
+	background-color: #1391E6;
+	color: #fff;
 }
 
 .p-medical-nav__item + .p-medical-nav__item {

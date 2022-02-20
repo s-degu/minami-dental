@@ -12,6 +12,11 @@
   letter-spacing: .08em;
   padding: 15px 0 11px 0;
   text-align: center;
+  transition: all .3s ease;
+  &:hover {
+    background-color: $main-color;
+    color: $white;
+  }
 }
 
 .p-medical-nav__item + .p-medical-nav__item {

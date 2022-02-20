@@ -29,7 +29,15 @@
               <span>WEB予約</span>
             </a>
             <a class="c-footer-button p-footer__button" href="#">
-              <svg height="17.478" viewBox="0 0 17.478 17.478" width="17.478" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="m0 0h17.478v17.478h-17.478z"/><g stroke="#1391e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m4.457 6h11.652a1.461 1.461 0 0 1 1.457 1.457v8.743a1.461 1.461 0 0 1 -1.457 1.457h-11.652a1.461 1.461 0 0 1 -1.457-1.457v-8.743a1.461 1.461 0 0 1 1.457-1.457z" transform="translate(-1.544 -3.087)"/><path d="m17.565 9-7.283 5.445-7.282-5.445" transform="translate(-1.544 -4.531)"/></g></g></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g id="グループ_10810" data-name="グループ 10810" transform="translate(-49)">
+                <rect id="長方形_23052" data-name="長方形 23052" width="24" height="24" transform="translate(49)" fill="none" />
+                <g id="icon-contact" transform="translate(51 4)">
+                  <path id="パス_43721" data-name="パス 43721" d="M5,6H21a2.006,2.006,0,0,1,2,2V20a2.006,2.006,0,0,1-2,2H5a2.006,2.006,0,0,1-2-2V8A2.006,2.006,0,0,1,5,6Z" transform="translate(-3 -6)" fill="none" stroke="#1391e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                  <path id="パス_43722" data-name="パス 43722" d="M23,9,13,16.476,3,9" transform="translate(-3 -6.864)" fill="none" stroke="#1391e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                </g>
+                </g>
+              </svg>
               <span class="p-footer__button--white">お問い合わせ</span>
             </a>
           </div>

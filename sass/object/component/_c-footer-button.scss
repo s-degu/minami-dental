@@ -5,16 +5,30 @@
   font-size: rem(14);
   height: 38px;
   @include mq(tab) {
-    max-width: 220px;
-    height: 56px;
     border-radius: 30px;
+    height: 56px;
+    max-width: 220px;
   }
   max-width: 150px;
   text-align: center;
+  transition: all .3s ease;
   width: 100%;
+  &:hover {
+    background-color: $main-color;
+    span {
+      color: $white;
+    }
+    path {
+      fill: $white;
+    }
+  }
 }
 
 .c-footer-button--blue {
   background-color: $main-color;
   color: $white;
+  transition: all .3s ease;
+  &:hover {
+    background-color: $sub-color;
+  }
 }
