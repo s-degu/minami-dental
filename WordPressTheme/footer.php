@@ -137,6 +137,32 @@
 </a>
 <!-- web予約 -->
 
+<!-- sp固定フッター -->
+<div class="l-sp-footer p-sp-footer">
+  <div class="l-inner p-sp-footer__inner">
+    <div class="p-sp-footer__wrap">
+      <div class="p-sp-footer__left">
+        <div class="p-sp-footer__phone">
+          <a href="#">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_tel.png" alt="">
+            03-1234-5678
+          </a>
+          <p class="p-sp-footer__time">(年中無休 AM9:00〜PM22:00)</p>
+        </div>
+      </div>
+      <div class="p-sp-footer__right">
+        <a href="#">
+          <div class="p-sp-footer__icon">
+            <svg height="25.47" viewBox="0 0 25.048 14.669" width="43.49" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m6.007 0h-4.947a1.06 1.06 0 0 0 -1.06 1.06v9.187a1.06 1.06 0 0 0 1.06 1.06h4.947a1.06 1.06 0 0 0 1.06-1.06v-9.187a1.06 1.06 0 0 0 -1.06-1.06zm-2.474 10.6a.707.707 0 1 1 .707-.707.706.706 0 0 1 -.707.707zm2.474-2.385a.266.266 0 0 1 -.265.265h-4.417a.266.266 0 0 1 -.265-.265v-6.89a.266.266 0 0 1 .265-.265h4.417a.266.266 0 0 1 .265.265z" transform="translate(17.981 3.362)"></path><path d="m15.127 0h-13.752a1.376 1.376 0 0 0 -1.375 1.375v9.168a1.376 1.376 0 0 0 1.375 1.375h5.5l-.458 1.375h-2.062a.688.688 0 1 0 0 1.375h7.793a.688.688 0 1 0 0-1.375h-2.063l-.458-1.375h5.5a1.376 1.376 0 0 0 1.373-1.375v-9.168a1.376 1.376 0 0 0 -1.373-1.375zm-.458 10.085h-12.835v-8.251h12.835z"></path></g></svg>
+          </div>
+          <p class="p-sp-footer__text">WEB予約<br><span>はこちら</span></p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- sp固定フッター -->
+
 <?php wp_footer(); ?>
 </body>
 

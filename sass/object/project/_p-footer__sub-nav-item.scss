@@ -5,10 +5,14 @@
 .p-footer__sub-nav-item > a {
   display: inline-block;
   font-weight: normal;
+  font-weight: 500;
   line-height: calc(36/16);
   padding-left: 12px;
   position: relative;
-  font-weight: 500;
+  transition: opacity .3s ease;
+  &:hover {
+    opacity: .6;
+  }
   &::before {
     background-image: url(../../../WordPressTheme/assets/img/arrow-dropright.png);
     background-position: center;

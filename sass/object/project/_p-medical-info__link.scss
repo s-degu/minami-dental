@@ -4,10 +4,20 @@
   border-radius: 20px;
   display: block;
   height: rem(210);
-  position: relative;
-  width: 100%;
   @include mq(tab) {
     height: rem(288);
+  }
+  padding: 10px;
+  position: relative;
+  transition: opacity .3s ease;
+  width: 100%;
+  &:hover {
+    .p-medical-link__line {
+      border: 2px solid $white;
+    }
+    &::after {
+      background-color: rgba(0, 0, 0, .5);
+    }
   }
   &::after {
     background-color: rgba(0, 0, 0, .2);
@@ -18,14 +28,51 @@
     left: 0;
     position: absolute;
     top: 0;
+    transition: all .4s ease;
     width: 100%;
   }
 }
 
 .p-medical-info__link--general {
-  background-image: url(../../../WordPressTheme/assets/img/medical_1.jpg);
+  overflow: hidden;
+  &::before {
+    background-image: url(../../../WordPressTheme/assets/img/medical_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .4s ease;
+  }
+  &:hover {
+    &::before {
+      transform: scale(1.2);
+    }
+  }
 }
 
 .p-medical-info__link--special {
-  background-image: url(../../../WordPressTheme/assets/img/medical_2.jpg);
+  overflow: hidden;
+  &::before {
+    background-image: url(../../../WordPressTheme/assets/img/medical_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .4s ease;
+  }
+  &:hover {
+    &::before {
+      transform: scale(1.2);
+    }
+  }
 }

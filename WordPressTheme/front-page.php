@@ -118,18 +118,22 @@
       <div class="p-medical-info__items">
         <div class="p-medical-info__item">
           <a href="" class="p-medical-info__link p-medical-info__link--general p-medical-link">
-            <div class="p-medical-link__wrap">
-              <h3 class="p-medical-link__title">一般診療</h3>
-              <p class="p-medical-link__text">虫歯・入れ歯・小児歯科</p>
+            <div class="p-medical-link__line">
+              <div class="p-medical-link__wrap">
+                <h3 class="p-medical-link__title">一般診療</h3>
+                <p class="p-medical-link__text">虫歯・入れ歯・小児歯科</p>
+              </div>
             </div>
           </a>
         </div>
         <div class="p-medical-info__item">
           <a href="" class="p-medical-info__link p-medical-info__link--special p-medical-link">
-            <div class="p-medical-link__wrap">
-              <h3 class="p-medical-link__title">特殊診療</h3>
-              <p class="p-medical-link__text">インプラント・ホワイトニング</p>
-              <p class="p-medical-link__text">予防歯科・口腔外科・審美歯科</p>
+            <div class="p-medical-link__line">
+              <div class="p-medical-link__wrap">
+                <h3 class="p-medical-link__title">特殊診療</h3>
+                <p class="p-medical-link__text">インプラント・ホワイトニング</p>
+                <p class="p-medical-link__text">予防歯科・口腔外科・審美歯科</p>
+              </div>
             </div>
           </a>
         </div>

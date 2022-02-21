@@ -3,8 +3,19 @@
     top: 33%;
   }
   left: 0;
+  opacity: 1;
   position: relative;
   text-align: center;
   top: 31%;
   z-index: $layer-up;
+}
+
+.p-medical-link__line {
+  border-radius: 20px;
+  height: 100%;
+  // margin: 10px;
+  position: relative;
+  transition: .1s ease-out;
+  width: 100%;
+  z-index: 1;
 }

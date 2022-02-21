@@ -618,6 +618,14 @@ summary {
 	z-index: 30;
 }
 
+.l-sp-footer {
+	bottom: 0;
+	left: 0;
+	padding: 10px 0 6px 0;
+	position: fixed;
+	right: 0;
+}
+
 .l-sub-blog__sideber {
 	margin-top: 165px;
 }
@@ -1413,6 +1421,11 @@ summary {
 	line-height: calc(36/16);
 	padding-left: 12px;
 	position: relative;
+	transition: opacity .3s ease;
+}
+
+.p-footer__sub-nav-item > a:hover {
+	opacity: .6;
 }
 
 .p-footer__sub-nav-item > a::before {
@@ -1496,6 +1509,7 @@ input[type="checkbox"] + span {
 	color: #1391E6;
 	font-size: 14px;
 	padding: 9px 0 4px 0;
+	transition: all .3s ease;
 	width: calc((273/335)*100%);
 }
 
@@ -2015,8 +2029,18 @@ textarea {
 	border-radius: 20px;
 	display: block;
 	height: 13.125rem;
+	padding: 10px;
 	position: relative;
+	transition: opacity .3s ease;
 	width: 100%;
+}
+
+.p-medical-info__link:hover .p-medical-link__line {
+	border: 2px solid #fff;
+}
+
+.p-medical-info__link:hover::after {
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .p-medical-info__link::after {
@@ -2028,15 +2052,52 @@ textarea {
 	left: 0;
 	position: absolute;
 	top: 0;
+	transition: all .4s ease;
 	width: 100%;
 }
 
 .p-medical-info__link--general {
+	overflow: hidden;
+}
+
+.p-medical-info__link--general::before {
 	background-image: url(../../../WordPressTheme/assets/img/medical_1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: all .4s ease;
+}
+
+.p-medical-info__link--general:hover::before {
+	transform: scale(1.2);
 }
 
 .p-medical-info__link--special {
+	overflow: hidden;
+}
+
+.p-medical-info__link--special::before {
 	background-image: url(../../../WordPressTheme/assets/img/medical_2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: all .4s ease;
+}
+
+.p-medical-info__link--special:hover::before {
+	transform: scale(1.2);
 }
 
 .p-medical-info__text {
@@ -2106,10 +2167,20 @@ textarea {
 
 .p-medical-link__wrap {
 	left: 0;
+	opacity: 1;
 	position: relative;
 	text-align: center;
 	top: 31%;
 	z-index: 2;
+}
+
+.p-medical-link__line {
+	border-radius: 20px;
+	height: 100%;
+	position: relative;
+	transition: .1s ease-out;
+	width: 100%;
+	z-index: 1;
 }
 
 .p-medical-nav__item > a {
@@ -2511,6 +2582,64 @@ textarea {
 
 .p-slider__text--underline {
 	border-bottom: 2px dotted #fff;
+}
+
+.p-sp-footer {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.p-sp-footer__wrap {
+	display: flex;
+}
+
+.p-sp-footer__phone > a {
+	color: #1391E6;
+	display: flex;
+	font-size: 20px;
+}
+
+.p-sp-footer__phone > a > img {
+	-o-object-fit: contain;
+	object-fit: contain;
+	width: 18px;
+}
+
+.p-sp-footer__time {
+	font-size: 10px;
+	text-align: center;
+}
+
+.p-sp-footer__right {
+	background-color: #1391E6;
+	border-radius: 8px;
+	color: #fff;
+	margin-left: 12px;
+	max-width: 157px;
+	width: 100%;
+}
+
+.p-sp-footer__right > a {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 10px;
+	padding-top: 11px;
+}
+
+.p-sp-footer__icon {
+	margin-right: 10px;
+}
+
+.p-sp-footer__text {
+	font-size: 16px;
+	line-height: 1;
+	text-align: center;
+}
+
+.p-sp-footer__text > span {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
 }
 
 .p-staff__charge {
@@ -3588,7 +3717,7 @@ input[type="checkbox"] + span {
 	display: -ms-grid;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	padding-top: 20px;
+	margin-top: 20px;
 }
 
 .p-medical-info__link {
