@@ -1,3 +1,7 @@
+<?php
+  $about = esc_url(home_url('/about'));
+?>
+
 <?php get_header(); ?>
 
 <!-- ファーストビュー -->
@@ -29,7 +33,7 @@
           $args = array(
             'paged' => $paged,
             'post_type' => 'blog',
-            'posts_per_page' => 1,
+            'posts_per_page' => 10,
           );
           $my_query = new WP_Query($args);
           $paged = get_query_var('page');
@@ -37,122 +41,31 @@
           while ($my_query->have_posts()) : $my_query->the_post();
         ?>
         <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
+          <a class="p-blog-card__link" href="<?php the_permalink();?>">
             <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
+              <?php
+                if (has_post_thumbnail() ) {
+                // アイキャッチ画像が設定されてれば大サイズで表示
+                the_post_thumbnail('large');
+                } else {
+                // なければnoimage画像をデフォルトで表示
+                echo '<img class="u-noimg" src="' . esc_url(get_template_directory_uri()) . '/assets/img/noimg.jpg" alt="">';
+                }
+              ?>
             </div>
             <div class="p-blog-card__body">
-              <span class="p-blog-card__label">カテゴリ1</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
-            </div>
-          </a>
-        </article>
-        <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
-            <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-            </div>
-            <div class="p-blog-card__body">
-              <span class="p-blog-card__label">お知らせ</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
-            </div>
-          </a>
-        </article>
-        <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
-            <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-            </div>
-            <div class="p-blog-card__body">
-              <span class="p-blog-card__label">お知らせ</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
-            </div>
-          </a>
-        </article>
-        <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
-            <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-            </div>
-            <div class="p-blog-card__body">
-              <span class="p-blog-card__label">お知らせ</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
-            </div>
-          </a>
-        </article>
-        <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
-            <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-            </div>
-            <div class="p-blog-card__body">
-              <span class="p-blog-card__label">お知らせ</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
-            </div>
-          </a>
-        </article>
-        <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
-            <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-            </div>
-            <div class="p-blog-card__body">
-              <span class="p-blog-card__label">お知らせ</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
-            </div>
-          </a>
-        </article>
-        <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
-            <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-            </div>
-            <div class="p-blog-card__body">
-              <span class="p-blog-card__label">お知らせ</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
-            </div>
-          </a>
-        </article>
-        <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
-            <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-            </div>
-            <div class="p-blog-card__body">
-              <span class="p-blog-card__label">お知らせ</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
-            </div>
-          </a>
-        </article>
-        <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
-            <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-            </div>
-            <div class="p-blog-card__body">
-              <span class="p-blog-card__label">お知らせ</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
-            </div>
-          </a>
-        </article>
-        <article class="p-blog-cards__item p-blog-card">
-          <a class="p-blog-card__link" href="#">
-            <div class="p-blog-card__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-            </div>
-            <div class="p-blog-card__body">
-              <span class="p-blog-card__label">お知らせ</span>
-              <p class="p-blog-card__text">記事のタイトルが入ります。記事のタイトルが入ります…</p>
-              <time datetime="2020-02-14" class="p-blog-card__date">2020.02.14</time>
+              <span class="p-blog-card__label">
+                <?php
+                  $terms = get_the_terms($post->ID, 'news');
+                  if ( $terms ) {
+                    echo $terms[0]->name;
+                  } else {
+                    echo "カテゴリなし";
+                  }
+                ?>
+              </span>
+              <p class="p-blog-card__text"><?php the_title();?></p>
+              <time datetime="<?php the_time('Y-m-d'); ?>" class="p-blog-card__date"><?php the_time('Y.m.d'); ?></time>
             </div>
           </a>
         </article>
@@ -173,7 +86,7 @@
           </div>
           <h3 class="p-sidebar__sub-title">みなみ歯科クリニック</h3>
           <p class="p-sidebar-clinic__text">お子様からご高齢の方まで、快適な空間で治療が受けられる場を作り、地域医療に貢献しきたいと考えております。</p>
-          <a href="#" class="p-sidebar-clinic__button">当院について</a>
+          <a href="<?php echo $about?>" class="p-sidebar-clinic__button">当院について</a>
         </div>
         <div class="l-new-article p-sidebar__new-article p-new-article">
           <h2 class="p-sidebar__title">

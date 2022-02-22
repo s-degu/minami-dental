@@ -754,6 +754,11 @@ summary {
 	width: 100%;
 }
 
+.u-noimg {
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
 .c-section__title {
 	display: inline-block;
 	font-size: 1.25rem;
@@ -3045,6 +3050,11 @@ input[type="date"] {
 .p-sub-staff__slider img {
 	border-radius: 20px;
 	width: 200px;
+}
+
+.u-noimg {
+	-o-object-fit: contain !important;
+	object-fit: contain !important;
 }
 
 .u-text-red {
