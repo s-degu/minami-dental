@@ -16,18 +16,7 @@
 <!-- パンくず -->
 <div class="l-breadcrumb p-breadcrumb">
   <div class="l-inner p-breadcrumb__inner">
-    <span property="itemListElement" typeof="ListItem">
-	<a property="item" typeof="WebPage" title="Go to codeups." href="#" class="home" >
-		<span property="name">ホーム</span>
-	</a>
-	<meta property="position" content="1">
-</span> &gt;
-
-<span property="itemListElement" typeof="ListItem">
-	<span property="name" class="post-root post post-post current-item">診療案内</span>
-	<meta property="url" content="http://codeups.local/archive/">
-	<meta property="position" content="2">
-</span>
+    <?php get_template_part( 'template-parts/breadcrumb' )?>
   </div>
 </div>
 <!-- パンくず -->
