@@ -24,11 +24,11 @@
           </a>
           <span class="p-footer__hours">(年中無休 AM9:00〜PM22:00)</span>
           <div class="p-footer__button-wrap">
-            <a class="c-footer-button c-footer-button--blue p-footer__button" href="#">
+            <a class="c-footer-button c-footer-button--blue p-footer__button" href="<?php echo $reservation?>">
               <svg height="14.669" viewBox="0 0 25.048 14.669" width="25.048" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m6.007 0h-4.947a1.06 1.06 0 0 0 -1.06 1.06v9.187a1.06 1.06 0 0 0 1.06 1.06h4.947a1.06 1.06 0 0 0 1.06-1.06v-9.187a1.06 1.06 0 0 0 -1.06-1.06zm-2.474 10.6a.707.707 0 1 1 .707-.707.706.706 0 0 1 -.707.707zm2.474-2.385a.266.266 0 0 1 -.265.265h-4.417a.266.266 0 0 1 -.265-.265v-6.89a.266.266 0 0 1 .265-.265h4.417a.266.266 0 0 1 .265.265z" transform="translate(17.981 3.362)"/><path d="m15.127 0h-13.752a1.376 1.376 0 0 0 -1.375 1.375v9.168a1.376 1.376 0 0 0 1.375 1.375h5.5l-.458 1.375h-2.062a.688.688 0 1 0 0 1.375h7.793a.688.688 0 1 0 0-1.375h-2.063l-.458-1.375h5.5a1.376 1.376 0 0 0 1.373-1.375v-9.168a1.376 1.376 0 0 0 -1.373-1.375zm-.458 10.085h-12.835v-8.251h12.835z"/></g></svg>
               <span>WEB予約</span>
             </a>
-            <a class="c-footer-button p-footer__button" href="#">
+            <a class="c-footer-button p-footer__button" href="<?php echo $contact?>">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                 <g id="グループ_10810" data-name="グループ 10810" transform="translate(-49)">
                 <rect id="長方形_23052" data-name="長方形 23052" width="24" height="24" transform="translate(49)" fill="none" />
@@ -52,15 +52,19 @@
     </div>
     <div class="p-footer__nav">
       <ul class="p-footer__nav-wrap">
-        <li class="p-footer__nav-item">TOP</li>
+        <li class="p-footer__nav-item">
+          <a href="<?php echo $home?>">
+            TOP
+          </a>
+        </li>
         <li class="p-footer__nav-item">
           当院について
           <ul class="p-footer__sub-nav">
             <li class="p-footer__sub-nav-item">
-              <a href="#">ポリシーと特徴</a>
+              <a href="<?php echo $about?>#policy">ポリシーと特徴</a>
             </li>
             <li class="p-footer__sub-nav-item">
-              <a href="#">当院の様子</a>
+              <a href="<?php echo $about?>#overview">当院の様子</a>
             </li>
           </ul>
         </li>
@@ -68,13 +72,13 @@
           スタッフ紹介
           <ul class="p-footer__sub-nav">
             <li class="p-footer__sub-nav-item">
-              <a href="#">院長のあいさつ</a>
+              <a href="<?php echo $staff?>#greeting">院長のあいさつ</a>
             </li>
             <li class="p-footer__sub-nav-item">
-              <a href="#">スタッフ</a>
+              <a href="<?php echo $staff?>#member">スタッフ</a>
             </li>
             <li class="p-footer__sub-nav-item">
-              <a href="#">スタッフブログ</a>
+              <a href="<?php echo $blog?>">スタッフブログ</a>
             </li>
           </ul>
         </li>
@@ -115,10 +119,10 @@
             お問い合わせ
             <ul class="p-footer__sub-nav">
               <li class="p-footer__sub-nav-item">
-                <a href="#">お問い合わせフォーム</a>
+                <a href="<?php echo $contact?>">お問い合わせフォーム</a>
               </li>
               <li class="p-footer__sub-nav-item">
-                <a href="#">WEB予約</a>
+                <a href="<?php echo $reservation?>">WEB予約</a>
               </li>
             </ul>
           </li>
@@ -151,7 +155,7 @@
         </div>
       </div>
       <div class="p-sp-footer__right">
-        <a href="#">
+        <a href="<?php echo $reservation?>">
           <div class="p-sp-footer__icon">
             <svg height="25.47" viewBox="0 0 25.048 14.669" width="43.49" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m6.007 0h-4.947a1.06 1.06 0 0 0 -1.06 1.06v9.187a1.06 1.06 0 0 0 1.06 1.06h4.947a1.06 1.06 0 0 0 1.06-1.06v-9.187a1.06 1.06 0 0 0 -1.06-1.06zm-2.474 10.6a.707.707 0 1 1 .707-.707.706.706 0 0 1 -.707.707zm2.474-2.385a.266.266 0 0 1 -.265.265h-4.417a.266.266 0 0 1 -.265-.265v-6.89a.266.266 0 0 1 .265-.265h4.417a.266.266 0 0 1 .265.265z" transform="translate(17.981 3.362)"></path><path d="m15.127 0h-13.752a1.376 1.376 0 0 0 -1.375 1.375v9.168a1.376 1.376 0 0 0 1.375 1.375h5.5l-.458 1.375h-2.062a.688.688 0 1 0 0 1.375h7.793a.688.688 0 1 0 0-1.375h-2.063l-.458-1.375h5.5a1.376 1.376 0 0 0 1.373-1.375v-9.168a1.376 1.376 0 0 0 -1.373-1.375zm-.458 10.085h-12.835v-8.251h12.835z"></path></g></svg>
           </div>

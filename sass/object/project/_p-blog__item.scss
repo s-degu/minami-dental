@@ -1,15 +1,15 @@
 .p-blog__item {
   align-items: center;
   display: flex;
-  max-width: rem(300);
-  width: 100%;
   @include mq(tab) {
     border-radius: 20px;
     box-shadow: 0 3px 6px -2px rgba(0, 0, 0, .16);
     flex-direction: column;
+    max-width: rem(300);
     // gap: 50px;
     width: calc(100% / 3 - 50px * 2 / 3);
   }
+  width: 100%;
 }
 
 .p-blog__item + .p-blog__item {
@@ -20,7 +20,11 @@
 }
 
 .p-blog__item > a {
-  display: block;
+  display: flex;
+  @include mq("tab") {
+    display: block;
+  }
+  width: 100%;
   &:hover {
     .c-blog-title {
       color: $main-color;

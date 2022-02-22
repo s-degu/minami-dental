@@ -1,9 +1,14 @@
 .p-sp-footer {
   background-color: rgba($color: #fff, $alpha: .8);
+  @include mq("tab") {
+    display: none;
+  }
+
 }
 
 .p-sp-footer__wrap {
   display: flex;
+  justify-content: center;
 }
 
 .p-sp-footer__phone > a {
@@ -35,8 +40,8 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  padding-top: 11px;
   padding-bottom: 10px;
+  padding-top: 11px;
 }
 
 .p-sp-footer__icon {

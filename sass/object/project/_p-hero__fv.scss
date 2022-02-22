@@ -1,6 +1,8 @@
 .p-hero__fv {
     position: relative;
     margin-top: rem(20);
+    max-width: 1980px;
+    width: 100%;
     @include mq(tab) {
         margin-top: rem(41);
     }

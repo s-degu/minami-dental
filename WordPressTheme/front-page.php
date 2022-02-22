@@ -1,3 +1,14 @@
+<?php
+  $home = esc_url(home_url('/'));
+  $about = esc_url(home_url('/about'));
+  $medical = esc_url(home_url('/medical'));
+  $staff = esc_url(home_url('/staff'));
+  $blog = get_post_type_archive_link( "blog" );
+  $contact = esc_url(home_url('/contact'));
+  $reservation = esc_url(home_url('/reservation'));
+?>
+
+
 <?php get_header(); ?>
 
 <!-- 👇メインビュー -->
@@ -53,7 +64,7 @@
       お子様からご高齢の方まで、快適な空間で治療が受けられる場を作り、地域医療に貢献しきたいと考えております。
       </p>
       <div class="p-concept__button-wrap">
-        <a href="#" class="c-button p-concept__button">当院について</a>
+        <a href="<?php echo $about?>" class="c-button p-concept__button">当院について</a>
       </div>
     </div>
   </div>
@@ -159,71 +170,35 @@
         <h2 class="p-recommend__title c-section__title">スタッフブログ</h2>
     </div>
     <div class="p-blog__items">
+      <?php $args = array(
+        'orderby' => 'DESC',
+        'numberposts' => 6, //表示したい記事の数
+        'post_type' => 'blog' //カスタム投稿で作成した投稿タイプ
+        );
+        $customPosts = get_posts($args);
+        if($customPosts) : foreach($customPosts as $post) : setup_postdata( $post );
+      ?>
       <div class="p-blog__item">
-        <a href="#">
+        <a href="<?php the_permalink(); ?>">
           <div class="p-blog__img-wrap">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog_test.jpg" alt="ほげほげ">
           </div>
           <div class="p-blog__body">
             <span class="p-blog__label c-article-label">お知らせ</span>
-            <div class="p-blog__title c-blog-title">記事のタイトルが入ります。記事のタイトルが入ります…</div>
-            <time class="p-blog__date c-blog-date">2020.02.14</time>
+            <div class="p-blog__title c-blog-title"><?php the_title(); ?></div>
+            <time datetime="<?php the_modified_time( 'c' ); ?>" class="p-blog__date c-blog-date"><?php the_modified_time( 'Y.n.j' ); ?></time>
           </div>
         </a>
       </div>
-      <div class="p-blog__item">
-        <div class="p-blog__img-wrap">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog_test.jpg" alt="ほげほげ">
-        </div>
-        <div class="p-blog__body">
-          <span class="p-blog__label c-article-label">お知らせ</span>
-          <div class="p-blog__title c-blog-title">記事のタイトルが入ります。記事のタイトルが入ります…</div>
-          <time class="p-blog__date c-blog-date">2020.02.14</time>
-        </div>
-      </div>
-      <div class="p-blog__item">
-        <div class="p-blog__img-wrap">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog_test.jpg" alt="ほげほげ">
-        </div>
-        <div class="p-blog__body">
-          <span class="p-blog__label c-article-label">お知らせ</span>
-          <div class="p-blog__title c-blog-title">記事のタイトルが入ります。記事のタイトルが入ります…</div>
-          <time class="p-blog__date c-blog-date">2020.02.14</time>
-        </div>
-      </div>
-      <div class="p-blog__item">
-        <div class="p-blog__img-wrap">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog_test.jpg" alt="ほげほげ">
-        </div>
-        <div class="p-blog__body">
-          <span class="p-blog__label c-article-label">お知らせ</span>
-          <div class="p-blog__title c-blog-title">記事のタイトルが入ります。記事のタイトルが入ります…</div>
-          <time class="p-blog__date c-blog-date">2020.02.14</time>
-        </div>
-      </div>
-      <div class="p-blog__item">
-        <div class="p-blog__img-wrap">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog_test.jpg" alt="ほげほげ">
-        </div>
-        <div class="p-blog__body">
-          <span class="p-blog__label c-article-label">お知らせ</span>
-          <div class="p-blog__title c-blog-title">記事のタイトルが入ります。記事のタイトルが入ります…</div>
-          <time class="p-blog__date c-blog-date">2020.02.14</time>
-        </div>
-      </div>
-      <div class="p-blog__item">
-        <div class="p-blog__img-wrap">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog_test.jpg" alt="ほげほげ">
-        </div>
-        <div class="p-blog__body">
-          <span class="p-blog__label c-article-label">お知らせ</span>
-          <div class="p-blog__title c-blog-title">記事のタイトルが入ります。記事のタイトルが入ります…</div>
-          <time class="p-blog__date c-blog-date">2020.02.14</time>
-        </div>
-      </div>
+      <?php endforeach; ?>
+      <?php else : //記事が無い場合 ?>
+      <p>投稿記事がありません。</p>
+      <?php endif;
+      wp_reset_postdata(); //クエリのリセット ?>
     </div>
+    <!-- p-blog__items -->
     <div class="p-blog__button">
-      <a class="c-button" href="#">スタッフブログ一覧はこちら</a>
+      <a class="c-button" href="<?php echo $blog?>">スタッフブログ一覧はこちら</a>
     </div>
   </div>
 </section>

@@ -34,7 +34,7 @@
 
 <div class="l-sub-staff">
   <!-- 院長の挨拶 -->
-  <section class="l-sub-staff-greeting p-sub-staff-greeting p-greeting">
+  <section class="l-sub-staff-greeting p-sub-staff-greeting p-greeting" id="greeting">
     <div class="l-inner p-greeting__inner">
       <div class="c-title-wrap">
         <h2 class="c-section__title">院長のあいさつ</h2>
@@ -102,7 +102,7 @@
 
 <!-- スタッフ紹介 -->
 <section class="l-sub-staff__member p-sub-staff__member p-member">
-  <div class="l-inner p-member__inner">
+  <div class="l-inner p-member__inner" id="member">
     <div class="c-title-wrap">
       <h2 class="c-section__title">スタッフ紹介</h2>
     </div>

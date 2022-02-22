@@ -33,7 +33,7 @@
 <!-- パンくず -->
 
 <!-- ポリシーと特徴 -->
-<section class="l-policy p-policy">
+<section class="l-policy p-policy" id="policy">
   <div class="p-policy__inner">
     <div class="p-policy__title-wrap">
       <h2 class="p-about-policy__title c-section__title">ポリシーと特徴</h2>
@@ -58,7 +58,7 @@
 <!-- ポリシーと特徴 -->
 
 <!-- feature -->
-<section class="l-feature p-feature">
+<section class="l-feature p-feature" >
   <div class="p-feature__inner">
     <div class="p-feature__content">
       <div class="p-feature__textarea">
@@ -80,7 +80,7 @@
 <!-- feature -->
 
 <!-- 院内の様子 -->
-<section class="l-about-gellery p-about-gellery">
+<section class="l-about-gellery p-about-gellery" id="overview">
   <div class="l-inner p-about-gellery__inner">
     <div class="p-about-gellery-wrap">
       <h2 class="p-about-gellery__title c-section__title">院内の様子</h2>
