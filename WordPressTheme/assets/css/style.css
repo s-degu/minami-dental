@@ -3391,8 +3391,8 @@ html {
 
 .p-concept::before {
 	background-image: url(../../../WordPressTheme/assets/img/concept-bg.png);
-	background-size: 102%;
-	height: 100vh;
+	background-size: contain;
+	height: 725px;
 	left: 33%;
 }
 

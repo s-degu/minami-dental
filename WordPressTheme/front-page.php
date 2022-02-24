@@ -1,5 +1,6 @@
 <?php
   $home = esc_url(home_url('/'));
+  $news = esc_url(home_url('/news'));
   $about = esc_url(home_url('/about'));
   $medical = esc_url(home_url('/medical'));
   $staff = esc_url(home_url('/staff'));
@@ -7,7 +8,6 @@
   $contact = esc_url(home_url('/contact'));
   $reservation = esc_url(home_url('/reservation'));
 ?>
-
 
 <?php get_header(); ?>
 
@@ -38,14 +38,29 @@
       <div class="p-news__heading">
         <p class="p-news__title">お知らせ</p>
         <span class="p-news__title--en">news</span>
-        <span class="p-news__title--past"><a href="#">過去のお知らせはこちら</a></span>
+        <span class="p-news__title--past"><a href="<?php echo $news?>">過去のお知らせはこちら</a></span>
       </div>
+      <?php
+      // 固定ページに特定のカテゴリーを表示
+      $args = array(
+          'post_type' => 'post',
+          'posts_per_page' => 1
+      );
+      $the_query = new WP_Query( $args );
+      if ( $the_query->have_posts() ) :
+      ?>
       <div class="p-news__body">
         <dl class="p-news__list-wrap">
-          <a class="p-news__list">
-            <dt class="p-news__date"><time datetime="2021/01/01">2021/01/01</time></dt>
-            <dd class="p-news__content">年末年始の営業時間のお知らせ</dd>
+          <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+          <a href="<?php the_permalink(); //記事のリンクを表示 ?>" class="p-news__list">
+            <dt class="p-news__date"><time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time></dt>
+            <dd class="p-news__content"><?php the_title();?></dd>
           </a>
+          <?php endwhile;?>
+          <?php wp_reset_postdata(); ?>
+          <?php else: ?>
+            <!-- 投稿がない場合の処理 -->
+          <?php endif; ?>
         </dl>
       </div>
     </div>
