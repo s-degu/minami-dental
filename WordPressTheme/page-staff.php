@@ -98,24 +98,57 @@
     <div class="p-member__content">
       <h3 class="p-member__sub-title">歯科衛生士</h3>
       <div class="p-member__items">
+      <?php $args = array(
+        'post_type' => 'staffs', //カスタム投稿で作成した投稿タイプ
+        'tax_query' => array(
+          array(
+            'taxonomy' => 'position',
+            'field' => 'slug',
+            'terms' => 'dental'
+            ),
+          ),
+        );
+        $customPosts = get_posts($args);
+        if($customPosts) : foreach($customPosts as $post) : setup_postdata( $post );
+      ?>
         <div class="p-member__item">
           <div class="p-member__img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff2.jpg" alt="">
+            <?php
+              if (has_post_thumbnail() ) {
+              // アイキャッチ画像が設定されてれば大サイズで表示
+              the_post_thumbnail('large');
+              } else {
+              // なければnoimage画像をデフォルトで表示
+              echo '<img class="u-noimg" src="' . esc_url(get_template_directory_uri()) . '/assets/img/noimg.jpg" alt="">';
+              }
+            ?>
+            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff2.jpg" alt=""> -->
           </div>
           <div class="p-staff__name-wrap">
             <span class="p-staff__charge">歯科衛生士</span>
-            <span class="p-staff__name">鈴木 太郎</span>
+            <span class="p-staff__name"><?php the_title();?></span>
           </div>
           <dl class="p-staff__info">
             <dt class="p-staff__def-title">出身地</dt>
-            <dd class="p-staff__def-data">北海道</dd>
+            <?php if ( get_field( 'place' ) ) : ?>
+            <dd class="p-staff__def-data"><?php the_field( 'place' ); ?></dd>
+            <?php endif; ?>
             <dt class="p-staff__def-title">趣味</dt>
-            <dd class="p-staff__def-data">スキー、料理</dd>
+            <?php if ( get_field( 'hobby' ) ) : ?>
+            <dd class="p-staff__def-data"><?php the_field( 'hobby' ); ?></dd>
+            <?php endif; ?>
             <dt class="p-staff__def-title">好きな食べ物</dt>
-            <dd class="p-staff__def-data">お寿司、うなぎ</dd>
+            <?php if (get_field( 'foods' ) ):?>
+            <dd class="p-staff__def-data"><?php the_field( 'foods' ); ?></dd>
+            <?php endif; ?>
           </dl>
         </div>
-        <div class="p-member__item">
+        <?php endforeach; ?>
+        <?php else : //記事が無い場合 ?>
+        <p>該当する担当者がいません。</p>
+        <?php endif;
+        wp_reset_postdata(); //クエリのリセット ?>
+        <!-- <div class="p-member__item">
           <div class="p-member__img">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff3.jpg" alt="">
           </div>
@@ -131,15 +164,65 @@
             <dt class="p-staff__def-title">好きな食べ物</dt>
             <dd class="p-staff__def-data">お寿司、うなぎ</dd>
           </dl>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="p-member__content">
       <h3 class="p-member__sub-title">歯科助手</h3>
       <div class="p-member__items">
+        <?php $args = array(
+          'post_type' => 'staffs', //カスタム投稿で作成した投稿タイプ
+          'tax_query' => array(
+            array(
+              'taxonomy' => 'position',
+              'field' => 'slug',
+              'terms' => 'assistant'
+              ),
+            ),
+          );
+          $customPosts = get_posts($args);
+          if($customPosts) : foreach($customPosts as $post) : setup_postdata( $post );
+        ?>
         <div class="p-member__item">
           <div class="p-member__img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff4.jpg" alt="">
+            <?php
+              if (has_post_thumbnail() ) {
+              // アイキャッチ画像が設定されてれば大サイズで表示
+              the_post_thumbnail('large');
+              } else {
+              // なければnoimage画像をデフォルトで表示
+              echo '<img class="u-noimg" src="' . esc_url(get_template_directory_uri()) . '/assets/img/noimg.jpg" alt="">';
+              }
+            ?>
+            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff4.jpg" alt=""> -->
+          </div>
+          <div class="p-staff__name-wrap">
+            <span class="p-staff__charge">歯科衛生士</span>
+            <span class="p-staff__name"><?php the_title();?></span>
+          </div>
+          <dl class="p-staff__info">
+            <dt class="p-staff__def-title">出身地</dt>
+            <?php if ( get_field( 'place' ) ) : ?>
+            <dd class="p-staff__def-data"><?php the_field( 'place' ); ?></dd>
+            <?php endif; ?>
+            <dt class="p-staff__def-title">趣味</dt>
+            <?php if ( get_field( 'hobby' ) ) : ?>
+            <dd class="p-staff__def-data"><?php the_field( 'hobby' ); ?></dd>
+            <?php endif; ?>
+            <dt class="p-staff__def-title">好きな食べ物</dt>
+            <?php if (get_field( 'foods' ) ):?>
+            <dd class="p-staff__def-data"><?php the_field( 'foods' ); ?></dd>
+            <?php endif; ?>
+          </dl>
+        </div>
+        <?php endforeach; ?>
+        <?php else : //記事が無い場合 ?>
+        <p>該当する担当者がいません。</p>
+        <?php endif;
+        wp_reset_postdata(); //クエリのリセット ?>
+        <!-- <div class="p-member__item">
+          <div class="p-member__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff3.jpg" alt="">
           </div>
           <div class="p-staff__name-wrap">
             <span class="p-staff__charge">歯科衛生士</span>
@@ -204,24 +287,7 @@
             <dt class="p-staff__def-title">好きな食べ物</dt>
             <dd class="p-staff__def-data">お寿司、うなぎ</dd>
           </dl>
-        </div>
-        <div class="p-member__item">
-          <div class="p-member__img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff3.jpg" alt="">
-          </div>
-          <div class="p-staff__name-wrap">
-            <span class="p-staff__charge">歯科衛生士</span>
-            <span class="p-staff__name">山田 花子</span>
-          </div>
-          <dl class="p-staff__info">
-            <dt class="p-staff__def-title">出身地</dt>
-            <dd class="p-staff__def-data">北海道</dd>
-            <dt class="p-staff__def-title">趣味</dt>
-            <dd class="p-staff__def-data">スキー、料理</dd>
-            <dt class="p-staff__def-title">好きな食べ物</dt>
-            <dd class="p-staff__def-data">お寿司、うなぎ</dd>
-          </dl>
-        </div>
+        </div> -->
       </div>
     </div>
 

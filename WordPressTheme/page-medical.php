@@ -210,7 +210,6 @@
                 echo '<img class="u-noimg" src="' . esc_url(get_template_directory_uri()) . '/assets/img/noimg.jpg" alt="">';
                 }
               ?>
-
             </div>
             <img class="p-general__icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/tag-02-sp.svg" alt="">
           </div>
