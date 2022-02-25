@@ -40,7 +40,7 @@
           <div class="p-greeting__text-wrap3">
             <p class="p-greeting__text">みなみ歯科クリニック<br>院長&nbsp;&nbsp;&nbsp;南 俊雄</p>
           </div>
-          <div class="p-greeting__img u-hidden-pc">
+          <div class="p-greeting__img p-greeting__img--sp">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/greeting.png" alt="">
           </div>
           <div class="p-greeting__about">
@@ -84,8 +84,12 @@
 </div>
 
 <!-- スライダー -->
-<div class="p-sub-staff__slider">
+<div class="p-sub-staff__slider js-staff-slider">
   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff-slider1.jpg" alt="">
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff-slider2.jpg" alt="">
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff-slider3.jpg" alt="">
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff-slider4.jpg" alt="">
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff-slider5.jpg" alt="">
 </div>
 <!-- スライダー -->
 

@@ -65,4 +65,26 @@ jQuery(function ($) {
       speed: 800,
     });
   });
+
+  jQuery(".js-staff-slider").slick({
+    autoplay: true, //自動でスクロール
+    autoplaySpeed: 0, //自動再生のスライド切り替えまでの時間を設定
+    speed: 10000, //スライドが流れる速度を設定
+    cssEase: "linear", //スライドの流れ方を等速に設定
+    slidesToShow: 3, //表示するスライドの数
+    swipe: false, // 操作による切り替えはさせない
+    arrows: false, //矢印非表示
+    pauseOnFocus: false, //スライダーをフォーカスした時にスライドを停止させるか
+    pauseOnHover: false, //スライダーにマウスホバーした時にスライドを停止させるか
+    infinite: true, //スライドのループを有効にする
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  });
 });

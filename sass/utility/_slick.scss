@@ -1,10 +1,12 @@
 //ロード時一瞬横並びになるのを回避------
-.p-slider__wrap {
+.p-slider__wrap,
+.p-sub-staff__slider {
   opacity: 0;
   transition: opacity .3s linear;
 }
 
-.p-slider__wrap.slick-initialized {
+.p-slider__wrap.slick-initialized,
+.p-sub-staff__slider.slick-initialized {
   opacity: 1;
 }
 //---------------------------------
@@ -97,4 +99,19 @@
 
 .p-slide__dots {
   font-size: 1px;
+}
+
+
+.p-sub-staff__slider {
+  img {
+    @include mq("tab") {
+      margin: 0 10px;
+      max-height: 229px;
+      max-width: 350px;
+    }
+    margin: 0 5px;
+    max-width: 200px;
+    object-fit: cover;
+    width: 100%;
+  }
 }

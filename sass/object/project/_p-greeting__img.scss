@@ -6,6 +6,13 @@
   position: relative;
 }
 
+.p-greeting__img--sp {
+  display: block;
+  @include mq("tab") {
+    display: none;
+  }
+}
+
 .p-greeting__img img {
   border-radius: 20px;
   height: 100%;
@@ -17,14 +24,21 @@
 }
 
 .p-greeting__img-pc {
-  align-self: flex-start;
   background-color: #ececec;
   border-radius: 20px;
-  margin-left: auto;
-  margin-top: 7px;
-  padding-top: calc((613/1000)*100%);
+  display: none;
+  @include mq("tab") {
+    align-self: flex-start;
+    display: block;
+    margin-left: auto;
+    margin-top: 7px;
+    padding-top: calc((613/1000)*100%);
+    width: calc((460/1000)*100%);
+  }
+  margin-top: 40px;
+  padding-top: calc((446/335)*100%);
   position: relative;
-  width: calc((460/1000)*100%);
+  width: 100%;
 }
 
 .p-greeting__img-pc img {
