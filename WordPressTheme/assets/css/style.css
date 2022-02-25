@@ -2134,6 +2134,10 @@ textarea {
 	width: 100%;
 }
 
+.p-medical-info__bg {
+	background: #dff1fd;
+}
+
 .p-medical-link__text {
 	color: #fff;
 	font-size: 0.75rem;

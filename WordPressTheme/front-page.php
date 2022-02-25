@@ -143,7 +143,7 @@
       </div>
       <div class="p-medical-info__items">
         <div class="p-medical-info__item">
-          <a href="" class="p-medical-info__link p-medical-info__link--general p-medical-link">
+          <a href="<?php echo $medical?>/#general" class="p-medical-info__link p-medical-info__link--general p-medical-link">
             <div class="p-medical-link__line">
               <div class="p-medical-link__wrap">
                 <h3 class="p-medical-link__title">一般診療</h3>
@@ -153,7 +153,7 @@
           </a>
         </div>
         <div class="p-medical-info__item">
-          <a href="" class="p-medical-info__link p-medical-info__link--special p-medical-link">
+          <a href="<?php echo $medical?>/#special" class="p-medical-info__link p-medical-info__link--special p-medical-link">
             <div class="p-medical-link__line">
               <div class="p-medical-link__wrap">
                 <h3 class="p-medical-link__title">特殊診療</h3>
