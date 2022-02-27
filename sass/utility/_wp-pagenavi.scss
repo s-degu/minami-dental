@@ -1,0 +1,32 @@
+.wp-pagenavi span,
+.wp-pagenavi a {
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 9px 13px;
+  transition: all .3s ease;
+  &:hover {
+    background-color: $main-color;
+    color: $white;
+  }
+}
+
+.wp-pagenavi span {
+  background-color: $main-color;
+  color: $white;
+}
+
+.wp-pagenavi span.pages {
+  display: none;
+}
+
+a.last,
+a.first {
+  display: none;
+}
+
+.wp-pagenavi a {
+  background-color: $white;
+  border: 1px solid $main-color;
+  color: $main-color;
+}

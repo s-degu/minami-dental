@@ -30,13 +30,14 @@
     <div class="p-sub-blog__content">
       <div class="p-sub-blog__items p-blog-cards">
         <?php
+          $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
           $args = array(
             'paged' => $paged,
             'post_type' => 'blog',
             'posts_per_page' => 10,
           );
           $my_query = new WP_Query($args);
-          $paged = get_query_var('page');
+          // $paged = get_query_var('page');
           if ($my_query->have_posts()) :
           while ($my_query->have_posts()) : $my_query->the_post();
         ?>
@@ -46,7 +47,7 @@
               <?php
                 if (has_post_thumbnail() ) {
                 // アイキャッチ画像が設定されてれば大サイズで表示
-                the_post_thumbnail('large');
+                the_post_thumbnail('medium');
                 } else {
                 // なければnoimage画像をデフォルトで表示
                 echo '<img class="u-noimg" src="' . esc_url(get_template_directory_uri()) . '/assets/img/noimg.jpg" alt="">';
@@ -70,11 +71,12 @@
           </a>
         </article>
         <?php endwhile; endif; ?>
-        <?php wp_reset_query();?>
         <div class="p-sub-blog__page-navi">
           <?php if(function_exists('wp_pagenavi')) wp_pagenavi(array('query' => $my_query));?>
         </div>
+        <?php wp_reset_query();?>
       </div>
+
       <aside class="l-sub-blog__sideber p-sub-blog__sideber p-sidebar">
         <div class="p-sidebar__block p-sidebar__clinic">
           <h2 class="p-sidebar__title">
@@ -94,7 +96,48 @@
             新着記事
           </h2>
           <div class="l-new-article__cards p-sub-blog__items p-blog-cards">
+          <?php
+            $args = array(
+            'post_type' => 'blog',
+            'posts_per_page' => 5,
+            'orderby' => 'date',
+            'order' => 'DESC',
+            );
+            $new_posts = get_posts($args);
+            foreach($new_posts as $post): setup_postdata( $post );
+          ?>
             <article class="p-blog-cards__item p-blog-card">
+              <a class="p-blog-card__link" href="<?php the_permalink();?>">
+                <div class="p-blog-card__img aside">
+                <?php
+                  if (has_post_thumbnail() ) {
+                  // アイキャッチ画像が設定されてれば大サイズで表示
+                  the_post_thumbnail('medium');
+                  } else {
+                  // なければnoimage画像をデフォルトで表示
+                  echo '<img class="u-noimg" src="' . esc_url(get_template_directory_uri()) . '/assets/img/noimg.jpg" alt="画像なし">';
+                  }
+                ?>
+                  <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt=""> -->
+                </div>
+                <div class="p-blog-card__body aside">
+                  <span class="p-blog-card__label aside">
+                  <?php
+                    $terms = get_the_terms($post->ID, 'news');
+                    if ( $terms ) {
+                      echo $terms[0]->name;
+                    } else {
+                      echo "カテゴリなし";
+                    }
+                  ?>
+                  </span>
+                  <p class="p-blog-card__text aside"><?php the_title();?></p>
+                  <time datetime="<?php the_time('Y-m-d'); ?>" class="p-blog-card__date aside"><?php the_time('Y.m.d'); ?></time>
+                </div>
+              </a>
+            </article>
+            <?php endforeach; wp_reset_postdata(); ?>
+            <!-- <article class="p-blog-cards__item p-blog-card">
               <a class="p-blog-card__link" href="#">
                 <div class="p-blog-card__img aside">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
@@ -141,20 +184,7 @@
                   <time datetime="2020-02-14" class="p-blog-card__date aside">2020.02.14</time>
                 </div>
               </a>
-            </article>
-            <article class="p-blog-cards__item p-blog-card">
-              <a class="p-blog-card__link" href="#">
-                <div class="p-blog-card__img aside">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog01.jpg" alt="">
-                </div>
-                <div class="p-blog-card__body aside">
-                  <span class="p-blog-card__label aside">お知らせ</span>
-                  <p class="p-blog-card__text aside">記事のタイトルが入ります。記事のタイトルます…</p>
-                  <time datetime="2020-02-14" class="p-blog-card__date aside">2020.02.14</time>
-                </div>
-              </a>
-            </article>
-
+            </article> -->
           </div>
           <div class="p-sub-blog__category p-blog-categry l-blog-categry">
             <h2 class="p-sidebar__title">
@@ -162,7 +192,13 @@
               カテゴリー
             </h2>
             <ul class="p-blog-category__lists">
-              <li class="p-blog-categpry__item">
+              <?php
+                $terms = get_terms('news');
+                foreach ( $terms as $term ) {
+                  echo '<li class="p-blog-categpry__item"><a href="'.get_term_link($term).'">'.$term->name.'</a></li>';
+                }
+              ?>
+              <!-- <li class="p-blog-categpry__item">
                 <a href="#">テキストテキスト</a>
               </li>
               <li class="p-blog-categpry__item">
@@ -173,7 +209,7 @@
               </li>
               <li class="p-blog-categpry__item">
                 <a href="#">テキストテキスト</a>
-              </li>
+              </li> -->
             </ul>
           </div>
       </aside>

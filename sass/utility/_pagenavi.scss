@@ -1,20 +1,37 @@
 .wp-pagenavi a.previouspostslink {
-  background-color: #1391e6;
+  background-color: $white;
   background-image: url(./../img/common/arrow-circle-left.svg);
   background-position: left 14px center;
   background-repeat: no-repeat;
-  border: none;
-  color: #fff;
+  border: 1px solid $main-color;
+  color: $main-color;
   @include mq(tab) {
     background-size: 13px 13px;
     padding-right: 13px;
-    width: 71px;
+    // width: 71px;
   }
   justify-content: flex-end;
   letter-spacing: -.1em;
   padding-right: 15px;
+  transition: all .3s ease;
   transition: .3s ease;
   width: 82px;
+  &:hover {
+    background-color: $main-color;
+    color: $white;
+  }
+}
+
+a.nextpostslink {
+  transition: all .3s ease;
+  &:hover {
+    background-color: $main-color;
+    color: $white;
+  }
+}
+
+i.fas.fa-arrow-alt-circle-right {
+  margin-left: 6px;
 }
 
 .pages {

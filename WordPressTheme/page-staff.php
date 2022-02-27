@@ -85,11 +85,11 @@
 
 <!-- スライダー -->
 <div class="p-sub-staff__slider js-staff-slider">
-  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff-slider1.jpg" alt="">
-  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff-slider2.jpg" alt="">
-  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff-slider3.jpg" alt="">
-  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff-slider4.jpg" alt="">
-  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff-slider5.jpg" alt="">
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff-slider1.jpg" alt="診療の様子">
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff-slider2.jpg" alt="診療の様子">
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff-slider3.jpg" alt="診療の様子">
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff-slider4.jpg" alt="診療の様子">
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/staff-slider5.jpg" alt="診療の様子">
 </div>
 <!-- スライダー -->
 
