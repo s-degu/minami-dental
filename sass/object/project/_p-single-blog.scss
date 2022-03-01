@@ -1,0 +1,43 @@
+.p-single-blog-pagenavi {
+  margin-top: 100px;
+}
+
+.p-single-blog__pagenavi-lists {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.p-single-blog__pagenavi-list {
+  color: $main-color;
+  border-radius: 4px;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.p-single-blog__pagenavi-list > a {
+  border: 1px solid $main-color;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 8px 16px;
+  transition: all .3s ease;
+}
+
+.p-single-blog__pagenavi-list.articles {
+  &:hover {
+    color: $white;
+    background-color: $main-color;
+  }
+}
+
+.p-single-blog__pagenavi-list.previous,
+.p-single-blog__pagenavi-list.next {
+  background-color: $main-color;
+  border-radius: 4px;
+  color: $white;
+  &:hover {
+    background-color: $white;
+    color: $main-color;
+  }
+}
