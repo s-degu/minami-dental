@@ -196,7 +196,15 @@
       <div class="p-blog__item">
         <a href="<?php the_permalink(); ?>">
           <div class="p-blog__img-wrap">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/blog_test.jpg" alt="ほげほげ">
+          <?php
+            if (has_post_thumbnail() ) {
+            // アイキャッチ画像が設定されてれば大サイズで表示
+            the_post_thumbnail('medium');
+            } else {
+            // なければnoimage画像をデフォルトで表示
+            echo '<img class="u-noimg" src="' . esc_url(get_template_directory_uri()) . '/assets/img/noimg.jpg" alt="画像なし">';
+            }
+          ?>
           </div>
           <div class="p-blog__body">
             <span class="p-blog__label c-article-label">お知らせ</span>
