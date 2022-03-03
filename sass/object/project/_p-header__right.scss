@@ -2,7 +2,7 @@
   height: inherit;
   margin-left: auto;
   display: none;
-  @include mq(tab) {
+  @include mq("nav") {
       display: flex;
       align-items: center;
   }

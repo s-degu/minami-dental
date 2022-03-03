@@ -77,7 +77,7 @@
         </div>
         <?php wp_reset_query();?>
       </div>
-
+      
       <aside class="l-sub-blog__sideber p-sub-blog__sideber p-sidebar">
         <div class="p-sidebar__block p-sidebar__clinic">
           <h2 class="p-sidebar__title">

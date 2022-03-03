@@ -3208,6 +3208,7 @@ i.fas.fa-arrow-alt-circle-right {
 	left: 0;
 	position: absolute;
 	top: 0;
+	width: 100%;
 }
 
 .slick-dots {
@@ -3884,15 +3885,6 @@ input[type="checkbox"] + span {
 	width: calc((460/1000)*100%);
 }
 
-.p-header__drawer {
-	display: none;
-}
-
-.p-header__right {
-	align-items: center;
-	display: flex;
-}
-
 .p-hero__fv {
 	margin-top: 2.5625rem;
 }
@@ -4334,6 +4326,19 @@ input[type="checkbox"] + span {
 
 .p-sub-staff__slider img {
 	width: 305px;
+}
+
+}
+
+@media screen and (min-width: 1080px) {
+
+.p-header__drawer {
+	display: none;
+}
+
+.p-header__right {
+	align-items: center;
+	display: flex;
 }
 
 }

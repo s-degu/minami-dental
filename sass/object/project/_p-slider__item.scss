@@ -1,7 +1,7 @@
 .p-slider__item img {
-    aspect-ratio: 335 / 446.93;
+  aspect-ratio: 335 / 446.93;
   @include mq(tab) {
-    border-radius: 20px;
     aspect-ratio: 1160 / 520;
+    border-radius: 20px;
   }
 }
