@@ -1,3 +1,5 @@
 .p-feature__content {
-  display: flex;
+  @include mq("tab") {
+    display: flex;
+  }
 }

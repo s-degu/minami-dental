@@ -1,0 +1,6 @@
+.p-policy__textarea {
+  @include mq("tab") {
+    padding: 0;
+  }
+  padding: 0 $padding-sp;
+}
