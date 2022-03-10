@@ -1,10 +1,10 @@
 .p-concept {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   @include mq(tab) {
     flex-direction: row-reverse;
   }
+  overflow: hidden;
   position: relative;
   &::before {
     background-image: url(../../../WordPressTheme/assets/img/concept-bg_sp.png);
@@ -17,7 +17,6 @@
       background-image: url(../../../WordPressTheme/assets/img/concept-bg.png);
       background-size: contain;
       height: 725px;
-    //   background-size: contain;
       left: 33%;
     }
     left: 2%;

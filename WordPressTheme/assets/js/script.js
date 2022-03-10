@@ -14,6 +14,21 @@ jQuery(function ($) {
       }
     });
 
+    /* グローバルナビのクリックされたナビに下線をつける */
+    // jQuery(".p-header__right ul li a").click(function () {
+    //   jQuery(".p-header__right ul li a").removeClass("is-active");
+    //   jQuery(this).addClass("is-active");
+    //   return false;
+    // });
+
+    jQuery(document).ready(function () {
+      if (location.pathname != "/") {
+        jQuery(
+          '.p-header__nav a[href^="/' + location.pathname.split("/")[1] + '"]'
+        ).addClass("active");
+      } else jQuery(".p-header__nav a:eq(0)").addClass("active");
+    });
+
     /* ドロワー */
     jQuery(".js-drawer").on("click", function (e) {
       e.preventDefault();

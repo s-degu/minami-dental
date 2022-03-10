@@ -1366,7 +1366,6 @@ summary {
 
 .p-feature__img {
 	height: 61.2vw;
-	margin-left: auto;
 	margin-top: 37px;
 	max-width: 334px;
 	position: relative;
@@ -1384,8 +1383,8 @@ summary {
 	width: 100%;
 }
 
-.p-policy__textarea,
-.p-feature__textarea {
+.p-policy__textarea .p-policy__textarea,
+.p-policy__textarea .p-feature__textarea {
 	padding: 0 20px;
 }
 
@@ -1917,12 +1916,11 @@ textarea {
 }
 
 .p-header__nav-link::after {
-	background-color: #1391E6;
+	background-color: transparent;
 	bottom: 9px;
 	content: "";
 	height: 2px;
 	left: 50%;
-	opacity: 0;
 	position: absolute;
 	transform: translateX(-50%);
 	transition: all .3s ease;
@@ -1937,8 +1935,9 @@ textarea {
 	fill: #1391E6;
 }
 
-.p-header__nav-link:hover::after {
-	opacity: 1;
+.p-header__nav-link:hover::after,
+.p-header__nav-link.is-active::after {
+	background-color: #1391E6;
 }
 
 .p-header__nav-link > span {
@@ -2034,6 +2033,12 @@ textarea {
 
 .p-hero__news {
 	margin-top: 2.375rem;
+}
+
+.p-hero__info-wrap {
+	display: flex;
+	justify-content: center;
+	width: 100%;
 }
 
 .p-medial-nav__sub-title {
@@ -2319,6 +2324,7 @@ textarea {
 }
 
 .p-medical-nav__items {
+	gap: 16px;
 	margin-top: 31px;
 }
 
@@ -2487,7 +2493,7 @@ textarea {
 
 .p-policy__img {
 	height: 61.2vw;
-	margin-right: auto;
+	margin-right: 5.8125rem;
 	margin-top: 37px;
 	position: relative;
 	width: calc((334/375)*100%);
@@ -3575,6 +3581,7 @@ html {
 }
 
 .p-breadcrumb__inner {
+	max-width: 123.75rem;
 	padding-left: 89px;
 }
 
@@ -3636,20 +3643,22 @@ html {
 }
 
 .p-policy__textarea {
-	margin-left: -46px;
 	margin-right: auto;
 	margin-top: 40px;
-	max-width: 407px;
+	max-width: 427px;
 	padding: 0;
+	padding-right: 20px;
 	padding-top: 34px;
 	width: 100%;
 }
 
 .p-feature__textarea {
-	margin-left: 140px;
+	margin-left: auto;
+	margin-right: 5.8125rem;
 	margin-top: 37px;
-	max-width: 407px;
+	max-width: 427px;
 	padding: 0;
+	padding-left: 20px;
 	width: 100%;
 }
 
@@ -3657,7 +3666,7 @@ html {
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 62.5rem;
+	max-width: 1000px;
 	padding: 40px 49px;
 	width: 100%;
 }
@@ -3676,7 +3685,7 @@ html {
 }
 
 .p-footer__map {
-	margin-left: auto;
+	margin-left: 2.5rem;
 	max-width: 24.0625rem;
 	padding-top: calc((385/1000)*100%);
 }
@@ -3701,10 +3710,6 @@ html {
 	margin-top: 0;
 }
 
-.p-footer__nav-wrap {
-	display: flex;
-}
-
 .p-footer__nav {
 	display: flex;
 	justify-content: center;
@@ -3712,7 +3717,6 @@ html {
 	margin-right: auto;
 	margin-top: 37px;
 	max-width: 1000px;
-	padding: 0;
 }
 
 .p-form__button-wrap {
@@ -3891,21 +3895,26 @@ input[type="checkbox"] + span {
 
 .p-hero__info {
 	flex: 0 0 39.8%;
-	margin-left: auto;
-	margin-right: 59px;
+	margin-left: 3.9375rem;
 	margin-top: -36px;
+	max-width: 29.8125rem;
 	order: 3;
+}
+
+.p-hero__info > img {
+	max-width: 29.8125rem;
 }
 
 .p-hero__inner {
 	flex-direction: row;
 	flex-wrap: wrap;
+	max-width: 123.75rem;
 }
 
 .p-hero__news {
 	flex: 0 0 44.9%;
-	margin-left: 60px;
 	margin-top: 17px;
+	max-width: 33.625rem;
 }
 
 .p-medial-nav__title {
@@ -4012,23 +4021,22 @@ input[type="checkbox"] + span {
 .p-medical-nav__inner {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 998px;
-	padding: 0;
+	max-width: 1078px;
 	width: 100%;
 }
 
 .p-medical-nav__item > a {
-	font-size: 24px;
+	font-size: 1.5rem;
 	padding: 14px 30px;
 }
 
 .p-medical-nav__item + .p-medical-nav__item {
-	margin-left: 16px;
 	margin-top: 0;
 }
 
 .p-medical-nav__items {
 	display: flex;
+	flex-wrap: wrap;
 	margin-top: 29px;
 }
 
@@ -4258,6 +4266,7 @@ input[type="checkbox"] + span {
 }
 
 .p-sub-fv__inner {
+	max-width: 123.75rem;
 	padding-left: 60px;
 	padding-right: 60px;
 }
@@ -4331,6 +4340,10 @@ input[type="checkbox"] + span {
 }
 
 @media screen and (min-width: 1080px) {
+
+.p-footer__nav-wrap {
+	display: flex;
+}
 
 .p-header__drawer {
 	display: none;

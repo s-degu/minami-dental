@@ -1,26 +1,29 @@
-.p-policy__textarea,
-.p-feature__textarea {
-  padding: 0 $padding-sp;
-}
 .p-policy__textarea {
+  .p-policy__textarea,
+  .p-feature__textarea {
+    padding: 0 $padding-sp;
+  }
   @include mq(tab) {
-    margin-left: -46px;
-    // margin-left: 93px;
+    // margin-left: -46px;
+    // margin-left: rem(93);
     margin-right: auto;
     margin-top: 40px;
-    max-width: 407px;
+    max-width: 427px;
     padding: 0;
     padding-top: 34px;
+    padding-right: 20px;
     width: 100%;
   }
 }
 
 .p-feature__textarea {
   @include mq(tab) {
-    margin-left: 140px;
+    margin-left: auto;
+    margin-right: rem(93);
     margin-top: 37px;
-    max-width: 407px;
+    max-width: 427px;
     padding: 0;
+    padding-left: 20px;
     width: 100%;
   }
 }

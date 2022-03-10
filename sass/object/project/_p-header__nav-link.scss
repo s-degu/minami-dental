@@ -8,12 +8,11 @@
   justify-content: center;
   position: relative;
   &::after {
-    background-color: $main-color;
+    background-color: transparent;
     bottom: 9px;
     content: "";
     height: 2px;
     left: 50%;
-    opacity: 0;
     position: absolute;
     transform: translateX(-50%);
     transition: all .3s ease;
@@ -24,9 +23,13 @@
     svg > path {
       fill: $main-color;
     }
-    &::after {
-      opacity: 1;
-    }
+  }
+}
+
+.p-header__nav-link:hover,
+.p-header__nav-link.is-active {
+  &::after {
+    background-color: $main-color;
   }
 }
 

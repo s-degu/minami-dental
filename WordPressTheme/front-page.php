@@ -31,37 +31,39 @@
         </picture>
       </div>
     </div>
-    <div class="p-hero__info">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/medical-time.png" alt="診察日一覧">
-    </div>
-    <div class="p-hero__news p-news">
-      <div class="p-news__heading">
-        <p class="p-news__title">お知らせ</p>
-        <span class="p-news__title--en">news</span>
-        <span class="p-news__title--past"><a href="<?php echo $news?>">過去のお知らせはこちら</a></span>
+    <div class="p-hero__info-wrap">
+      <div class="p-hero__info">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/medical-time.png" alt="診察日一覧">
       </div>
-      <?php
-      // 固定ページに特定のカテゴリーを表示
-      $args = array(
-          'post_type' => 'post',
-          'posts_per_page' => 1
-      );
-      $the_query = new WP_Query( $args );
-      if ( $the_query->have_posts() ) :
-      ?>
-      <div class="p-news__body">
-        <dl class="p-news__list-wrap">
-          <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-          <a href="<?php the_permalink(); //記事のリンクを表示 ?>" class="p-news__list">
-            <dt class="p-news__date"><time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time></dt>
-            <dd class="p-news__content"><?php the_title();?></dd>
-          </a>
-          <?php endwhile;?>
-          <?php wp_reset_postdata(); ?>
-          <?php else: ?>
-            <!-- 投稿がない場合の処理 -->
-          <?php endif; ?>
-        </dl>
+      <div class="p-hero__news p-news">
+        <div class="p-news__heading">
+          <p class="p-news__title">お知らせ</p>
+          <span class="p-news__title--en">news</span>
+          <span class="p-news__title--past"><a href="<?php echo $news?>">過去のお知らせはこちら</a></span>
+        </div>
+        <?php
+        // 固定ページに特定のカテゴリーを表示
+        $args = array(
+            'post_type' => 'post',
+            'posts_per_page' => 1
+        );
+        $the_query = new WP_Query( $args );
+        if ( $the_query->have_posts() ) :
+        ?>
+        <div class="p-news__body">
+          <dl class="p-news__list-wrap">
+            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+            <a href="<?php the_permalink(); //記事のリンクを表示 ?>" class="p-news__list">
+              <dt class="p-news__date"><time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y/m/d'); ?></time></dt>
+              <dd class="p-news__content"><?php the_title();?></dd>
+            </a>
+            <?php endwhile;?>
+            <?php wp_reset_postdata(); ?>
+            <?php else: ?>
+              <!-- 投稿がない場合の処理 -->
+            <?php endif; ?>
+          </dl>
+        </div>
       </div>
     </div>
   </div>

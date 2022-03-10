@@ -6,7 +6,7 @@
   font-size: rem(20);
   font-weight: bold;
   @include mq(tab) {
-    font-size: 24px;
+    font-size: rem(24);
     padding: 14px 30px;
   }
   letter-spacing: .08em;
@@ -21,7 +21,7 @@
 
 .p-medical-nav__item + .p-medical-nav__item {
   @include mq(tab) {
-    margin-left: 16px;
+    // margin-left: 16px;
     margin-top: 0;
   }
   margin-top: 16px;

@@ -1,6 +1,6 @@
 .p-footer__map {
   @include mq(tab) {
-    margin-left: auto;
+    margin-left: rem(40);
     max-width: rem(385);
     padding-top: calc((385/1000)*100%);
   }

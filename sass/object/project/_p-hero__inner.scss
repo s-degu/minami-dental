@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   @include mq(tab) {
+    max-width: rem(1980);
     flex-direction: row;
     flex-wrap: wrap;
   }
