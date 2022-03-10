@@ -1,11 +1,12 @@
 .p-general__img {
   @include mq(tab) {
-    margin-left: auto;
+    margin-left: rem(40);
     margin-top: 0;
     margin-top: 19px;
     max-width: 420px;
     padding-top: calc((315/880)*100%);
   }
+  margin-left: 0;
   margin-top: 18px;
   padding-top: calc((221/295)*100%);
   position: relative;

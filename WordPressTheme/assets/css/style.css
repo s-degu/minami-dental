@@ -1680,6 +1680,7 @@ textarea {
 
 .p-general__content {
 	display: flex;
+	flex-direction: column;
 }
 
 .p-general__heading-sub-title {
@@ -1712,6 +1713,7 @@ textarea {
 }
 
 .p-general__img {
+	margin-left: 0;
 	margin-top: 18px;
 	padding-top: calc((221/295)*100%);
 	position: relative;
@@ -3768,6 +3770,7 @@ input[type="checkbox"] + span {
 }
 
 .p-general__content {
+	flex-direction: row;
 	margin-top: 20px;
 }
 
@@ -3793,7 +3796,7 @@ input[type="checkbox"] + span {
 }
 
 .p-general__img {
-	margin-left: auto;
+	margin-left: 2.5rem;
 	margin-top: 0;
 	margin-top: 19px;
 	max-width: 420px;
@@ -3875,8 +3878,8 @@ input[type="checkbox"] + span {
 .p-greeting__inner {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 1000px;
-	padding: 0;
+	max-width: 1040px;
+	padding: 0 20px;
 	width: 100%;
 }
 
@@ -4060,8 +4063,8 @@ input[type="checkbox"] + span {
 .p-member__inner {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 1000px;
-	padding: 0;
+	max-width: 1040px;
+	padding: 0 20px;
 	width: 100%;
 }
 

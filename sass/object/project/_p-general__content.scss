@@ -1,6 +1,8 @@
 .p-general__content {
   display: flex;
+  flex-direction: column;
   @include mq(tab) {
+    flex-direction: row;
     margin-top: 20px;
   }
 }
