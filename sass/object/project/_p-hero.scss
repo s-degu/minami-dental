@@ -1,5 +1,7 @@
 .p-hero__info-wrap {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+  @include mq("tab") {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
