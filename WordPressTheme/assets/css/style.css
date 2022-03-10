@@ -831,6 +831,7 @@ summary {
 }
 
 .p-blog__body {
+	flex-grow: 1;
 	padding-left: 0.625rem;
 	padding-right: 0.625rem;
 	position: relative;
@@ -3712,7 +3713,6 @@ html {
 
 .p-footer__nav {
 	display: flex;
-	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 37px;
@@ -4343,6 +4343,10 @@ input[type="checkbox"] + span {
 
 .p-footer__nav-wrap {
 	display: flex;
+}
+
+.p-footer__nav {
+	justify-content: center;
 }
 
 .p-header__drawer {

@@ -1,4 +1,5 @@
 .p-blog__body {
+  flex-grow: 1;
   // padding-top: rem(12);
   @include mq(tab) {
     padding: 21px 24px 13px 24px;
