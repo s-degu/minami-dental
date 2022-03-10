@@ -1,0 +1,15 @@
+#page_top {
+  bottom: 50px;
+  cursor: pointer;
+  display: block;
+  height: 52px;
+  opacity: .6;
+  position: fixed;
+  right: 10px;
+  transition: opacity .3s ease;
+  width: 52px;
+  z-index: 30;
+  &:hover {
+    opacity: 1;
+  }
+}

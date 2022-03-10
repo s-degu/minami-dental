@@ -3115,6 +3115,23 @@ input[type="date"] {
 	margin-top: 15px;
 }
 
+#page_top {
+	bottom: 50px;
+	cursor: pointer;
+	display: block;
+	height: 52px;
+	opacity: .6;
+	position: fixed;
+	right: 10px;
+	transition: opacity .3s ease;
+	width: 52px;
+	z-index: 30;
+}
+
+#page_top:hover {
+	opacity: 1;
+}
+
 .wp-pagenavi a.previouspostslink {
 	background-color: #fff;
 	background-image: url(./../img/common/arrow-circle-left.svg);

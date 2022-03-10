@@ -141,6 +141,12 @@
 </a>
 <!-- web予約 -->
 
+<!-- トップへ戻る -->
+<div id="page_top" class="js-top-btn">
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-top.png" alt="ページトップ">
+</div>
+<!-- トップへ戻る -->
+
 <!-- sp固定フッター -->
 <div class="l-sp-footer p-sp-footer">
   <div class="l-inner p-sp-footer__inner">

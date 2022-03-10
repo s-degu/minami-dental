@@ -1,5 +1,5 @@
 // ローディング判定
-jQuery(function ($) {
+jQuery(function (jQuery) {
   jQuery(window).on("load", function () {
     jQuery("body").attr("data-loading", "true");
   });
@@ -14,6 +14,22 @@ jQuery(function ($) {
       }
     });
 
+    jQuery(function () {
+      var pagetop = jQuery(".js-top-btn");
+      pagetop.hide();
+      jQuery(window).scroll(function () {
+        if (jQuery(this).scrollTop() > 100) {
+          pagetop.fadeIn();
+        } else {
+          pagetop.fadeOut();
+        }
+      });
+      pagetop.click(function () {
+        jQuery("body, html").animate({ scrollTop: 0 }, 500);
+        return false;
+      });
+    });
+
     /* グローバルナビのクリックされたナビに下線をつける */
     // jQuery(".p-header__right ul li a").click(function () {
     //   jQuery(".p-header__right ul li a").removeClass("is-active");
@@ -21,13 +37,13 @@ jQuery(function ($) {
     //   return false;
     // });
 
-    jQuery(document).ready(function () {
-      if (location.pathname != "/") {
-        jQuery(
-          '.p-header__nav a[href^="/' + location.pathname.split("/")[1] + '"]'
-        ).addClass("active");
-      } else jQuery(".p-header__nav a:eq(0)").addClass("active");
-    });
+    // jQuery(document).ready(function () {
+    //   if (location.pathname != "/") {
+    //     jQuery(
+    //       '.p-header__nav a[href^="/' + location.pathname.split("/")[1] + '"]'
+    //     ).addClass("active");
+    //   } else jQuery(".p-header__nav a:eq(0)").addClass("active");
+    // });
 
     /* ドロワー */
     jQuery(".js-drawer").on("click", function (e) {
