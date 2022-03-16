@@ -3,7 +3,10 @@
   @include mq("tab") {
     display: none;
   }
+}
 
+.p-sp-footer__inner {
+  padding: 0;
 }
 
 .p-sp-footer__wrap {
@@ -14,7 +17,10 @@
 .p-sp-footer__phone > a {
   color: $main-color;
   display: flex;
-  font-size: 20px;
+  font-size: 14px;
+  @include mq("sp") {
+    font-size: 20px;
+  }
 }
 
 .p-sp-footer__phone > a > img {
@@ -31,6 +37,8 @@
   background-color: $main-color;
   border-radius: 8px;
   color: $white;
+  display: flex;
+  justify-content: center;
   margin-left: 12px;
   max-width: 157px;
   width: 100%;

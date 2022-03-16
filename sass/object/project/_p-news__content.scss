@@ -10,9 +10,9 @@
     // height: 14px;
     position: absolute;
     right: 0;
-    top: 11%;
+    top: calc(50% - 12px);
     transition: all .3s ease;
-    // transform: translateY(-50%);
+    transform: translateX(-50%);
     width: 21px;
   }
 }

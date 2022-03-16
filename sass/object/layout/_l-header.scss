@@ -1,6 +1,13 @@
 .l-header {
+  background-color: $white;
   height: $header-height-sp;
   @include mq(tab) {
     height: $header-height-pc;
   }
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 40;
 }

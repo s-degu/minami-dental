@@ -45,6 +45,10 @@ body {
   overflow-wrap: break-word;
   position: relative;
   z-index: -9999;
+  padding-top: $header-height-sp;
+  @include mq("tab") {
+    padding-top: $header-height-pc;
+  }
 }
 
 /* Box sizing rules */

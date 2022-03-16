@@ -325,6 +325,7 @@ body {
 	min-height: 100vh;
 	min-height: -webkit-fill-available;
 	overflow-wrap: break-word;
+	padding-top: 60px;
 	position: relative;
 	z-index: -9999;
 }
@@ -587,7 +588,14 @@ summary {
 }
 
 .l-header {
+	background-color: #fff;
 	height: 60px;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 40;
 }
 
 .l-inner {
@@ -1998,12 +2006,9 @@ textarea {
 	font-size: 1.25rem;
 }
 
-.p-header__title img {
-	width: 270px;
-}
-
 .p-header__title a {
 	display: block;
+	max-width: 270px;
 	transition: opacity .3s ease;
 }
 
@@ -2393,7 +2398,8 @@ textarea {
 	font-weight: bold;
 	position: absolute;
 	right: 0;
-	top: 11%;
+	top: calc(50% - 12px);
+	transform: translateX(-50%);
 	transition: all .3s ease;
 	width: 21px;
 }
@@ -2754,6 +2760,10 @@ textarea {
 	background-color: rgba(255, 255, 255, 0.8);
 }
 
+.p-sp-footer__inner {
+	padding: 0;
+}
+
 .p-sp-footer__wrap {
 	display: flex;
 	justify-content: center;
@@ -2762,7 +2772,7 @@ textarea {
 .p-sp-footer__phone > a {
 	color: #1391E6;
 	display: flex;
-	font-size: 20px;
+	font-size: 14px;
 }
 
 .p-sp-footer__phone > a > img {
@@ -2780,6 +2790,8 @@ textarea {
 	background-color: #1391E6;
 	border-radius: 8px;
 	color: #fff;
+	display: flex;
+	justify-content: center;
 	margin-left: 12px;
 	max-width: 157px;
 	width: 100%;
@@ -3090,7 +3102,7 @@ input[type="checkbox"] + span {
 }
 
 .wpcf7-list-item:nth-child(3n) label > span {
-	margin-right: 0;
+	margin-right: 32px;
 }
 
 select {
@@ -3342,6 +3354,10 @@ html {
 	font-size: 16px;
 }
 
+.p-sp-footer__phone > a {
+	font-size: 20px;
+}
+
 .u-hidden-sp {
 	display: none;
 }
@@ -3352,6 +3368,10 @@ html {
 
 html {
 	font-size: 1.25vw;
+}
+
+body {
+	padding-top: 80px;
 }
 
 .l-about-gellery {

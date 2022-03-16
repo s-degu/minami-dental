@@ -3,12 +3,13 @@
   font-size: rem(20);
 }
 
-.p-header__title img {
-  width: 270px;
-}
+// .p-header__title img {
+//   width: 270px;
+// }
 
 .p-header__title a {
   display: block;
+  max-width: 270px;
   transition: opacity .3s ease;
   &:hover {
     opacity: .8;

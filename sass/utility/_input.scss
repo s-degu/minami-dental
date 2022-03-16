@@ -10,10 +10,10 @@ textarea {
 }
 
 .reservation-textarea > textarea {
+  font-size: rem(16);
   @include mq(tab) {
     min-height: 200px;
   }
-  font-size: rem(16);
   min-height: 160px;
   resize: vertical;
 }
@@ -32,7 +32,7 @@ input[type="checkbox"] + span {
       @include mq("tab") {
         margin-right: 32px;
       }
-      margin-right: 0;
+      margin-right: 32px;
     }
   }
 
