@@ -35,7 +35,7 @@
 
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
-  <header class="l-header p-header">
+  <header class="l-header p-header js-header">
     <div class="l-inner p-header__inner">
       <h1 class="p-header__title">
         <a href="<?php echo $home?>"><img class="p-header__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="みなみ歯科クリニック"></a>
