@@ -214,6 +214,17 @@
             <time datetime="<?php the_modified_time( 'c' ); ?>" class="p-blog__date c-blog-date"><?php the_modified_time( 'Y.n.j' ); ?></time>
           </div>
         </a>
+        <?php //投稿日から３日以内だった場合、NEWのラベルをつける
+          $days = 3;
+          $today = date_i18n('U');
+          $entry_day = get_the_time('U');
+          $keika = date('U',($today - $entry_day)) / 86400;
+          if ( $days > $keika ):
+              // echo 'new';
+              echo '<span class="p-blog__new-label">NEW</span>';
+
+          endif;
+        ?>
       </div>
       <?php endforeach; ?>
       <?php else : //記事が無い場合 ?>
