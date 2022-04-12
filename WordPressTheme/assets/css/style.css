@@ -3636,6 +3636,14 @@ body {
 	display: block;
 }
 
+.p-blog__new-label {
+	font-size: 16px;
+	height: 60px;
+	line-height: 60px;
+	top: -14px;
+	width: 60px;
+}
+
 .p-breadcrumb__inner {
 	max-width: 123.75rem;
 	padding-left: 89px;
